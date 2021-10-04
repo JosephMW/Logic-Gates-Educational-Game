@@ -1,4 +1,4 @@
-###Daily Log
+## Daily Log
 
 This is where I will daily log my efforts on the project.
 
