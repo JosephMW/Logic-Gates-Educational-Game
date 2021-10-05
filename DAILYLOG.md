@@ -2,6 +2,8 @@
 
 This is where I will daily log my efforts on the project.
 
+[Link back to README](README.md)
+
 | Date   | Log    |
 | :----- | :----- |
 | 27/09/21  | Received notice that I had been allowed to do my self-proposed project. <br> Reached out to my supervisor (Chris McCaig) to make initial contact and thank him. |

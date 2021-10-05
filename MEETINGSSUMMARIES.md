@@ -2,7 +2,7 @@
 
 This file contains summaries of all the advisor meetings throughout the course of my project.
 
-
+[Link back to README](README.md)
 
 ## 01/10/21 - Weekly Supervisor Meeting
 What we spoke about:

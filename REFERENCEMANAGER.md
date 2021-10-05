@@ -2,6 +2,8 @@
 
 This is where I will record and manage my references throughout the project.
 
+[Link back to README](README.md)
+
 | Title  | Source | Author | Date of Use | Reference Type | My Use |
 | :----- | :----- | :----- | :-----      | :-----         | :----- |
 | How to Setup GitHub with Unity: Step-by-Step Instructions | https://www.studica.com/blog/how-to-setup-github-with-unity-step-by-step-instructions | Kristiel | 04/10/21 | Blog Post | Setup Instructions |
