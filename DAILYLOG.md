@@ -1,12 +1,42 @@
 # Daily Log
 
-This is where I will daily log my efforts on the project.
+* Project Name: Logic Gates Educational Game
+* Student Name: Joseph Weir
+* Student GUID: 2365352w
+* Supervisor Name: Chris McCaig
 
 [Link back to README](README.md)
 
-| Date   | Log    |
-| :----- | :----- |
-| 27/09/21  | Received notice that I had been allowed to do my self-proposed project. <br> Reached out to my supervisor (Chris McCaig) to make initial contact and thank him. |
-| 01/10/21  | First meeting with supervisor. <br> We discussed several aspects of the project and arranged a meeting for 8/10/21 at 10am. <br> Emailed him a summary of the meeting after finishing. <br> **Please see [MEETINGSSUMMARIES.md](MEETINGSSUMMARIES.md) to view specific details from the meeting.**
-| 04/10/21  | Installed Unity. Setup GitHub, VS Code, GitHub Desktop. <br>Created base Unity project. Created .gitignore. <br>Started this log. |
-| 05/10/21  | Added MEETINGSSUMMARIES.md <br> Added links between my documentation files. |
+## Guidance
+
+* This file contains the time log for your project. It will be submitted along with your final dissertation.
+* **YOU MUST KEEP THIS UP TO DATE AND UNDER VERSION CONTROL.**
+* This timelog should be filled out honestly, regularly (daily) and accurately. It is for *your* benefit.
+* Follow the structure provided, grouping time by weeks.  Quantise time to the half hour.
+
+## Week 1
+
+### 29 Sep 2021
+
+* *0 hours* Received notice that I had been allowed to do my self-proposed project.
+* *0.5 hours* Reached out to my supervisor (Chris McCaig) to make initial contact and thank him.
+
+### 01 Oct 2021
+
+* *0.5 hours* First meeting with supervisor.
+* *0.5 hours* Emailed supervisor a summary of the meeting after finishing.
+
+## Week 2
+
+### 04 Oct 2021
+
+* *0.5 hours* Installed Unity.
+* *1 hours* Setup dev tools: GitHub, VS Code, GitHub Desktop
+* *0.2 hours* Created Base Unity Project
+* *0.1 hours* Added .gitignore
+* *0.2 hours* Started this log.
+
+### 05 Oct 2021
+
+* *0.5 hours* Added [MEETINGSSUMMARIES.md](MEETINGSSUMMARIES.md)
+* *0.5 hours* Added links between documentation files and improved styling.
