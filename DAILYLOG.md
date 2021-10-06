@@ -45,3 +45,4 @@
 
 * *0.6 hours* Read over moodle information page, and then amended this log file to mirror the proposed styling.
 * *0.3 hours* Added 'Issue Tracking & Branching Strategy' information to my README
+* *0.7 hours* Created Project Timeline and Added to README: Software I used was very annoying and forced a watermark which I removed.
