@@ -40,3 +40,8 @@
 
 * *0.5 hours* Added [MEETINGSSUMMARIES.md](MEETINGSSUMMARIES.md)
 * *0.5 hours* Added links between documentation files and improved styling.
+
+### 06 Oct 2021
+
+* *0.6 hours* Read over moodle information page, and then amended this log file to mirror the proposed styling.
+* *0.3 hours* Added 'Issue Tracking & Branching Strategy' information to my README
