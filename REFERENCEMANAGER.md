@@ -4,7 +4,7 @@ This is where I will record and manage my references throughout the project.
 
 [Link back to README](README.md)
 
-[References-2.xml](References-2.xml)
+[ref.ris](ref.ris)
 [References.bib](References.bib)
 
 | Title  | Source | Author | Date of Use | Reference Type | My Use |
