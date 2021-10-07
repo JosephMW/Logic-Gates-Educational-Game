@@ -17,8 +17,8 @@ I will be keeping a Daily log to keep track of my work and make sure I am on tra
 ## [Meetings Summaries](MEETINGSSUMMARIES.md)
 I am recording the contents of all my meetings so that I can keep myself on track with set goals and reflect on the timeline of my work. This can be found at the link above.
 
-## [Reference Manager](REFERENCEMANAGER.md)
-I am recording all my references as the project progresses so that I can easily find useful sources that I have used in the past, and so I can give all my references when writing my dissertation to ensure there are no uncertainties around plagiarism.
+## [Reference Manager](References.bib)
+I am recording all my references as the project progresses so that I can easily find useful sources that I have used in the past, and so I can give all my references when writing my dissertation to ensure there are no uncertainties around plagiarism. I am using Mendeley to record my references. At the link above you will find an exported .bib file of my references. This is the format I will use when writing my final dissertation in LaTeX.
 
 ## Issue Tracking & Branching Strategy
 I have created a [project board](https://github.com/JosephMW/Logic-Gates-Educational-Game/projects/1) where I will log all issues. In the future I may consider a second GitHub board to track bugs. 
