@@ -9,15 +9,15 @@ The game will allow users to learn about Logic Gates in a hands-on and intuitive
 The gates and circuits will be drag-and-drop with wires you can draw to connect the components.
 The user will be able to design circuits and save them to use later - this abstraction will allow users to create more complex circuits while keeping the UI simple.
 
-![Project Timeline](ProjectTimeline.png)
+![Project Timeline](Documentation/ProjectTimeline.png)
 
-## [Daily Log](DAILYLOG.md)
+## [Daily Log](Documentation/DAILYLOG.md)
 I will be keeping a Daily log to keep track of my work and make sure I am on track. This can be found at the link above.
 
-## [Meetings Summaries](MEETINGSSUMMARIES.md)
+## [Meetings Summaries](Documentation/MEETINGSSUMMARIES.md)
 I am recording the contents of all my meetings so that I can keep myself on track with set goals and reflect on the timeline of my work. This can be found at the link above.
 
-## [Reference Manager](References.bib)
+## [Reference Manager](Documentation/References.bib)
 I am recording all my references as the project progresses so that I can easily find useful sources that I have used in the past, and so I can give all my references when writing my dissertation to ensure there are no uncertainties around plagiarism. I am using Mendeley to record my references. At the link above you will find an exported .bib file of my references. This is the format I will use when writing my final dissertation in LaTeX.
 
 ## Issue Tracking & Branching Strategy

@@ -5,7 +5,7 @@
 * Student GUID: 2365352w
 * Supervisor Name: Chris McCaig
 
-[Link back to README](README.md)
+[Link back to README](../README.md)
 
 ## Guidance
 
