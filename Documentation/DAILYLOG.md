@@ -51,5 +51,5 @@
 
 * *0.7 hours* Decided to replace old referencing system with Mendeley.
 * *0.3 hours* Added exported .bib reference file and reordered file-system to be neater.
-* *0.25 hours* research gamedev start 16:15-30
-* *0.X hours* game work 16:30- 
+* *0.25 hours* Research gamedev start 16:15-30
+* *0.6 hours* Began creating Grid-area in first feature branch.
