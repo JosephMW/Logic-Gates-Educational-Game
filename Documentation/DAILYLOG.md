@@ -49,4 +49,5 @@
 
 ### 07 Oct 2021
 
-* *10:55 hours* in prog
+* *0.7 hours* Decided to replace old referencing system with Mendeley.
+* *0.3 hours* Added exported .bib reference file and reordered file-system to be neater.
