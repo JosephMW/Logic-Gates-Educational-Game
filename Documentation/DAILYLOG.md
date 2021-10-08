@@ -51,3 +51,10 @@
 
 * *0.7 hours* Decided to replace old referencing system with Mendeley.
 * *0.3 hours* Added exported .bib reference file and reordered file-system to be neater.
+* *0.25 hours* Researched gamedev.
+* *0.6 hours* Began creating Grid-area in first feature branch.
+
+### 08 Oct 2021
+
+* *0.5 hours* Project Meeting with Supervisor
+* *0.5 hours* Writing up Project Meeting and recording details.
