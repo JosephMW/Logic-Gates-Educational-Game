@@ -7,27 +7,36 @@ public class CustomGrid
     private int width;
     private int height;
     private int[,] gridArray;
-    public CustomGrid(int width, int height){
+    private float cellSize;
+
+    public CustomGrid(int width, int height, float cellSize){
         this.width=width;
         this.height=height;
+        this.cellSize = cellSize;
 
         this.gridArray = new int[width, height];
 
         for (int x=0; x<width; x++){
             for (int y=0; y<height; y++){
                 //Display empty grid square here.
-                Debug.Log(x + " " + y);
+                Debug.Log("x = " + x + " y= " + y + " Position= " + getPosition(x, y));
+                createBackgroundSquare(null, getPosition(x, y));
             }
         }
     }
 
-    private (int, int) getPosition(){
-        return (0,0);
+    private Vector3 getPosition(int x, int y){
+        return new Vector3(x, y) * cellSize;
     }
 
-    private TextMesh createBackgroundSquare(){
+    private TextMesh createBackgroundSquare(Transform parent, Vector3 localPosition){
         GameObject gameObject = new GameObject("Background square", typeof(TextMesh));
+        Transform transform = gameObject.transform;
+        transform.SetParent(parent, false);
+        transform.localPosition = localPosition;
 
-        //more to come...
+        TextMesh textMesh = gameObject.GetComponent<TextMesh>();
+        textMesh.text = "blah";
+        return textMesh;   
     }
 }

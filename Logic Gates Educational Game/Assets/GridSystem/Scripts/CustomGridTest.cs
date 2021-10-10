@@ -9,6 +9,7 @@ public class CustomGridTest : MonoBehaviour
     {
         int width = 3;
         int height = 7;
-        CustomGrid myGrid = new CustomGrid(width, height);
+        float cellSize = 10f;
+        CustomGrid myGrid = new CustomGrid(width, height, cellSize);
     }
 }
