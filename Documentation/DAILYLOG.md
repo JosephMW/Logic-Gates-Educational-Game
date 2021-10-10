@@ -58,3 +58,7 @@
 
 * *0.5 hours* Project Meeting with Supervisor
 * *0.5 hours* Writing up Project Meeting and recording details.
+
+### 10 Oct 2021
+
+* *0.4 hours* Recorded Project Board over last week in MeetingsSummaries, and prepared board for next week. 

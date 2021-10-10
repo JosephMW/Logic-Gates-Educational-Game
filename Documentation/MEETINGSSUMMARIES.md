@@ -43,6 +43,9 @@ Progress I’ve made:
     +	Exported .bib references file from my private Mendeley.
     +	Issue Tracking & Branching Strategy
 *	Did general research into Unity.
+
+Project Board after the first week:
+![Project Board after the first week.](ProjectBoardImages/EndOfWeek-4-10-21.png)
  
  
 What we spoke about:
@@ -63,3 +66,6 @@ Goals for next time:
     +	Allow the placing of wires on the grid
     +	Allow wires to connect to each other
     +	Allow wires to connect to components?
+
+Project Board for the next week:
+![Project Board for the next week.](ProjectBoardImages/StartOfWeek-11-10-21.png)
