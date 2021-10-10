@@ -20,7 +20,7 @@ public class CustomGrid
             for (int y=0; y<height; y++){
                 //Display empty grid square here.
                 Debug.Log("x = " + x + " y= " + y + " Position= " + getPosition(x, y));
-                createBackgroundSquare(null, getPosition(x, y));
+                createBackgroundSquare(null, getPosition(x, y), "x = " + x + " y= " + y);
             }
         }
     }
@@ -29,14 +29,17 @@ public class CustomGrid
         return new Vector3(x, y) * cellSize;
     }
 
-    private TextMesh createBackgroundSquare(Transform parent, Vector3 localPosition){
+    private TextMesh createBackgroundSquare(Transform parent, Vector3 localPosition, string text){
         GameObject gameObject = new GameObject("Background square", typeof(TextMesh));
         Transform transform = gameObject.transform;
         transform.SetParent(parent, false);
         transform.localPosition = localPosition;
 
         TextMesh textMesh = gameObject.GetComponent<TextMesh>();
-        textMesh.text = "blah";
+        textMesh.anchor = TextAnchor.MiddleCenter;
+        
+        textMesh.text = text;
+        textMesh.fontSize = 15;
         return textMesh;   
     }
 }

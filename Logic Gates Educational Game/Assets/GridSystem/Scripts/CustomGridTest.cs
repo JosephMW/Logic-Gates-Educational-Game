@@ -7,8 +7,8 @@ public class CustomGridTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int width = 3;
-        int height = 7;
+        int width = 5;
+        int height = 4;
         float cellSize = 10f;
         CustomGrid myGrid = new CustomGrid(width, height, cellSize);
     }
