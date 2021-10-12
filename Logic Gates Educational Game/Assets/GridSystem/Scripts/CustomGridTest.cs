@@ -11,5 +11,7 @@ public class CustomGridTest : MonoBehaviour
         int height = 6;
         float cellSize = 10f;
         CustomGrid myGrid = new CustomGrid(width, height, cellSize);
+        Vector3 initialCircuitPosition = new Vector3(5f, 0.7f);
+        Circuit myCircuit = new Circuit(initialCircuitPosition);
     }
 }

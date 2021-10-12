@@ -42,4 +42,9 @@ public class CustomGrid
         spriteRenderer.sprite = customGridSquare;
         spriteRenderer.size = new Vector2 (0.95f * this.cellSize, 0.95f * this.cellSize);
     }
+
+    public Vector3 placeElementInGrid(Vector3 proposedPosition){
+        // Based on proposedPosition, assign the element a position in the grid,
+        // and return a Vector3 of the center of the gridPosition;
+    }
 }
