@@ -29,17 +29,24 @@ public class CustomGrid
         return new Vector3(x, y) * cellSize;
     }
 
-    private TextMesh createBackgroundSquare(Transform parent, Vector3 localPosition, string text){
-        GameObject gameObject = new GameObject("Background square", typeof(TextMesh));
+    private void createBackgroundSquare(Transform parent, Vector3 localPosition, string text){
+        GameObject gameObject = new GameObject("Background square", typeof(SpriteRenderer));
         Transform transform = gameObject.transform;
         transform.SetParent(parent, false);
         transform.localPosition = localPosition;
 
-        TextMesh textMesh = gameObject.GetComponent<TextMesh>();
-        textMesh.anchor = TextAnchor.MiddleCenter;
+        // TextMesh textMesh = gameObject.GetComponent<TextMesh>();
+        // textMesh.anchor = TextAnchor.MiddleCenter;
         
-        textMesh.text = text;
-        textMesh.fontSize = 15;
-        return textMesh;   
+        // textMesh.text = text;
+        // textMesh.fontSize = 15;
+        // return textMesh;   
+
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.drawMode = SpriteDrawMode.Sliced;
+        Sprite customGridSquare = Resources.Load<Sprite>("Sprites/CustomGridSquare");
+        spriteRenderer.sprite = customGridSquare;
+        spriteRenderer.size = new Vector2 (0.95f * this.cellSize, 0.95f * this.cellSize);
+        // return textMesh;   
     }
 }
