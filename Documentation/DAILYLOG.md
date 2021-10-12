@@ -62,3 +62,4 @@
 ### 10 Oct 2021
 
 * *0.4 hours* Recorded Project Board over last week in MeetingsSummaries, and prepared board for next week. 
+* *0.7 hours* Worked on CustomGrid which is being tracked with [#9](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/9)
