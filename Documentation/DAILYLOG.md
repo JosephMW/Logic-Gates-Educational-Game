@@ -56,4 +56,4 @@
 
 ### 12 Oct 2021
 
-* *0.7 hours* start 18:18 work on CustomGrid - generate image.
+* *1 hour* replaced TextMesh with SpriteRenderer and square sprite to complete CustomGrid for now.
