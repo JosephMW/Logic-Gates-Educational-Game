@@ -64,8 +64,9 @@
 * *0.4 hours* Recorded Project Board over last week in MeetingsSummaries, and prepared board for next week. 
 * *0.7 hours* Worked on CustomGrid which is being tracked with [#9](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/9)
 
+## Week 3
+
 ### 12 Oct 2021
 
 * *1 hour* Replaced TextMesh with SpriteRenderer and square sprite to complete CustomGrid for now.
 * *1 hour* Built foundations for circuit with drag-and-drop, added placeholder sprite.
-
