@@ -11,7 +11,7 @@
 */Assets/AssetStoreTools*
 *.apk
 *.unitypackage
- */*.log
+*/*.log
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
