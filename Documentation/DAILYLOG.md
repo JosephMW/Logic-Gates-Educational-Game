@@ -70,3 +70,7 @@
 
 * *1 hour* Replaced TextMesh with SpriteRenderer and square sprite to complete CustomGrid for now.
 * *1 hour* Built foundations for circuit with drag-and-drop, added placeholder sprite.
+
+### 13 Oct 2021
+
+* *0.4 hours* Tidied [PR for CustomGrid](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/10), merged PR, and closed [Issue #9](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/9).
