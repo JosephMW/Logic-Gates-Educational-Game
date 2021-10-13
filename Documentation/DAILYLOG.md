@@ -74,3 +74,4 @@
 ### 13 Oct 2021
 
 * *0.4 hours* Tidied [PR for CustomGrid](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/10), merged PR, and closed [Issue #9](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/9).
+* *0.2 hours* Created [PR template](.github/pull_request_template.md) to try and ensure consistent PRs.
