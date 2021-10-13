@@ -57,3 +57,7 @@
 ### 12 Oct 2021
 
 * *1 hour* replaced TextMesh with SpriteRenderer and square sprite to complete CustomGrid for now.
+
+### 13 Oct 2021
+
+* *1 hour* Wrestled with drag-and-drop. Realised I need more fundamental knowledge about GameObject, transform, AddComponent, MonoBehaviour etc. I'm wasting time by trying to get things to work without fully understanding them.

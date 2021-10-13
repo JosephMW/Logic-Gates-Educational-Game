@@ -52,5 +52,23 @@ public class CustomGrid
     {
         // Based on proposedPosition, assign the element a position in the grid,
         // and return a Vector3 of the center of the gridPosition;
+
+        // NOTE: This is just the rough layout below, maths is incorrect. See notebook.
+        Vector3 normalisedPosition = proposedPosition / this.cellSize;
+
+        //INSERT: We need to normalise by the offset HERE.
+
+        int x_arrayPosition = (int)System.Math.Round(normalisedPosition[0]);
+        int y_arrayPosition = (int)System.Math.Round(normalisedPosition[1]);
+
+        this.gridArray[x_arrayPosition, y_arrayPosition] = 1; // 1 signifies slot taken.
+
+        Vector3 centerOfSquare = getPosition(x_arrayPosition, y_arrayPosition);
+        return centerOfSquare;
+    }
+
+    public void clearSquare(int x_pos, int y_pos)
+    {
+        this.gridArray[x_pos, y_pos] = 0;
     }
 }
