@@ -81,5 +81,5 @@
 
 ### 14 Oct 2021
 * *0.7 hours* Supervisor meeting. Emailed summary of meeting.
-* *0.5 hour* Researched Unity - linking scripts, GameObjects etc.
-* *1.7 hour* Completed Drag-and-Drop, prepared [Drag-and-Drop PR](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/16), merged and closed issues [#8](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/8), [#11](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/11).
+* *0.5 hours* Researched Unity - linking scripts, GameObjects etc.
+* *2 hours* Completed Drag-and-Drop, prepared [Drag-and-Drop PR](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/16), merged and closed issues [#8](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/8), [#11](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/11).
