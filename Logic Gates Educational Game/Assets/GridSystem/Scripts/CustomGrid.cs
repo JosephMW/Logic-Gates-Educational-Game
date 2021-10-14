@@ -70,6 +70,15 @@ public class CustomGrid : MonoBehaviour
 
         (int x, int y) arrayPosition = convertLocalPositionToGridArrayPosition(proposedPosition);
 
+        if ((arrayPosition.x >= this.width)
+            || (arrayPosition.x < 0)
+            || (arrayPosition.y >= this.height)
+            || (arrayPosition.y < 0))
+        {
+            // we are outside of the grid.
+            return startPosition;
+        }
+
         if (!this.gridArray[arrayPosition.x, arrayPosition.y])
         {
             clearSquare(startPosition);
@@ -89,6 +98,14 @@ public class CustomGrid : MonoBehaviour
     public void clearSquare(Vector3 localPosition)
     {
         (int x, int y) arrayPosition = convertLocalPositionToGridArrayPosition(localPosition);
+        if ((arrayPosition.x >= this.width)
+           || (arrayPosition.x < 0)
+           || (arrayPosition.y >= this.height)
+           || (arrayPosition.y < 0))
+        {
+            // we are outside of the grid.
+            return;
+        }
         this.gridArray[arrayPosition.x, arrayPosition.y] = false;
     }
 }
