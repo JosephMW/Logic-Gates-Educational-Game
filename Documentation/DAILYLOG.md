@@ -81,3 +81,5 @@
 
 ### 14 Oct 2021
 * *0.7 hours* Supervisor meeting. Emailed summary of meeting.
+* *0.5 hour* Researched Unity - linking scripts, GameObjects etc.
+* *1.7 hour* Completed Drag-and-Drop, prepared PR, merged and closed.
