@@ -21,16 +21,15 @@ public class CustomGrid : MonoBehaviour
         {
             for (int y = 0; y < height; y++)
             {
-                createBackgroundSquare(null, getPosition(x, y));
+                createBackgroundSquare(null, convertGridArrayPositionToLocalPosition(x, y));
             }
         }
     }
 
-    private Vector3 getPosition(int x, int y)
+    private Vector3 convertGridArrayPositionToLocalPosition(int x, int y)
     {
         float x_pos = x - (float)(this.width - 1) / (float)(2);
         float y_pos = y - (float)(this.height - 1) / (float)(2);
-        // Debug.Log("x = " + x_pos + " y= " + y_pos);
         return new Vector3(x_pos, y_pos) * cellSize;
     }
 
@@ -48,12 +47,10 @@ public class CustomGrid : MonoBehaviour
         spriteRenderer.size = new Vector2(0.95f * this.cellSize, 0.95f * this.cellSize);
     }
 
-    public Vector3 placeElementInGrid(Vector3 proposedPosition)
-    {
-        // Based on proposedPosition, assign the element a position in the grid,
-        // and return a Vector3 of the center of the gridPosition;
 
-        Vector3 normalisedPosition = proposedPosition / this.cellSize;
+    private (int x_arrayPosition, int y_arrayPosition) convertLocalPositionToGridArrayPosition(Vector3 localPosition)
+    {
+        Vector3 normalisedPosition = localPosition / this.cellSize;
 
         Vector3 offset = new Vector3((float)(this.width - 1) / (float)(2), (float)(this.height - 1) / (float)(2));
 
@@ -62,18 +59,36 @@ public class CustomGrid : MonoBehaviour
         int x_arrayPosition = (int)System.Math.Round(normalisedPosition[0]);
         int y_arrayPosition = (int)System.Math.Round(normalisedPosition[1]);
 
-        if (!this.gridArray[x_arrayPosition, y_arrayPosition])
-        {
-            this.gridArray[x_arrayPosition, y_arrayPosition] = true; // true signifies slot taken.
-
-            Vector3 centerOfSquare = getPosition(x_arrayPosition, y_arrayPosition);
-            return centerOfSquare;
-        }
-        return new Vector3(-9999, -9999, -9999);
+        return (x_arrayPosition, y_arrayPosition);
     }
 
-    public void clearSquare(int x_pos, int y_pos)
+    public Vector3 placeElementInGrid(Vector3 proposedPosition, Vector3 startPosition)
     {
-        this.gridArray[x_pos, y_pos] = false;
+        // Based on proposedPosition, assign the element a position in the grid,
+        // and return a Vector3 of the center of the gridPosition;
+        // If the proposedPosition is taken, instead return startPosition;
+
+        (int x, int y) arrayPosition = convertLocalPositionToGridArrayPosition(proposedPosition);
+
+        if (!this.gridArray[arrayPosition.x, arrayPosition.y])
+        {
+            clearSquare(startPosition);
+
+            this.gridArray[arrayPosition.x, arrayPosition.y] = true; // true signifies slot taken.
+
+            Vector3 centerOfSquare = convertGridArrayPositionToLocalPosition(arrayPosition.x, arrayPosition.y);
+            return centerOfSquare;
+        }
+        else
+        {
+            return startPosition;
+        }
+    }
+
+
+    public void clearSquare(Vector3 localPosition)
+    {
+        (int x, int y) arrayPosition = convertLocalPositionToGridArrayPosition(localPosition);
+        this.gridArray[arrayPosition.x, arrayPosition.y] = false;
     }
 }

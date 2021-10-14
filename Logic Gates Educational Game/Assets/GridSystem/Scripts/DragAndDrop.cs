@@ -8,16 +8,15 @@ public class DragAndDrop : MonoBehaviour
 {
     private float x_mouseOffset, y_mouseOffset;
     private Vector3 startPosition;
-    private bool mouseDown = false;
+    private bool dragging = false;
 
     public CustomGrid customGrid;
 
     void Update()
     {
-        if (mouseDown)
+        if (dragging)
         {
-            Vector3 mousePosition;
-            mousePosition = Input.mousePosition;
+            Vector3 mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
             this.gameObject.transform.localPosition = new Vector3(mousePosition.x - x_mouseOffset, mousePosition.y - y_mouseOffset, 0);
@@ -26,45 +25,32 @@ public class DragAndDrop : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Circuit OnMouseDown");
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 mousePosition;
-            mousePosition = Input.mousePosition;
+            Vector3 mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
+            // Set the start position and mouseOffset for later use. Also set dragging true.
             this.startPosition = this.transform.localPosition;
 
-            x_mouseOffset = mousePosition.x - this.transform.localPosition.x;
-            y_mouseOffset = mousePosition.y - this.transform.localPosition.y;
-            mouseDown = true;
-
-            //NEED TO EMPTY SQUARE IN GRID ALSO
+            this.x_mouseOffset = mousePosition.x - this.transform.localPosition.x;
+            this.y_mouseOffset = mousePosition.y - this.transform.localPosition.y;
+            this.dragging = true;
         }
     }
 
     private void OnMouseUp()
     {
-        Debug.Log("Circuit OnMouseUp");
-        mouseDown = false;
+        dragging = false;
 
-        Vector3 mousePosition;
-        mousePosition = Input.mousePosition;
+        Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         if (customGrid != null)
         {
-            Vector3 newPosition = customGrid.placeElementInGrid(new Vector3(mousePosition.x - x_mouseOffset, mousePosition.y - y_mouseOffset, 0));
+            Vector3 newPosition = customGrid.placeElementInGrid(new Vector3(mousePosition.x - x_mouseOffset, mousePosition.y - y_mouseOffset, 0), this.startPosition);
 
-            if (newPosition != new Vector3(-9999, -9999, -9999))
-            {
-                this.gameObject.transform.localPosition = newPosition;
-            }
-            else
-            {
-                this.gameObject.transform.localPosition = this.startPosition;
-            }
-
+            this.gameObject.transform.localPosition = newPosition;
         }
     }
 }
