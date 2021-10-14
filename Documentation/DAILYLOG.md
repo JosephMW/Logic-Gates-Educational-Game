@@ -14,6 +14,8 @@
 * This timelog should be filled out honestly, regularly (daily) and accurately. It is for *your* benefit.
 * Follow the structure provided, grouping time by weeks.  Quantise time to the half hour.
 
+**NOTE:** *My 'Weeks' are recorded Monday to Monday. I will organise my sprints to last 1 week and also run Monday to Monday for ease of documentation. This decision was made on 14/10/21 after confusion as to when my weeks work on the project board should end.*
+
 ## Week 1
 
 ### 29 Sep 2021
@@ -51,18 +53,33 @@
 
 * *0.7 hours* Decided to replace old referencing system with Mendeley.
 * *0.3 hours* Added exported .bib reference file and reordered file-system to be neater.
-* *0.25 hours* Research gamedev start 16:15-30
+* *0.25 hours* Researched gamedev.
 * *0.6 hours* Began creating Grid-area in first feature branch.
+
+### 08 Oct 2021
+
+* *0.5 hours* Project Meeting with Supervisor
+* *0.5 hours* Writing up Project Meeting and recording details.
+
+### 10 Oct 2021
+
+* *0.4 hours* Recorded Project Board over last week in MeetingsSummaries, and prepared board for next week. 
+* *0.7 hours* Worked on CustomGrid which is being tracked with [#9](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/9)
+
+## Week 3
 
 ### 12 Oct 2021
 
-* *1 hour* replaced TextMesh with SpriteRenderer and square sprite to complete CustomGrid for now.
+* *1 hour* Replaced TextMesh with SpriteRenderer and square sprite to complete CustomGrid for now.
+* *1 hour* Built foundations for circuit with drag-and-drop, added placeholder sprite.
 
 ### 13 Oct 2021
 
-* *1 hour* Wrestled with drag-and-drop. Realised I need more fundamental knowledge about GameObject, transform, AddComponent, MonoBehaviour etc. I'm wasting time by trying to get things to work without fully understanding them.
+* *0.4 hours* Tidied [PR for CustomGrid](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/10), merged PR, and closed [Issue #9](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/9). Merge was delayed for lack of internet access.
+* *0.2 hours* Created [PR template](.github/pull_request_template.md) to try and ensure consistent PRs.
+* *1.5 hours* Worked on Drag-and-drop. Now working rudimentally, using OnMouseDown etc. 
 
 ### 14 Oct 2021
-
+* *0.7 hours* Supervisor meeting. Emailed summary of meeting.
 * *0.5 hour* Researched Unity - linking scripts, GameObjects etc.
 * *1.7 hour* Completed Drag-and-Drop, prepared PR, merged and closed.
