@@ -61,3 +61,8 @@
 ### 13 Oct 2021
 
 * *1 hour* Wrestled with drag-and-drop. Realised I need more fundamental knowledge about GameObject, transform, AddComponent, MonoBehaviour etc. I'm wasting time by trying to get things to work without fully understanding them.
+
+### 14 Oct 2021
+
+* *0.5 hour* Researched Unity - linking scripts, GameObjects etc.
+* *1.7 hour* Completed Drag-and-Drop, prepared PR, merged and closed.

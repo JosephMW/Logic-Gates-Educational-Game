@@ -11,8 +11,8 @@ public class CustomGrid : MonoBehaviour
 
     void Awake()
     {
-        this.width = 6;
-        this.height = 8;
+        this.width = 8;
+        this.height = 6;
         this.cellSize = 2f;
 
         this.gridArray = new bool[width, height];
