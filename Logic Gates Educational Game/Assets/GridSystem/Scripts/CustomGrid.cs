@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CustomGrid
+public class CustomGrid : MonoBehaviour
 {
     private int width;
     private int height;
-    private int[,] gridArray;
+    private bool[,] gridArray;
     private float cellSize;
 
-    public CustomGrid(int width, int height, float cellSize)
+    void Awake()
     {
-        this.width = width;
-        this.height = height;
-        this.cellSize = cellSize;
+        this.width = 6;
+        this.height = 8;
+        this.cellSize = 2f;
 
-        this.gridArray = new int[width, height];
+        this.gridArray = new bool[width, height];
 
         for (int x = 0; x < width; x++)
         {
@@ -53,22 +53,27 @@ public class CustomGrid
         // Based on proposedPosition, assign the element a position in the grid,
         // and return a Vector3 of the center of the gridPosition;
 
-        // NOTE: This is just the rough layout below, maths is incorrect. See notebook.
         Vector3 normalisedPosition = proposedPosition / this.cellSize;
 
-        //INSERT: We need to normalise by the offset HERE.
+        Vector3 offset = new Vector3((float)(this.width - 1) / (float)(2), (float)(this.height - 1) / (float)(2));
+
+        normalisedPosition += offset;
 
         int x_arrayPosition = (int)System.Math.Round(normalisedPosition[0]);
         int y_arrayPosition = (int)System.Math.Round(normalisedPosition[1]);
 
-        this.gridArray[x_arrayPosition, y_arrayPosition] = 1; // 1 signifies slot taken.
+        if (!this.gridArray[x_arrayPosition, y_arrayPosition])
+        {
+            this.gridArray[x_arrayPosition, y_arrayPosition] = true; // true signifies slot taken.
 
-        Vector3 centerOfSquare = getPosition(x_arrayPosition, y_arrayPosition);
-        return centerOfSquare;
+            Vector3 centerOfSquare = getPosition(x_arrayPosition, y_arrayPosition);
+            return centerOfSquare;
+        }
+        return new Vector3(-9999, -9999, -9999);
     }
 
     public void clearSquare(int x_pos, int y_pos)
     {
-        this.gridArray[x_pos, y_pos] = 0;
+        this.gridArray[x_pos, y_pos] = false;
     }
 }
