@@ -69,3 +69,34 @@ Goals for next time:
 
 Project Board for the next week:
 ![Project Board for the next week.](ProjectBoardImages/StartOfWeek-11-10-21.png)
+
+## 14/10/21 - Weekly Supervisor Meeting
+Progress I’ve made:
+*	Completed my CustomGrid, which has the following functionality:
+    +   Renders a 2D grid of partially separated squares.
+    +   Takes 3 params: width, height, cellSize.
+    +   Linear transformation takes the grid and ensures the center of the grid aligns with the game plane.
+*   Made progress with Drag-and-Drop:
+    +   I now have the functionality of being able to drag-and-drop a component on screen.
+    +   I still need to have a dropped sprite snap into position on the CustomGrid which sits behind.
+ 
+What we spoke about:
+*	The progress I have made (found above)
+*   The struggles I have had with development
+    +   I don't have wifi in my flat yet which is slowing things.
+    +   I need to learn the key Unity Architecture and styles of coding before continuing
+        -   It has become clear there are styles of programming in Unity, you can instantiate components, or use AddComponent and give reference to other GameObjects. I need to learn the key details in these approaches and become consistent for the rest of the project. We both expect issues will arise if I try to combine different approaches. 
+*	My goals for the next week (found below)
+ 
+Goals for next time:
+*   Learn about Unity Architecture, and using AddComponent etc to avoid directly instantiating classes via constructors.
+*	Complete Drag-and-Drop
+    +   Have sprites snap into position on the grid.
+*   Complete other outstanding issues on the Project Board
+    +   Wire System: Get Placeholder Image
+    +   Wire System: Allow the placing of wires on the grid
+    +   Wire System: Allow wires to connect to each other
+    +   Wire System: Allow wires to connect to components
+
+**KEY DECISION** *At this point in the project I felt confusion as to how I organised my work. I had decided to use week-long sprints at the beginning as I thought it would work well with weeekly meetings - however I failed to consider that weekly supervisor meetings may not always occur on the same day and same time. Therefore, I cannot ensure that a supervisor meeting always occurs at the end of a sprint. I now realise I need a concrete start and end to each sprint, and supervisor meetings will have to sometimes occur mid-sprint.*
+*We now have three things which occur weekly: My sprints; My supervisor meetings; The university 'Weeks'. In order to save confusion over these three different things I have decided to organise my sprints to align with the university 'Weeks' - that being start on Monday and end on Sunday. My Supervisor meetings will just occur when my supervisor is available.*

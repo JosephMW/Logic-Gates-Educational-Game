@@ -14,6 +14,8 @@
 * This timelog should be filled out honestly, regularly (daily) and accurately. It is for *your* benefit.
 * Follow the structure provided, grouping time by weeks.  Quantise time to the half hour.
 
+**NOTE:** *My 'Weeks' are recorded Monday to Monday. I will organise my sprints to last 1 week and also run Monday to Monday for ease of documentation. This decision was made on 14/10/21 after confusion as to when my weeks work on the project board should end.*
+
 ## Week 1
 
 ### 29 Sep 2021
@@ -73,5 +75,9 @@
 
 ### 13 Oct 2021
 
-* *0.4 hours* Tidied [PR for CustomGrid](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/10), merged PR, and closed [Issue #9](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/9).
+* *0.4 hours* Tidied [PR for CustomGrid](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/10), merged PR, and closed [Issue #9](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/9). Merge was delayed for lack of internet access.
 * *0.2 hours* Created [PR template](.github/pull_request_template.md) to try and ensure consistent PRs.
+* *1.5 hours* Worked on Drag-and-drop. Now working rudimentally, using OnMouseDown etc. 
+
+### 14 Oct 2021
+* *0.7 hours* Supervisor meeting. Emailed summary of meeting.
