@@ -80,5 +80,12 @@
 * *1.5 hours* Worked on Drag-and-drop. Now working rudimentally, using OnMouseDown etc. 
 
 ### 14 Oct 2021
-* *0.7 hours* Supervisor meeting. Emailed summary of meeting.
 
+* *0.7 hours* Supervisor meeting. Emailed summary of meeting.
+* *0.5 hours* Researched Unity - linking scripts, GameObjects etc.
+* *2 hours* Completed Drag-and-Drop, prepared [Drag-and-Drop PR](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/16), merged and closed issues [#8](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/8), [#11](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/11).
+
+### 16 Oct 2021
+
+* *0.25 hours* Researched and planned wiring system.
+* *2 hours* Began work on Wire System.
