@@ -108,4 +108,18 @@ public class CustomGrid : MonoBehaviour
         }
         this.gridArray[arrayPosition.x, arrayPosition.y] = false;
     }
+
+    public int queryGrid(Vector3 localPosition)
+    {
+        (int x, int y) arrayPosition = convertLocalPositionToGridArrayPosition(localPosition);
+        if ((arrayPosition.x >= this.width)
+           || (arrayPosition.x < 0)
+           || (arrayPosition.y >= this.height)
+           || (arrayPosition.y < 0))
+        {
+            // we are outside of the grid.
+            return -1;
+        }
+        return this.gridArray[arrayPosition.x, arrayPosition.y];
+    }
 }

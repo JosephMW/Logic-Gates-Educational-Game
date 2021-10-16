@@ -25,18 +25,15 @@ public class DragAndDrop : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector3 mousePosition = Input.mousePosition;
-            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-            // Set the start position and mouseOffset for later use. Also set dragging true.
-            this.startPosition = this.transform.localPosition;
+        // Set the start position and mouseOffset for later use. Also set dragging true.
+        this.startPosition = this.transform.localPosition;
 
-            this.x_mouseOffset = mousePosition.x - this.transform.localPosition.x;
-            this.y_mouseOffset = mousePosition.y - this.transform.localPosition.y;
-            this.dragging = true;
-        }
+        this.x_mouseOffset = mousePosition.x - this.transform.localPosition.x;
+        this.y_mouseOffset = mousePosition.y - this.transform.localPosition.y;
+        this.dragging = true;
     }
 
     private void OnMouseUp()
