@@ -80,6 +80,5 @@
 * *1.5 hours* Worked on Drag-and-drop. Now working rudimentally, using OnMouseDown etc. 
 
 ### 14 Oct 2021
-
 * *0.7 hours* Supervisor meeting. Emailed summary of meeting.
 
