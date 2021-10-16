@@ -34,19 +34,23 @@ public class DrawWires : MonoBehaviour
         {
             // case -1 is used to represent we clicked outside the grid.
             case -1:
+                Debug.Log("You clicked outside of the grid");
                 return;
             // case 0 means grid empty
             case 0:
+                Debug.Log("You clicked on an empty square");
                 dragging = true;
                 // Create new wire
                 break;
             // case 1 means circuit at location.
             case 1:
+                Debug.Log("You clicked on a circuit");
                 // link new wire to circuit
                 break;
 
             // case X means a circuit with unique identifier X is at the location.
             default:
+                break;
                 // continue building this wire.
         }
     }

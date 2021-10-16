@@ -6,7 +6,7 @@ public class CustomGrid : MonoBehaviour
 {
     private int width;
     private int height;
-    private bool[,] gridArray;
+    private int[,] gridArray;
     private float cellSize;
 
     void Awake()
@@ -15,7 +15,7 @@ public class CustomGrid : MonoBehaviour
         this.height = 6;
         this.cellSize = 2f;
 
-        this.gridArray = new bool[width, height];
+        this.gridArray = new int[width, height];
 
         for (int x = 0; x < width; x++)
         {
@@ -79,11 +79,12 @@ public class CustomGrid : MonoBehaviour
             return startPosition;
         }
 
-        if (!this.gridArray[arrayPosition.x, arrayPosition.y])
+        // If the current position is empty:
+        if (this.gridArray[arrayPosition.x, arrayPosition.y] == 0)
         {
             clearSquare(startPosition);
 
-            this.gridArray[arrayPosition.x, arrayPosition.y] = true; // true signifies slot taken.
+            this.gridArray[arrayPosition.x, arrayPosition.y] = 1; // 1 signifies slot taken by a circuit
 
             Vector3 centerOfSquare = convertGridArrayPositionToLocalPosition(arrayPosition.x, arrayPosition.y);
             return centerOfSquare;
@@ -106,7 +107,7 @@ public class CustomGrid : MonoBehaviour
             // we are outside of the grid.
             return;
         }
-        this.gridArray[arrayPosition.x, arrayPosition.y] = false;
+        this.gridArray[arrayPosition.x, arrayPosition.y] = 0;
     }
 
     public int queryGrid(Vector3 localPosition)
