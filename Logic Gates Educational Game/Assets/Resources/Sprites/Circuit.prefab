@@ -296,6 +296,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5924722429281599207}
   - component: {fileID: 7982611837071807912}
+  - component: {fileID: 884082539175616480}
+  - component: {fileID: 646321918759462086}
+  - component: {fileID: 6331663162307979488}
   m_Layer: 0
   m_Name: CircuitWireConnection
   m_TagString: Untagged
@@ -368,6 +371,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &884082539175616480
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7617053260146675756}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &646321918759462086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7617053260146675756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f26cb2ca318c0684690bc0e068d647f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &6331663162307979488
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7617053260146675756}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1817280483661928597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,6 +437,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2025324700130644313}
     m_Modifications:
+    - target: {fileID: 549149392312682341, guid: 9013442770144294c810ae21dea99cff, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 549149392312682341, guid: 9013442770144294c810ae21dea99cff, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208718273451165532, guid: 9013442770144294c810ae21dea99cff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208718273451165532, guid: 9013442770144294c810ae21dea99cff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208718273451165532, guid: 9013442770144294c810ae21dea99cff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208718273451165532, guid: 9013442770144294c810ae21dea99cff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208718273451165532, guid: 9013442770144294c810ae21dea99cff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3203815425093871698, guid: 9013442770144294c810ae21dea99cff, type: 3}
       propertyPath: m_Name
       value: Wire

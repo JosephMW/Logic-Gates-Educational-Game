@@ -87,6 +87,15 @@
 
 ### 16 Oct 2021
 
-* *X hours* Researched and planned wiring system. 14:15 - 14:30 doesnt seem suuuper useful https://www.youtube.com/watch?v=n2cYUbtt28M
+* *0.25 hours* Researched and planned wiring system.
+* *2 hours* Began work on Wire System.
 
-mucking with code : 14:30 - 
+### 19 Oct 2021
+
+* *0.7 hours* Created Wire prefab.
+
+### 16 Oct 2021
+
+* *0.4 hours* Supervisor Meeting.
+* *2.5 hours* Created Circuit prefab and added draggable wires. 
+* *0.2 hours* Emailed supervisor a meeting summary.

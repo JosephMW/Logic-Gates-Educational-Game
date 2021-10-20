@@ -22,10 +22,8 @@ public class Wire : MonoBehaviour
             wireEnd.transform.localScale = new Vector3(distance, wireEnd.transform.localScale.y, 0);
             float angle = Mathf.Atan((mousePosition.y - startPosition.y) / (mousePosition.x - startPosition.x));
             angle = (angle * 180) / Mathf.PI;
-            Debug.Log(angle);
             wireEnd.transform.eulerAngles = new Vector3(0, 0, angle);
-            // wireEnd.transform.localPosition = new Vector3(mousePosition.x - this.x_mouseOffset - startPosition.x, mousePosition.y - this.y_mouseOffset - startPosition.y, 0);
-            wireEnd.transform.localPosition = new Vector3(-(mousePosition.x - this.x_mouseOffset)/2, -(mousePosition.y - this.y_mouseOffset)/2, 0);
+            wireEnd.transform.localPosition = new Vector3(-(mousePosition.x - this.x_mouseOffset) / 2, -(mousePosition.y - this.y_mouseOffset) / 2, 0);
         }
     }
 
@@ -33,7 +31,8 @@ public class Wire : MonoBehaviour
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        if(this.startPosition == new Vector3(0, 0, 0)){
+        if (this.startPosition == new Vector3(0, 0, 0))
+        {
             this.startPosition = this.transform.position;
         }
         this.dragging = true;
@@ -49,9 +48,5 @@ public class Wire : MonoBehaviour
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         this.gameObject.transform.localPosition = new Vector3(mousePosition.x - this.x_mouseOffset, mousePosition.y - this.y_mouseOffset, 0);
         float distance = Vector2.Distance(startPosition, mousePosition);
-        //     wireEnd.size = new Vector2(distance, wireEnd.size.y);
-        // Vector3 newPosition = check to see if there is a WireConnectionEnd at this spot. If there is and its empty then return position of it here. (And connect to circuit);
-
-        // this.gameObject.transform.localPosition = newPosition;
     }
 }

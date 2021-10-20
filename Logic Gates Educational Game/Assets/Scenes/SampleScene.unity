@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2910018353360808223, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
       propertyPath: m_Name
-      value: Circuit 2
+      value: Circuit Xor2
       objectReference: {fileID: 0}
     - target: {fileID: 7349708323388164363, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
       propertyPath: m_text
@@ -883,17 +883,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2208662187797389296, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2569892053704314544, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2910018353360808223, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
       propertyPath: m_Name
-      value: Circuit 1
+      value: Circuit And2
       objectReference: {fileID: 0}
     - target: {fileID: 4381597674797173608, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8795534964134441190, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
