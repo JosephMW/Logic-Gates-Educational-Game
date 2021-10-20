@@ -99,3 +99,4 @@
 * *0.4 hours* Supervisor Meeting.
 * *2.5 hours* Created Circuit prefab and added draggable wires. 
 * *0.2 hours* Emailed supervisor a meeting summary.
+* *0.8 hours* Researched and implemented simple collisions with triggers so that dragging a wire over an input is sensed.
