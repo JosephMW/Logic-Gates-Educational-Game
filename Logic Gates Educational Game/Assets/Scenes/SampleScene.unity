@@ -178,6 +178,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circuit 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7349708323388164363, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+      propertyPath: m_text
+      value: 'Xor2
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
 --- !u!1 &171334684 stripped
@@ -224,6 +230,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &479384225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8073926723827192871, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+  m_PrefabInstance: {fileID: 8720248472122078880}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +581,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1057154848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 354736118747336417, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+  m_PrefabInstance: {fileID: 8720248472122078880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1057154851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057154848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43543ea562ec9e242ba1819827926aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wireEnd: {fileID: 479384225}
 --- !u!1 &1784014101 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2910018353360808223, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
@@ -657,6 +686,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02e1f7a047af82a498c3ca8eb32f14f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1909844662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 354736118747336417, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+  m_PrefabInstance: {fileID: 171334683}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1909844665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909844662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43543ea562ec9e242ba1819827926aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wireEnd: {fileID: 1987999759}
 --- !u!1 &1963397270
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +827,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!1 &1987999759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8073926723827192871, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+  m_PrefabInstance: {fileID: 171334683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8720248472122078880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -831,9 +883,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2569892053704314544, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2910018353360808223, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
       propertyPath: m_Name
       value: Circuit 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381597674797173608, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
