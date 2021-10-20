@@ -9,6 +9,7 @@ public class CircuitInputTrigger : MonoBehaviour
     {
         Debug.Log("Name of circuit that just overlapped:");
         Debug.Log(collider.gameObject.transform.parent.parent);
+        // collider.gameObject.transform.position = this.gameObject.transform.position;
     }
 
     //Overlapping a collider 2D
