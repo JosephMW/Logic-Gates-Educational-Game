@@ -94,9 +94,13 @@
 
 * *0.7 hours* Created Wire prefab.
 
-### 16 Oct 2021
+### 20 Oct 2021
 
 * *0.4 hours* Supervisor Meeting.
 * *2.5 hours* Created Circuit prefab and added draggable wires. 
 * *0.2 hours* Emailed supervisor a meeting summary.
 * *0.8 hours* Researched and implemented simple collisions with triggers so that dragging a wire over an input is sensed.
+
+### 21 Oct 2021
+
+* *0.4 hours* Updated MeetingsSummaries to recap on yesterdays meeting. Updated references.
