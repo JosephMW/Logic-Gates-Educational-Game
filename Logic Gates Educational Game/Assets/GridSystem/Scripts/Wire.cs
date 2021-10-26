@@ -8,7 +8,7 @@ public class Wire : MonoBehaviour
 {
     private float x_mouseOffset, y_mouseOffset;
     private Vector3 startPosition;
-    private bool dragging = false;
+    public bool dragging = false;
     public GameObject wireEnd;
 
     void Update()

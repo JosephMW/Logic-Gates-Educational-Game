@@ -104,3 +104,7 @@
 ### 21 Oct 2021
 
 * *0.4 hours* Updated MeetingsSummaries to recap on yesterdays meeting. Updated references.
+
+### 26 Oct 2021
+
+* *X hours* worked on wires... 15:45 - 
