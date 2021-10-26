@@ -7,17 +7,20 @@ public class Switch : MonoBehaviour
     public bool value = false;
     public Wire output;
     public SpriteRenderer sprite;
-
-    void Update()
+    private static Color onColor = new Color(0, 1, 0, 1);
+    private static Color offColor = new Color(1, 0, 0, 1);
+    void OnMouseDown()
     {
+        Debug.Log("Clicked");
         if (!this.value)
         {
-            sprite.color = new Color(1, 0, 0, 1);
+            sprite.color = onColor;
         }
         else
         {
-            sprite.color = new Color(4, 1, 0, 0);
+            sprite.color = offColor;
         }
-        // this.value = !this.value;
+        output.setValue(!this.value);
+        this.value = !this.value;
     }
 }

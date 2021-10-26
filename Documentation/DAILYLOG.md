@@ -107,4 +107,5 @@
 
 ### 26 Oct 2021
 
-* *X hours* worked on wires... 15:45 - 
+* *2 hours* Set up Wire logic connection. Created placeholder Switch and Light.
+* *X hours* 21:10 - 

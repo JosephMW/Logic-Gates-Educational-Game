@@ -8,6 +8,7 @@ public class CircuitInputTrigger : MonoBehaviour
 
     private Wire wireConnected;
     public Circuit ownerCircuit;
+    public DisplayLight ownerLight;
 
     public void setValue(bool value)
     {
@@ -19,8 +20,15 @@ public class CircuitInputTrigger : MonoBehaviour
         if (value != valueOut)
         {
             this.valueOut = value;
-            ownerCircuit.setValue(this.value);
             Debug.Log("CircuitInput just output: " + this.value);
+            if (ownerCircuit != null)
+            {
+                ownerCircuit.setValue(this.value);
+            }
+            if (ownerLight != null)
+            {
+                ownerLight.setValue(this.value);
+            }
         }
     }
     //Just overlapped a collider 2D
