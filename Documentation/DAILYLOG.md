@@ -108,4 +108,4 @@
 ### 26 Oct 2021
 
 * *2 hours* Set up Wire logic connection. Created placeholder Switch and Light.
-* *X hours* 21:10 - 
+* *1 hour* Fully implemented Switch and Light. Now we can see signals passing through the circuit.
