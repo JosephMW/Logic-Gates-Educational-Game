@@ -47,7 +47,6 @@ public class Wire : MonoBehaviour
                 connectionPoint.setValue(this.value);
                 Debug.Log("CircuitOutput(Wire) just output: " + this.value);
             }
-            // continuously output the value on this wire
         }
     }
 
@@ -55,10 +54,9 @@ public class Wire : MonoBehaviour
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        if (this.startPosition == new Vector3(0, 0, 0))
-        {
-            this.startPosition = this.transform.position;
-        }
+
+        this.startPosition = this.transform.position - this.transform.localPosition;
+
         this.dragging = true;
         this.x_mouseOffset = mousePosition.x - this.transform.localPosition.x;
         this.y_mouseOffset = mousePosition.y - this.transform.localPosition.y;
