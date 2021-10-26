@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7763575885959885518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354736118747336417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43543ea562ec9e242ba1819827926aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragging: 0
+  wireEnd: {fileID: 8073926723827192871}
 --- !u!1 &845296415179623922
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +276,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2025324700130644313}
+  - component: {fileID: 2067625883019455031}
+  - component: {fileID: 4892501435627878601}
   m_Layer: 0
   m_Name: Circuit
   m_TagString: Untagged
@@ -286,6 +302,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2067625883019455031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2910018353360808223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1537f9e532dd114b8a520ac11f1531a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customGrid: {fileID: 0}
+--- !u!114 &4892501435627878601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2910018353360808223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a3a3fd59b381d42a4c1393fcdefaad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  output: {fileID: 7763575885959885518}
+  input: {fileID: 646321918759462086}
 --- !u!1 &7617053260146675756
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26cb2ca318c0684690bc0e068d647f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ownerCircuit: {fileID: 4892501435627878601}
 --- !u!50 &6331663162307979488
 Rigidbody2D:
   serializedVersion: 4
@@ -518,5 +562,15 @@ PrefabInstance:
 --- !u!4 &3841143730560594118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3203815425093871699, guid: 9013442770144294c810ae21dea99cff, type: 3}
+  m_PrefabInstance: {fileID: 1817280483661928597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &354736118747336417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2149343362111821428, guid: 9013442770144294c810ae21dea99cff, type: 3}
+  m_PrefabInstance: {fileID: 1817280483661928597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8073926723827192871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7580718618697764018, guid: 9013442770144294c810ae21dea99cff, type: 3}
   m_PrefabInstance: {fileID: 1817280483661928597}
   m_PrefabAsset: {fileID: 0}

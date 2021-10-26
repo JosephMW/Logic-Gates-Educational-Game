@@ -6,10 +6,23 @@ using UnityEngine.UI;
 
 public class Wire : MonoBehaviour
 {
+    private bool value, valueOut;
     private float x_mouseOffset, y_mouseOffset;
     private Vector3 startPosition;
     public bool dragging = false;
     public GameObject wireEnd;
+
+    private CircuitInputTrigger connectionPoint;
+
+    public void setValue(bool value)
+    {
+        this.value = value;
+    }
+
+    public void setConnectionPoint(CircuitInputTrigger connectionPoint)
+    {
+        this.connectionPoint = connectionPoint;
+    }
 
     void Update()
     {
@@ -24,6 +37,17 @@ public class Wire : MonoBehaviour
             angle = (angle * 180) / Mathf.PI;
             wireEnd.transform.eulerAngles = new Vector3(0, 0, angle);
             wireEnd.transform.localPosition = new Vector3(-(mousePosition.x - this.x_mouseOffset) / 2, -(mousePosition.y - this.y_mouseOffset) / 2, 0);
+        }
+
+        if (connectionPoint != null)
+        {
+            if (value != valueOut)
+            {
+                this.valueOut = value;
+                connectionPoint.setValue(this.value);
+                Debug.Log("CircuitOutput(Wire) just output: " + this.value);
+            }
+            // continuously output the value on this wire
         }
     }
 
