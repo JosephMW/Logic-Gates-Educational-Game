@@ -109,3 +109,8 @@
 
 * *2 hours* Set up Wire logic connection. Created placeholder Switch and Light.
 * *1 hour* Fully implemented Switch and Light. Now we can see signals passing through the circuit.
+
+### 27 Oct 2021
+
+* *0.5 hours* Supervisor Meeting.
+* *0.25 hours* Emailed supervisor a meeting summary and recorded the meeting in MEETINGSSUMMARIES.md
