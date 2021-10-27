@@ -155,3 +155,5 @@ Goals for next time:
     +   Create a real functioning And2 circuit.
     +   Create other circuits if I have time, perhaps: Or2, Xor2, Inv, etc.
 
+![Project Board status on 27/10/21](ProjectBoardImages/EndOfWeek-25-10-21.png)
+
