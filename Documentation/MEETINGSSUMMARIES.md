@@ -100,3 +100,58 @@ Goals for next time:
 
 **KEY DECISION** *At this point in the project I felt confusion as to how I organised my work. I had decided to use week-long sprints at the beginning as I thought it would work well with weeekly meetings - however I failed to consider that weekly supervisor meetings may not always occur on the same day and same time. Therefore, I cannot ensure that a supervisor meeting always occurs at the end of a sprint. I now realise I need a concrete start and end to each sprint, and supervisor meetings will have to sometimes occur mid-sprint.*
 *We now have three things which occur weekly: My sprints; My supervisor meetings; The university 'Weeks'. In order to save confusion over these three different things I have decided to organise my sprints to align with the university 'Weeks' - that being start on Monday and end on Sunday. My Supervisor meetings will just occur when my supervisor is available.*
+
+## 20/10/21 - Weekly Supervisor Meeting
+Progress I’ve made:
+*	Completed Drag-and-Drop functionality:
+    +   I now have the functionality of being able to drag-and-drop a component and have a dropped sprite snap into position on the CustomGrid which sits behind.
+*	Began work on Wire System
+    +   I have a prefab for a Wire.
+    +   I have begun working on the logic for a wire
+    +   I have decided to first build a simple version of the wires and later polish them.
+
+What we spoke about:
+*	The progress I have made (found above)
+*	How important testing is in my project
+    +   Should definitely do some, but doesn’t need to be huge.
+    +   I will write C# tests for the logic.
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Complete the rudimentary wire system. This involves:
+    +   Use straight line wires
+    +   Connect circuit to circuit visually
+    +   Connect circuit to circuit logically (Allow data to be passed from one circuit to another after a wire has been set up)
+*	Start writing some C# tests.
+*	If I accomplish the above tasks then I will consider adding placeholder input and outputs for the circuits
+    +   This could be a button you toggle to select 0 or 1 for the input.
+    +   Output could be a light which is lit if it recieves a 1, or off if it recieves a 0.
+
+## 27/10/21 - Weekly Supervisor Meeting
+Progress I’ve made:
+*	Created Circuit prefab
+*	Created Switch prefab (This is used as input to the circuit)
+*	Created Light prefab (This is used as output for the circuit)
+*	Created Wire system which works visually and logically – we can now join components using wires and pass signals through the circuit.
+
+What we spoke about:
+*	The progress I have made (found above)
+*	It may be worthwhile keeping consistent notes of how elements work as I write them – perhaps a short readme on each component?
+*	Could be worth reading some academic literature on relevant projects.
+*	The difficulties in which keeping state could introduce
+    +   If we give the user the ability to create custom reusable circuits, how do we do this?
+        -   Purely combinational circuits could be easily stored as a look-up-table
+        -   If we allow state (flip flops) then a look-up-table wouldn’t work.
+*	My goals for the next week (found below)
+
+Goals for next time:
+1.	Complete final details surrounding Wire System:
+    +   Ability to disconnect a previously connected wire.
+    +   Have a wire retract to its start point if when dragged you do not connect it to anything.
+2.	Start writing tests:
+    +   Ideally run these in GitHub Actions (Or a similar system) to test each branch before merging.
+    +   These tests will cover the C# logic I am writing
+3.	Create multiple input circuits:
+    +   Create a real functioning And2 circuit.
+    +   Create other circuits if I have time, perhaps: Or2, Xor2, Inv, etc.
+

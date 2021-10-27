@@ -12,6 +12,16 @@ public class DragAndDrop : MonoBehaviour
 
     public CustomGrid customGrid;
 
+    void Start(){
+        // center on underlying grid on start
+        if (customGrid != null)
+        {
+            Vector3 newPosition = customGrid.placeElementInGrid(this.transform.localPosition, this.transform.localPosition);
+
+            this.gameObject.transform.localPosition = newPosition;
+        }
+    }
+
     void Update()
     {
         if (dragging)

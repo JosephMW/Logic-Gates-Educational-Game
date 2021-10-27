@@ -89,3 +89,28 @@
 
 * *0.25 hours* Researched and planned wiring system.
 * *2 hours* Began work on Wire System.
+
+### 19 Oct 2021
+
+* *0.7 hours* Created Wire prefab.
+
+### 20 Oct 2021
+
+* *0.4 hours* Supervisor Meeting.
+* *2.5 hours* Created Circuit prefab and added draggable wires. 
+* *0.2 hours* Emailed supervisor a meeting summary.
+* *0.8 hours* Researched and implemented simple collisions with triggers so that dragging a wire over an input is sensed.
+
+### 21 Oct 2021
+
+* *0.4 hours* Updated MeetingsSummaries to recap on yesterdays meeting. Updated references.
+
+### 26 Oct 2021
+
+* *2 hours* Set up Wire logic connection. Created placeholder Switch and Light.
+* *1 hour* Fully implemented Switch and Light. Now we can see signals passing through the circuit.
+
+### 27 Oct 2021
+
+* *0.5 hours* Supervisor Meeting.
+* *0.25 hours* Emailed supervisor a meeting summary and recorded the meeting in MEETINGSSUMMARIES.md

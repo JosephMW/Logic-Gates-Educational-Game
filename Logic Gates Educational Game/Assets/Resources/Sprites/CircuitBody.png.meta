@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7cadfe36b1e7ebc48a822576ee1fde8d
+guid: a25ebb221f26aa84ab4ac2075000078f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9095717837082945937
-    second: Capsule
+      213: 7482667652216324306
+    second: Square
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +50,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 256
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 4, y: 4, z: 4, w: 4}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -91,7 +91,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -103,7 +103,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -118,63 +118,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Capsule
+      name: Square
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 256
-        height: 512
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -33, y: 256}
-        - {x: -95, y: 223}
-        - {x: -128, y: 161}
-        - {x: -128, y: -161}
-        - {x: -95, y: -223}
-        - {x: -33, y: -256}
-        - {x: 33, y: -256}
-        - {x: 95, y: -223}
-        - {x: 128, y: -161}
-        - {x: 128, y: 161}
-        - {x: 95, y: 223}
-        - {x: 33, y: 256}
+      outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f669c7f71d485c180800000000000000
-      internalID: -9095717837082945937
+      spriteID: 2d009a6b596c7d760800000000000000
+      internalID: 7482667652216324306
       vertices: []
-      indices:
+      indices: 
       edges: []
       weights: []
-    outline:
-    - - {x: -33, y: 256}
-      - {x: -95, y: 223}
-      - {x: -128, y: 161}
-      - {x: -128, y: -161}
-      - {x: -95, y: -223}
-      - {x: -33, y: -256}
-      - {x: 33, y: -256}
-      - {x: 95, y: -223}
-      - {x: 128, y: -161}
-      - {x: 128, y: 161}
-      - {x: 95, y: 223}
-      - {x: 33, y: 256}
-    physicsShape: []
+    outline: []
+    physicsShape:
+    - - {x: -128, y: 128}
+      - {x: -128, y: -128}
+      - {x: 128, y: -128}
+      - {x: 128, y: 128}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
-    indices:
+    indices: 
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag:
+  spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
