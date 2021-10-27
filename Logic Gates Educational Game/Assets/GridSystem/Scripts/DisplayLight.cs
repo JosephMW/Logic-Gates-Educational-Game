@@ -20,7 +20,6 @@ public class DisplayLight : MonoBehaviour
         if (value != valueOut)
         {
             this.valueOut = value;
-            Debug.Log("Light just output: " + this.value);
             if (this.value)
             {
                 sprite.color = onColor;

@@ -45,7 +45,6 @@ public class Wire : MonoBehaviour
             {
                 this.valueOut = value;
                 connectionPoint.setValue(this.value);
-                Debug.Log("CircuitOutput(Wire) just output: " + this.value);
             }
         }
     }

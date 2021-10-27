@@ -20,7 +20,6 @@ public class CircuitInputTrigger : MonoBehaviour
         if (value != valueOut)
         {
             this.valueOut = value;
-            Debug.Log("CircuitInput just output: " + this.value);
             if (ownerCircuit != null)
             {
                 ownerCircuit.setValue(this.value);
@@ -31,7 +30,8 @@ public class CircuitInputTrigger : MonoBehaviour
             }
         }
     }
-    //Just overlapped a collider 2D
+
+    // Just overlapped a collider 2D
     private void OnTriggerEnter2D(Collider2D collider)
     {
         try
@@ -40,8 +40,6 @@ public class CircuitInputTrigger : MonoBehaviour
             if (wireScript.dragging)
             {
                 // WE ARE IN THE CORRECT STATE TO COUPLE WITH THIS INPUT WIRE:
-                Debug.Log("We are dragging a wire on this connection");
-                Debug.Log("Name of circuit that just overlapped:");
                 Debug.Log(collider.gameObject.transform.parent.parent.name);
                 wireScript.setConnectionPoint(this);
                 this.wireConnected = wireScript;
@@ -51,19 +49,18 @@ public class CircuitInputTrigger : MonoBehaviour
         {
             //do nothing
         }
-        // collider.gameObject.transform.position = this.gameObject.transform.position;
     }
 
-    //Overlapping a collider 2D
+    // Overlapping a collider 2D
     private void OnTriggerStay2D(Collider2D collider)
     {
         //Do something
     }
 
-    //Just stop overlapping a collider 2D
+    // Just stopped overlapping a collider 2D
     private void OnTriggerExit2D(Collider2D collider)
     {
-        //Do something
-        // Call retract() on the wire that is connected
+        // Uncouple the wire from this CircuitInput Trigger.
+        // Set value to false?
     }
 }

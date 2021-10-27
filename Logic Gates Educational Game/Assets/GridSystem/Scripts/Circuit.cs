@@ -20,7 +20,6 @@ public class Circuit : MonoBehaviour
         {
             this.valueOut = value;
             output.setValue(this.value);
-            Debug.Log("Circuit just output: " + this.value);
         }
     }
 }
