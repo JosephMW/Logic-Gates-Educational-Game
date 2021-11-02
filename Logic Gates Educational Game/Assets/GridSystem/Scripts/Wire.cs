@@ -26,13 +26,6 @@ public class Wire : MonoBehaviour
 
         var connectionPointLctn = connectionPoint.transform.position + new Vector3(-0.1f, 0, 0);
         this.connectionPointLocation = connectionPointLctn;
-
-        float distance = Vector2.Distance(startPosition, connectionPointLctn);
-        wireEnd.transform.localScale = new Vector3(distance, wireEnd.transform.localScale.y, 0);
-        float angle = Mathf.Atan((connectionPointLctn.y - startPosition.y) / (connectionPointLctn.x - startPosition.x));
-        angle = (angle * 180) / Mathf.PI;
-        wireEnd.transform.eulerAngles = new Vector3(0, 0, angle);
-        wireEnd.transform.localPosition = (connectionPointLctn - startPosition) / 2;
     }
 
     public void deleteConnectionPoint()
@@ -81,11 +74,6 @@ public class Wire : MonoBehaviour
     {
         dragging = false;
 
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        this.gameObject.transform.localPosition = new Vector3(mousePosition.x - this.x_mouseOffset, mousePosition.y - this.y_mouseOffset, 0);
-        float distance = Vector2.Distance(startPosition, mousePosition);
-
         // If after dropping the wire we never connected to a circuit then retract the wire.
         if (connectionPoint == null)
         {
@@ -94,6 +82,13 @@ public class Wire : MonoBehaviour
         else
         {
             this.gameObject.transform.position = this.connectionPointLocation;
+
+            float distance = Vector2.Distance(this.startPosition, this.connectionPointLocation);
+            wireEnd.transform.localScale = new Vector3(distance, wireEnd.transform.localScale.y, 0);
+            float angle = Mathf.Atan((connectionPointLocation.y - startPosition.y) / (connectionPointLocation.x - startPosition.x));
+            angle = (angle * 180) / Mathf.PI;
+            wireEnd.transform.eulerAngles = new Vector3(0, 0, angle);
+            wireEnd.transform.position = (connectionPointLocation + startPosition) / 2;
         }
     }
 
