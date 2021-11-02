@@ -24,6 +24,11 @@ public class Wire : MonoBehaviour
         this.connectionPoint = connectionPoint;
     }
 
+    public void deleteConnectionPoint()
+    {
+        this.connectionPoint = null;
+    }
+
     void Update()
     {
         if (dragging)
@@ -70,6 +75,7 @@ public class Wire : MonoBehaviour
         this.gameObject.transform.localPosition = new Vector3(mousePosition.x - this.x_mouseOffset, mousePosition.y - this.y_mouseOffset, 0);
         float distance = Vector2.Distance(startPosition, mousePosition);
 
+        // If after dropping the wire we never connected to a circuit then retract the wire.
         if (connectionPoint == null) retractWire();
     }
 
