@@ -70,13 +70,24 @@ public class Wire : MonoBehaviour
     {
         dragging = false;
 
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        this.gameObject.transform.localPosition = new Vector3(mousePosition.x - this.x_mouseOffset, mousePosition.y - this.y_mouseOffset, 0);
-        float distance = Vector2.Distance(startPosition, mousePosition);
-
         // If after dropping the wire we never connected to a circuit then retract the wire.
-        if (connectionPoint == null) retractWire();
+        if (connectionPoint == null)
+        {
+            retractWire();
+        }
+        else
+        {
+            var connectionPointLocation = this.connectionPoint.transform.position + new Vector3(-0.1f, 0, 0);
+
+            this.gameObject.transform.position = connectionPointLocation;
+
+            float distance = Vector2.Distance(this.startPosition, connectionPointLocation);
+            wireEnd.transform.localScale = new Vector3(distance, wireEnd.transform.localScale.y, 0);
+            float angle = Mathf.Atan((connectionPointLocation.y - startPosition.y) / (connectionPointLocation.x - startPosition.x));
+            angle = (angle * 180) / Mathf.PI;
+            wireEnd.transform.eulerAngles = new Vector3(0, 0, angle);
+            wireEnd.transform.position = (connectionPointLocation + startPosition) / 2;
+        }
     }
 
     private void retractWire()
