@@ -117,4 +117,4 @@
 
 ### 02 Nov 2021
 * *0.3 hours* Completed [#24 Wire System: Wires which are dragged to empty space should retract](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/24) and merged the matching PR.
-* *0.4 hours* Completed [#18 Wire System: Disconnecting wires](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/18) and merged the matching PR.
+* *0.5 hours* Completed [#18 Wire System: Disconnecting wires](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/18) and merged the matching PR.

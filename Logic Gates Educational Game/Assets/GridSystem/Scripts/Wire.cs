@@ -13,6 +13,7 @@ public class Wire : MonoBehaviour
     public GameObject wireEnd;
 
     private CircuitInputTrigger connectionPoint;
+    private Vector3 connectionPointLocation;
 
     public void setValue(bool value)
     {
@@ -22,6 +23,16 @@ public class Wire : MonoBehaviour
     public void setConnectionPoint(CircuitInputTrigger connectionPoint)
     {
         this.connectionPoint = connectionPoint;
+
+        var connectionPointLctn = connectionPoint.transform.position + new Vector3(-0.1f, 0, 0);
+        this.connectionPointLocation = connectionPointLctn;
+
+        float distance = Vector2.Distance(startPosition, connectionPointLctn);
+        wireEnd.transform.localScale = new Vector3(distance, wireEnd.transform.localScale.y, 0);
+        float angle = Mathf.Atan((connectionPointLctn.y - startPosition.y) / (connectionPointLctn.x - startPosition.x));
+        angle = (angle * 180) / Mathf.PI;
+        wireEnd.transform.eulerAngles = new Vector3(0, 0, angle);
+        wireEnd.transform.localPosition = (connectionPointLctn - startPosition) / 2;
     }
 
     public void deleteConnectionPoint()
@@ -76,7 +87,14 @@ public class Wire : MonoBehaviour
         float distance = Vector2.Distance(startPosition, mousePosition);
 
         // If after dropping the wire we never connected to a circuit then retract the wire.
-        if (connectionPoint == null) retractWire();
+        if (connectionPoint == null)
+        {
+            retractWire();
+        }
+        else
+        {
+            this.gameObject.transform.position = this.connectionPointLocation;
+        }
     }
 
     private void retractWire()
