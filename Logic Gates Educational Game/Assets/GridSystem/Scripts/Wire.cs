@@ -69,5 +69,14 @@ public class Wire : MonoBehaviour
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         this.gameObject.transform.localPosition = new Vector3(mousePosition.x - this.x_mouseOffset, mousePosition.y - this.y_mouseOffset, 0);
         float distance = Vector2.Distance(startPosition, mousePosition);
+
+        if (connectionPoint == null) retractWire();
+    }
+
+    private void retractWire()
+    {
+        this.gameObject.transform.position = this.startPosition;
+        wireEnd.transform.localScale = new Vector3(0, wireEnd.transform.localScale.y, 0);
+        wireEnd.transform.localPosition = this.startPosition;
     }
 }
