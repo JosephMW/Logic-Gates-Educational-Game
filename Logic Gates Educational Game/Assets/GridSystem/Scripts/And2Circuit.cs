@@ -11,8 +11,15 @@ public class And2Circuit : MonoBehaviour
 
     public void updateValue()
     {
-        this.value1 = input1.valueOut;
-        this.value2 = input2.valueOut;
+        if (input1 != null)
+        {
+            this.value1 = input1.valueOut;
+        }
+
+        if (input2 != null)
+        {
+            this.value2 = input2.valueOut;
+        }
     }
 
     // Update is called once per frame

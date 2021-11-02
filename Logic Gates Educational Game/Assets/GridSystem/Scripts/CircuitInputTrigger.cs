@@ -8,6 +8,7 @@ public class CircuitInputTrigger : MonoBehaviour
     public bool valueOut;
     private Wire wireConnected;
     public Circuit ownerCircuit;
+    public And2Circuit ownerAnd2Circuit;
     public DisplayLight ownerLight;
 
     public void setValue(bool value)
@@ -23,6 +24,10 @@ public class CircuitInputTrigger : MonoBehaviour
             if (ownerCircuit != null)
             {
                 ownerCircuit.updateValue();
+            }
+            if (ownerAnd2Circuit != null)
+            {
+                ownerAnd2Circuit.updateValue();
             }
             if (ownerLight != null)
             {

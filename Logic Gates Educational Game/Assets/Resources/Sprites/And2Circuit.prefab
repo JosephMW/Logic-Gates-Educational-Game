@@ -309,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valueOut: 0
   ownerCircuit: {fileID: 0}
+  ownerAnd2Circuit: {fileID: 1640884162937355419}
   ownerLight: {fileID: 0}
 --- !u!50 &5742296584205192068
 Rigidbody2D:
@@ -425,6 +426,7 @@ GameObject:
   - component: {fileID: 2025324700130644313}
   - component: {fileID: 2067625883019455031}
   - component: {fileID: 1640884162937355419}
+  - component: {fileID: 2512566528361730528}
   m_Layer: 0
   m_Name: And2Circuit
   m_TagString: Untagged
@@ -478,6 +480,32 @@ MonoBehaviour:
   output: {fileID: 7763575885959885518}
   input1: {fileID: 646321918759462086}
   input2: {fileID: 511363144364923668}
+--- !u!61 &2512566528361730528
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2910018353360808223}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7617053260146675756
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valueOut: 0
   ownerCircuit: {fileID: 0}
+  ownerAnd2Circuit: {fileID: 1640884162937355419}
   ownerLight: {fileID: 0}
 --- !u!50 &6331663162307979488
 Rigidbody2D:
