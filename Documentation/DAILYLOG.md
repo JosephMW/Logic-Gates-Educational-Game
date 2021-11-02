@@ -114,3 +114,6 @@
 
 * *0.5 hours* Supervisor Meeting.
 * *0.25 hours* Emailed supervisor a meeting summary and recorded the meeting in MEETINGSSUMMARIES.md
+
+### 02 Nov 2021
+* *0.3 hours* Completed and merged [#24 Wire System: Wires which are dragged to empty space should retract](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/24)
