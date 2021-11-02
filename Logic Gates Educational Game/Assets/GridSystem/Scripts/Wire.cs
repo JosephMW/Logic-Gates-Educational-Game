@@ -13,7 +13,6 @@ public class Wire : MonoBehaviour
     public GameObject wireEnd;
 
     private CircuitInputTrigger connectionPoint;
-    private Vector3 connectionPointLocation;
 
     public void setValue(bool value)
     {
@@ -23,9 +22,6 @@ public class Wire : MonoBehaviour
     public void setConnectionPoint(CircuitInputTrigger connectionPoint)
     {
         this.connectionPoint = connectionPoint;
-
-        var connectionPointLctn = connectionPoint.transform.position + new Vector3(-0.1f, 0, 0);
-        this.connectionPointLocation = connectionPointLctn;
     }
 
     public void deleteConnectionPoint()
@@ -81,9 +77,11 @@ public class Wire : MonoBehaviour
         }
         else
         {
-            this.gameObject.transform.position = this.connectionPointLocation;
+            var connectionPointLocation = this.connectionPoint.transform.position + new Vector3(-0.1f, 0, 0);
 
-            float distance = Vector2.Distance(this.startPosition, this.connectionPointLocation);
+            this.gameObject.transform.position = connectionPointLocation;
+
+            float distance = Vector2.Distance(this.startPosition, connectionPointLocation);
             wireEnd.transform.localScale = new Vector3(distance, wireEnd.transform.localScale.y, 0);
             float angle = Mathf.Atan((connectionPointLocation.y - startPosition.y) / (connectionPointLocation.x - startPosition.x));
             angle = (angle * 180) / Mathf.PI;
