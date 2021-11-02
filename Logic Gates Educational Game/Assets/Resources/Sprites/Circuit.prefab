@@ -438,7 +438,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &646321918759462086
 MonoBehaviour:
@@ -453,6 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ownerCircuit: {fileID: 4892501435627878601}
+  ownerLight: {fileID: 0}
 --- !u!50 &6331663162307979488
 Rigidbody2D:
   serializedVersion: 4
