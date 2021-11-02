@@ -36,13 +36,16 @@ public class CircuitInputTrigger : MonoBehaviour
     {
         try
         {
-            var wireScript = collider.gameObject.GetComponentInParent<Wire>();
-            if (wireScript.dragging)
+            if (wireConnected == null)
             {
-                // WE ARE IN THE CORRECT STATE TO COUPLE WITH THIS INPUT WIRE:
-                Debug.Log(collider.gameObject.transform.parent.parent.name);
-                wireScript.setConnectionPoint(this);
-                this.wireConnected = wireScript;
+                var wireScript = collider.gameObject.GetComponentInParent<Wire>();
+                if (wireScript.dragging)
+                {
+                    // WE ARE IN THE CORRECT STATE TO COUPLE WITH THIS INPUT WIRE:
+                    Debug.Log(collider.gameObject.transform.parent.parent.name);
+                    wireScript.setConnectionPoint(this);
+                    this.wireConnected = wireScript;
+                }
             }
         }
         catch
