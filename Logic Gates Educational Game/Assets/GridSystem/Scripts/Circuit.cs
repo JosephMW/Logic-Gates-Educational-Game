@@ -8,9 +8,9 @@ public class Circuit : MonoBehaviour
     public Wire output;
     public CircuitInputTrigger input;
 
-    public void setValue(bool value)
+    public void updateValue()
     {
-        this.value = value;
+        this.value = input.valueOut;
     }
 
     // Update is called once per frame

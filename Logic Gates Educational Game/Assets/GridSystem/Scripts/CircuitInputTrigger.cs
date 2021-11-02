@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CircuitInputTrigger : MonoBehaviour
 {
-    private bool value, valueOut;
-
+    private bool value;
+    public bool valueOut;
     private Wire wireConnected;
     public Circuit ownerCircuit;
+    public And2Circuit ownerAnd2Circuit;
     public DisplayLight ownerLight;
 
     public void setValue(bool value)
@@ -22,11 +23,15 @@ public class CircuitInputTrigger : MonoBehaviour
             this.valueOut = value;
             if (ownerCircuit != null)
             {
-                ownerCircuit.setValue(this.value);
+                ownerCircuit.updateValue();
+            }
+            if (ownerAnd2Circuit != null)
+            {
+                ownerAnd2Circuit.updateValue();
             }
             if (ownerLight != null)
             {
-                ownerLight.setValue(this.value);
+                ownerLight.updateValue();
             }
         }
     }
