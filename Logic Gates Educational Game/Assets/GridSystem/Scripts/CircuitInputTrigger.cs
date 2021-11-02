@@ -63,7 +63,16 @@ public class CircuitInputTrigger : MonoBehaviour
     // Just stopped overlapping a collider 2D
     private void OnTriggerExit2D(Collider2D collider)
     {
-        // Uncouple the wire from this CircuitInput Trigger.
-        // Set value to false?
+        // We use a try block as accessing collider.gameObject.GetComponentInParent<Wire>() may be a null ref
+        try
+        {
+            // if the object that left the collider is out connected wire and that wire is being dragged (The goal is decoupling) then decouple.
+            if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
+            {
+                wireConnected.deleteConnectionPoint();
+                this.wireConnected = null;
+            }
+        }
+        catch { }
     }
 }
