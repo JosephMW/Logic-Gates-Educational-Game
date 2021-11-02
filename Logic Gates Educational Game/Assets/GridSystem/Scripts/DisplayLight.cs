@@ -10,9 +10,9 @@ public class DisplayLight : MonoBehaviour
     private static Color onColor = new Color(1, 1, 0, 1);
     private static Color offColor = new Color(46f / 255f, 46f / 255f, 46f / 255f, 1);
 
-    public void setValue(bool value)
+    public void updateValue()
     {
-        this.value = value;
+        this.value = input.valueOut;
     }
 
     void Update()

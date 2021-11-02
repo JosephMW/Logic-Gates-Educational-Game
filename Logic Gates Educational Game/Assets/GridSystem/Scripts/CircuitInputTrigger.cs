@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CircuitInputTrigger : MonoBehaviour
 {
-    private bool value, valueOut;
-
+    private bool value;
+    public bool valueOut;
     private Wire wireConnected;
     public Circuit ownerCircuit;
     public DisplayLight ownerLight;
@@ -22,11 +22,11 @@ public class CircuitInputTrigger : MonoBehaviour
             this.valueOut = value;
             if (ownerCircuit != null)
             {
-                ownerCircuit.setValue(this.value);
+                ownerCircuit.updateValue();
             }
             if (ownerLight != null)
             {
-                ownerLight.setValue(this.value);
+                ownerLight.updateValue();
             }
         }
     }
