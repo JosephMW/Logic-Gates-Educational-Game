@@ -127,3 +127,7 @@
 * *0.7 hours* Completed [#19 Wire System: Have wire tips position correctly on their inputs](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/19) and merged the matching PR.
 * *0.8 hours* Completed [#27 Create the And2 circuit](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/27) and merged the matching PR.
 * *0.2 hours* Emailed supervisor outline for tomorrows meeting.
+
+### 03 Nov 2021
+* *0.5 hours* Supervisor meeting.
+* *0.3 hours* Emailed supervisor a summary of todays meeting and updated MEETINGSSUMMARIES

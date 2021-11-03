@@ -157,3 +157,25 @@ Goals for next time:
 
 ![Project Board status on 27/10/21](ProjectBoardImages/EndOfWeek-25-10-21.png)
 
+## 03/11/21 - Weekly Supervisor Meeting
+Progress I’ve made:
+1.	Wires which are not connected to input ports now retract to where they started
+2.	You can now disconnect wires
+3.	Wires position correctly when connected to input ports now
+4.	I have created the And2 circuit
+    +   This circuit takes 2 inputs
+    +   Has 1 output
+    +   Output is equal to (input1 && input2)
+
+What we spoke about:
+*	The progress I have made (found above)
+*	Reading the marking scheme carefully could benefit me – so I know I am working well.
+*	We discussed the workload of a joint-honours student on this project.
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Make it so when dragging a circuit with connected wires, those wires move appropriately.
+*	Add CI/CD Pipeline and some tests.
+*	Refactor some code.
+    +   Extract parent class for Circuit, And2Circuit, DisplayLight. 
+*	If I complete the above in time then work on adding a toolbar which allows the user to spawn premade components.
