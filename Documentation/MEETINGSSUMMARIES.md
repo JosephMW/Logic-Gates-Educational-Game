@@ -179,3 +179,5 @@ Goals for next time:
 *	Refactor some code.
     +   Extract parent class for Circuit, And2Circuit, DisplayLight. 
 *	If I complete the above in time then work on adding a toolbar which allows the user to spawn premade components.
+
+![Project Board status on 03/11/21](ProjectBoardImages/projectBoard-03-11-21.png)
