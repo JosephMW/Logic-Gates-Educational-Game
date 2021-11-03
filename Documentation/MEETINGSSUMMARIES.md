@@ -181,3 +181,5 @@ Goals for next time:
 *	If I complete the above in time then work on adding a toolbar which allows the user to spawn premade components.
 
 ![Project Board status on 03/11/21](ProjectBoardImages/projectBoard-03-11-21.png)
+
+**KEY DECISION** *As visibile in the above screenshot, I decided to add a fifth column to my project board. This column is 'Outside of Sprint' and will be used to hold issues which are not currently being worked on but are future work.*
