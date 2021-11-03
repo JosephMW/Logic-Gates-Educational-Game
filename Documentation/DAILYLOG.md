@@ -90,6 +90,8 @@
 * *0.25 hours* Researched and planned wiring system.
 * *2 hours* Began work on Wire System.
 
+## Week 4
+
 ### 19 Oct 2021
 
 * *0.7 hours* Created Wire prefab.
@@ -105,6 +107,8 @@
 
 * *0.4 hours* Updated MeetingsSummaries to recap on yesterdays meeting. Updated references.
 
+## Week 5
+
 ### 26 Oct 2021
 
 * *2 hours* Set up Wire logic connection. Created placeholder Switch and Light.
@@ -115,7 +119,11 @@
 * *0.5 hours* Supervisor Meeting.
 * *0.25 hours* Emailed supervisor a meeting summary and recorded the meeting in MEETINGSSUMMARIES.md
 
+## Week 6
+
 ### 02 Nov 2021
 * *0.3 hours* Completed [#24 Wire System: Wires which are dragged to empty space should retract](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/24) and merged the matching PR.
 * *0.5 hours* Completed [#18 Wire System: Disconnecting wires](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/18) and merged the matching PR.
 * *0.7 hours* Completed [#19 Wire System: Have wire tips position correctly on their inputs](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/19) and merged the matching PR.
+* *0.8 hours* Completed [#27 Create the And2 circuit](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/27) and merged the matching PR.
+* *0.2 hours* Emailed supervisor outline for tomorrows meeting.
