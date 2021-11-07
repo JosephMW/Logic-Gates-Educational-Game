@@ -5,7 +5,8 @@ using UnityEngine;
 public class And2Circuit : MonoBehaviour
 {
     public Wire output;
-    private bool value1, value2, valueOut;
+    private bool value1, value2;
+    public bool valueOut;
     public CircuitInputTrigger input1;
     public CircuitInputTrigger input2;
 
@@ -26,7 +27,7 @@ public class And2Circuit : MonoBehaviour
     void Update()
     {
         bool newestOutput = calculateOutput(this.value1, this.value2);
-        if (newestOutput != valueOut)
+        if (newestOutput != valueOut && output != null)
         {
             this.valueOut = newestOutput;
             output.setValue(newestOutput);
