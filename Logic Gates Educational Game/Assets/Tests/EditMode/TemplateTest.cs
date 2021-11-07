@@ -4,10 +4,10 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class FirstTest
+public class TemplateTests
 {
     [Test]
-    public void MyFirstTest()
+    public void BasicAssertion()
     {
         Assert.AreEqual(1, 1);
     }

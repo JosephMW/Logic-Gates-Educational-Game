@@ -6,6 +6,7 @@ using UnityEngine.TestTools;
 
 public class And2CircuitTests
 {
+    private GameObject gameObject;
     private And2Circuit and2;
     private CircuitInputTrigger input1;
     private CircuitInputTrigger input2;
@@ -14,7 +15,7 @@ public class And2CircuitTests
     [SetUp]
     public void Setup()
     {
-        var gameObject = new GameObject();
+        gameObject = new GameObject();
         and2 = gameObject.AddComponent<And2Circuit>();
         input1 = gameObject.AddComponent<CircuitInputTrigger>();
         input2 = gameObject.AddComponent<CircuitInputTrigger>();
@@ -35,6 +36,7 @@ public class And2CircuitTests
         Object.Destroy(input1);
         Object.Destroy(input2);
         Object.Destroy(and2Output);
+        Object.Destroy(gameObject);
     }
 
     [UnityTest]
