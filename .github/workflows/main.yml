@@ -44,7 +44,7 @@ jobs:
           # Specific docker image that should be used for testing the project
           customImage: # optional, default is 
           # Path to the Unity project to be tested.
-          projectPath: '.\Logic Gates Educational Game\'
+          projectPath: 
           # The type of tests to be run by the test runner.
           testMode: # optional, default is all
           # Path where test artifacts should be stored.
