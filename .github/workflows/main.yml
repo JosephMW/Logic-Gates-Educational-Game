@@ -21,7 +21,6 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
           UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
         with:
-          projectPath: /Logic Gates Educational Game/
           githubToken: ${{ secrets.GITHUB_TOKEN }}
       
       # Return License
