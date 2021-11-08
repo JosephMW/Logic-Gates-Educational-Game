@@ -135,3 +135,6 @@
 ### 07 Nov 2021
 * *0.5 hours* Researched testing in Unity. Learned about EditMode and PlayMode testing, as well as the Test Runner.
 * *1.5 hours* Completed [#28 Write a test](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/28) and merged the matching [PR](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/34).
+
+### 08 Nov 2021
+* *0.5 hours* Researched GitHub Actions and using the Unity Test Runner in GitHub Actions
