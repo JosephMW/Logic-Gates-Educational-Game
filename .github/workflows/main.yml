@@ -37,6 +37,6 @@ jobs:
       - name: Unity - Test runner
         uses: game-ci/unity-test-runner@v2.0-alpha-6
         with:
-          projectPath: '../../Logic Gates Educational Game/'
+          projectPath: '..\..\Logic Gates Educational Game\Assets\Tests\'
 
 
