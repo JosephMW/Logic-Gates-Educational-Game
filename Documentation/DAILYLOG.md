@@ -131,3 +131,7 @@
 ### 03 Nov 2021
 * *0.5 hours* Supervisor meeting.
 * *0.3 hours* Emailed supervisor a summary of todays meeting and updated MEETINGSSUMMARIES
+
+### 07 Nov 2021
+* *0.5 hours* Researched testing in Unity. Learned about EditMode and PlayMode testing, as well as the Test Runner.
+* *1.5 hours* Completed [#28 Write a test](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/28) and merged the matching [PR](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/34).
