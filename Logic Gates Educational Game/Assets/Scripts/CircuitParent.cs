@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public abstract class CircuitParent : MonoBehaviour
 {
@@ -20,19 +21,19 @@ public abstract class CircuitParent : MonoBehaviour
     {
         bool[] calculatedOutputs = calculateOutputs();
 
-        if (calculatedOutputs != outputs.Select(output => output.valueOut).ToList())
+        if (calculatedOutputs != outputs.Select(output => output.valueOut).ToArray())
         {
-            setOutput(calculatedOutputs);
+            setOutputs(calculatedOutputs);
         }
     }
 
     public abstract bool[] calculateOutputs();
-    public void setOutputs(bool[] outputValues)
+    public void setOutputs(bool[] newOutputValues)
     {
         for (int i = 0; i < outputs.Length; i++)
         {
-            outputs[i].outputWire.setValue(i);
-            outputs[i].valueOut = outputValues[i];
+            outputs[i].outputWire.setValue(newOutputValues[i]);
+            outputs[i].valueOut = newOutputValues[i];
         }
     }
 }
