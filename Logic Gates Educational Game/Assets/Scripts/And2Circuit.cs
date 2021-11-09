@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class And2Circuit : MonoBehaviour
 {
-    public Wire output;
-    private bool value1, value2;
-    public bool valueOut;
     public InputPort input1;
+    private bool value1;
     public InputPort input2;
+    private bool value2;
+    public Wire output;
+    public bool valueOut;
 
     public void updateValue()
     {
