@@ -140,4 +140,4 @@
 WORKED ON CI/CD
 
 ### 09 Nov 2021
-* *X hours* 7-
+* *3 hours* Completed [#33 Extract parent class from Circuit](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/33) and merged the matching PR.
