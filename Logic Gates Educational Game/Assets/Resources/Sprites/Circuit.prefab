@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueOut: 0
-  ownerCircuit: {fileID: 4892501435627878601}
+  ownerCircuitParent: {fileID: 4892501435627878601}
   ownerAnd2Circuit: {fileID: 0}
   ownerLight: {fileID: 0}
 --- !u!50 &6331663162307979488
