@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CircuitInputTrigger : MonoBehaviour
+public class InputPort : MonoBehaviour
 {
     private bool value;
     public bool valueOut;

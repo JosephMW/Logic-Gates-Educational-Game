@@ -7,8 +7,8 @@ public class And2Circuit : MonoBehaviour
     public Wire output;
     private bool value1, value2;
     public bool valueOut;
-    public CircuitInputTrigger input1;
-    public CircuitInputTrigger input2;
+    public InputPort input1;
+    public InputPort input2;
 
     public void updateValue()
     {

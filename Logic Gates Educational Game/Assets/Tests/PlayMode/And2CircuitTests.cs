@@ -8,8 +8,8 @@ public class And2CircuitTests
 {
     private GameObject gameObject;
     private And2Circuit and2;
-    private CircuitInputTrigger input1;
-    private CircuitInputTrigger input2;
+    private InputPort input1;
+    private InputPort input2;
     private Wire and2Output;
 
     [SetUp]
@@ -17,8 +17,8 @@ public class And2CircuitTests
     {
         gameObject = new GameObject();
         and2 = gameObject.AddComponent<And2Circuit>();
-        input1 = gameObject.AddComponent<CircuitInputTrigger>();
-        input2 = gameObject.AddComponent<CircuitInputTrigger>();
+        input1 = gameObject.AddComponent<InputPort>();
+        input2 = gameObject.AddComponent<InputPort>();
         and2Output = gameObject.AddComponent<Wire>();
 
         and2.input1 = input1;

@@ -6,7 +6,7 @@ public class Circuit : MonoBehaviour
 {
     private bool value, valueOut;
     public Wire output;
-    public CircuitInputTrigger input;
+    public InputPort input;
 
     public void updateValue()
     {

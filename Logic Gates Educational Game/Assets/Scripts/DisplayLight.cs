@@ -5,7 +5,7 @@ using UnityEngine;
 public class DisplayLight : MonoBehaviour
 {
     private bool value, valueOut;
-    public CircuitInputTrigger input;
+    public InputPort input;
     public SpriteRenderer sprite;
     private static Color onColor = new Color(1, 1, 0, 1);
     private static Color offColor = new Color(46f / 255f, 46f / 255f, 46f / 255f, 1);
