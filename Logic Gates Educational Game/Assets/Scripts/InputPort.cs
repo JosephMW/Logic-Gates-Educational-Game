@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CircuitInputTrigger : MonoBehaviour
+public class InputPort : MonoBehaviour
 {
     private bool value;
     public bool valueOut;
     private Wire wireConnected;
-    public Circuit ownerCircuit;
-    public And2Circuit ownerAnd2Circuit;
-    public DisplayLight ownerLight;
+    public CircuitParent ownerCircuitParent;
 
     public void setValue(bool value)
     {
@@ -21,18 +19,7 @@ public class CircuitInputTrigger : MonoBehaviour
         if (value != valueOut)
         {
             this.valueOut = value;
-            if (ownerCircuit != null)
-            {
-                ownerCircuit.updateValue();
-            }
-            if (ownerAnd2Circuit != null)
-            {
-                ownerAnd2Circuit.updateValue();
-            }
-            if (ownerLight != null)
-            {
-                ownerLight.updateValue();
-            }
+            ownerCircuitParent.updateValue();
         }
     }
 
@@ -46,8 +33,7 @@ public class CircuitInputTrigger : MonoBehaviour
                 var wireScript = collider.gameObject.GetComponentInParent<Wire>();
                 if (wireScript.dragging)
                 {
-                    // WE ARE IN THE CORRECT STATE TO COUPLE WITH THIS INPUT WIRE:
-                    Debug.Log(collider.gameObject.transform.parent.parent.name);
+                    // Debug.Log(collider.gameObject.transform.parent.parent.name);
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
                 }

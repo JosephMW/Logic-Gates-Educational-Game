@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 171334685}
     - target: {fileID: 7349708323388164363, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
       propertyPath: m_text
-      value: 'Circuit
+      value: 'Pass Through
 
 '
       objectReference: {fileID: 0}
@@ -866,6 +866,14 @@ PrefabInstance:
     - target: {fileID: 4381597674797173608, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892501435627878601, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+      propertyPath: testInputPortList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892501435627878601, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+      propertyPath: testInputPortList.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8795534964134441190, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}

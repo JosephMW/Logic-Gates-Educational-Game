@@ -308,8 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueOut: 0
-  ownerCircuit: {fileID: 0}
-  ownerAnd2Circuit: {fileID: 1640884162937355419}
+  ownerCircuitParent: {fileID: 1640884162937355419}
   ownerLight: {fileID: 0}
 --- !u!50 &5742296584205192068
 Rigidbody2D:
@@ -477,9 +476,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 575a4447e7ebf74478ede36ca8c0bf08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  output: {fileID: 7763575885959885518}
-  input1: {fileID: 646321918759462086}
-  input2: {fileID: 511363144364923668}
+  inputPorts:
+  - {fileID: 646321918759462086}
+  - {fileID: 511363144364923668}
+  outputWires:
+  - {fileID: 7763575885959885518}
 --- !u!61 &2512566528361730528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -630,8 +631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valueOut: 0
-  ownerCircuit: {fileID: 0}
-  ownerAnd2Circuit: {fileID: 1640884162937355419}
+  ownerCircuitParent: {fileID: 1640884162937355419}
   ownerLight: {fileID: 0}
 --- !u!50 &6331663162307979488
 Rigidbody2D:

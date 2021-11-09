@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26cb2ca318c0684690bc0e068d647f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ownerCircuit: {fileID: 0}
-  ownerLight: {fileID: 7685382357334128634}
+  valueOut: 0
+  ownerCircuitParent: {fileID: 7685382357334128634}
 --- !u!212 &399842022857049962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -206,7 +206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8bb67fb3ac8614ba4e5e4dde6467fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: {fileID: 0}
+  inputPorts:
+  - {fileID: 3101455765572352418}
+  outputWires: []
   sprite: {fileID: 2643135204497991995}
 --- !u!58 &6952885262338260069
 CircleCollider2D:

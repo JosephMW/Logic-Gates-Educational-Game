@@ -12,14 +12,14 @@ public class Wire : MonoBehaviour
     public bool dragging = false;
     public GameObject wireEnd;
 
-    private CircuitInputTrigger connectionPoint;
+    private InputPort connectionPoint;
 
     public void setValue(bool value)
     {
         this.value = value;
     }
 
-    public void setConnectionPoint(CircuitInputTrigger connectionPoint)
+    public void setConnectionPoint(InputPort connectionPoint)
     {
         this.connectionPoint = connectionPoint;
     }
