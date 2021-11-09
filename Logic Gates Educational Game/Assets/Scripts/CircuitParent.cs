@@ -10,7 +10,7 @@ public abstract class CircuitParent : MonoBehaviour
     public Wire[] outputWires;
     protected bool[] outputValues;
 
-    void Awake()
+    void Start()
     {
         // Instantiate the value arrays to have length matching their inputs/outputs
         inputValues = new bool[inputPorts.Length];
