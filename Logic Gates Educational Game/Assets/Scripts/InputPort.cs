@@ -8,7 +8,6 @@ public class InputPort : MonoBehaviour
     public bool valueOut;
     private Wire wireConnected;
     public CircuitParent ownerCircuitParent;
-    public DisplayLight ownerLight;
 
     public void setValue(bool value)
     {
@@ -20,14 +19,7 @@ public class InputPort : MonoBehaviour
         if (value != valueOut)
         {
             this.valueOut = value;
-            if (ownerCircuitParent != null)
-            {
-                ownerCircuitParent.updateValue();
-            }
-            if (ownerLight != null)
-            {
-                ownerLight.updateValue();
-            }
+            ownerCircuitParent.updateValue();
         }
     }
 

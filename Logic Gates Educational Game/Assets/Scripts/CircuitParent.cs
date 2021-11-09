@@ -29,7 +29,7 @@ public abstract class CircuitParent : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         bool[] calculatedOutputs = calculateOutputs();
 
