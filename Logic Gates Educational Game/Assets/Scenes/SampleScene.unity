@@ -867,6 +867,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4892501435627878601, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+      propertyPath: testInputPortList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892501435627878601, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+      propertyPath: testInputPortList.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8795534964134441190, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}

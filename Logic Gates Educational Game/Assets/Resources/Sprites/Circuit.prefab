@@ -329,8 +329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83a3a3fd59b381d42a4c1393fcdefaad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  output: {fileID: 7763575885959885518}
-  input: {fileID: 646321918759462086}
+  inputPorts:
+  - {fileID: 646321918759462086}
+  outputWires:
+  - {fileID: 7763575885959885518}
 --- !u!1 &7617053260146675756
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26cb2ca318c0684690bc0e068d647f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  valueOut: 0
   ownerCircuit: {fileID: 4892501435627878601}
+  ownerAnd2Circuit: {fileID: 0}
   ownerLight: {fileID: 0}
 --- !u!50 &6331663162307979488
 Rigidbody2D:

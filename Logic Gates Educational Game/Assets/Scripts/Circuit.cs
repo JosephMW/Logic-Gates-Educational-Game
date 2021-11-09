@@ -1,25 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
-public class Circuit : MonoBehaviour
+public class Circuit : CircuitParent
 {
-    private bool value, valueOut;
-    public Wire output;
-    public InputPort input;
-
-    public void updateValue()
-    {
-        this.value = input.valueOut;
-    }
-
     // Update is called once per frame
-    void Update()
+    public override bool[] calculateOutputs()
     {
-        if (value != valueOut)
-        {
-            this.valueOut = value;
-            output.setValue(this.value);
-        }
+        // output is just the inputs (This circuit does nothing)
+        return this.inputValues;
     }
 }

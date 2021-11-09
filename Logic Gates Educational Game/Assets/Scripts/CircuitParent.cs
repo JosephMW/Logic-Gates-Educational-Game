@@ -5,14 +5,16 @@ using System.Linq;
 
 public abstract class CircuitParent : MonoBehaviour
 {
-    public (InputPort inputPort, bool value)[] inputs;
-    public (Wire outputWire, bool valueOut)[] outputs;
+    public InputPort[] inputPorts;
+    protected bool[] inputValues;
+    public Wire[] outputWires;
+    protected bool[] outputValues;
 
     public void updateValue()
     {
-        for (int i = 0; i < inputs.Length; i++)
+        for (int i = 0; i < this.inputPorts.Length; i++)
         {
-            inputs[i].value = inputs[i].inputPort.valueOut;
+            this.inputValues[i] = this.inputPorts[i].valueOut;
         }
     }
 
@@ -21,19 +23,20 @@ public abstract class CircuitParent : MonoBehaviour
     {
         bool[] calculatedOutputs = calculateOutputs();
 
-        if (calculatedOutputs != outputs.Select(output => output.valueOut).ToArray())
+        if (calculatedOutputs != outputValues)
         {
             setOutputs(calculatedOutputs);
         }
     }
 
     public abstract bool[] calculateOutputs();
+
     public void setOutputs(bool[] newOutputValues)
     {
-        for (int i = 0; i < outputs.Length; i++)
+        for (int i = 0; i < outputWires.Length; i++)
         {
-            outputs[i].outputWire.setValue(newOutputValues[i]);
-            outputs[i].valueOut = newOutputValues[i];
+            outputWires[i].setValue(newOutputValues[i]);
+            outputValues[i] = newOutputValues[i];
         }
     }
 }
