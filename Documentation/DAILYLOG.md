@@ -137,7 +137,8 @@
 * *1.5 hours* Completed [#28 Write a test](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/28) and merged the matching [PR](https://github.com/JosephMW/Logic-Gates-Educational-Game/pull/34).
 
 ### 08 Nov 2021
-WORKED ON CI/CD
+* *0.5 hours* Researched GitHub Actions and using the Unity Test Runner in GitHub Actions
+* *2 hours* Tried to implement Unity Test Runner in GitHub Actions. GitHub Action still not working.
 
 ### 09 Nov 2021
 * *3 hours* Completed [#33 Extract parent class from Circuit](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/33) and merged the matching PR.
