@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 public abstract class CircuitParent : MonoBehaviour
 {
@@ -21,10 +20,7 @@ public abstract class CircuitParent : MonoBehaviour
     {
         for (int i = 0; i < this.inputPorts.Length; i++)
         {
-            // Debug.Log("Inside CircuitParent updateValue, here is connected port: ");
-            // Debug.Log(this.inputPorts[i].gameObject.transform.name);
             this.inputValues[i] = this.inputPorts[i].valueOut;
-            // Debug.Log("Inside CircuitParent updateValue END");
         }
     }
 
@@ -35,7 +31,6 @@ public abstract class CircuitParent : MonoBehaviour
 
         if (calculatedOutputs != outputValues)
         {
-            // Debug.Log("CircuitParent: Update - calculatedoutputs dont match previous outputs");
             setOutputs(calculatedOutputs);
         }
     }
@@ -44,7 +39,6 @@ public abstract class CircuitParent : MonoBehaviour
 
     public void setOutputs(bool[] newOutputValues)
     {
-        // Debug.Log("CircuitParent: Setting outputs now...");
         for (int i = 0; i < outputWires.Length; i++)
         {
             outputWires[i].setValue(newOutputValues[i]);

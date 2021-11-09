@@ -8,6 +8,7 @@ public class DisplayLight : CircuitParent
     private static Color onColor = new Color(1, 1, 0, 1);
     private static Color offColor = new Color(46f / 255f, 46f / 255f, 46f / 255f, 1);
 
+    // Here we override the Update method so that we can change the sprite color
     protected override void Update()
     {
         bool[] calculatedOutputs = calculateOutputs();

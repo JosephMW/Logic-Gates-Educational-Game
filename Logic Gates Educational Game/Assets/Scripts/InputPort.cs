@@ -33,8 +33,7 @@ public class InputPort : MonoBehaviour
                 var wireScript = collider.gameObject.GetComponentInParent<Wire>();
                 if (wireScript.dragging)
                 {
-                    // WE ARE IN THE CORRECT STATE TO COUPLE WITH THIS INPUT WIRE:
-                    Debug.Log(collider.gameObject.transform.parent.parent.name);
+                    // Debug.Log(collider.gameObject.transform.parent.parent.name);
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
                 }
