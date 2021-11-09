@@ -8,7 +8,6 @@ public class InputPort : MonoBehaviour
     public bool valueOut;
     private Wire wireConnected;
     public CircuitParent ownerCircuitParent;
-    public And2Circuit ownerAnd2Circuit;
     public DisplayLight ownerLight;
 
     public void setValue(bool value)
@@ -24,10 +23,6 @@ public class InputPort : MonoBehaviour
             if (ownerCircuitParent != null)
             {
                 ownerCircuitParent.updateValue();
-            }
-            if (ownerAnd2Circuit != null)
-            {
-                ownerAnd2Circuit.updateValue();
             }
             if (ownerLight != null)
             {
