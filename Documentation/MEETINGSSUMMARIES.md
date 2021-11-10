@@ -183,3 +183,36 @@ Goals for next time:
 ![Project Board status on 03/11/21](ProjectBoardImages/projectBoard-03-11-21.png)
 
 **KEY DECISION** *As visibile in the above screenshot, I decided to add a fifth column to my project board. This column is 'Outside of Sprint' and will be used to hold issues which are not currently being worked on but are future work.*
+
+## 10/11/21 - Weekly Supervisor Meeting
+Progress I’ve made:
+*	I have set up the Unity Test Runner which allows me to test my Unity components in live scenes – allowing testing which is closer to playing the game.
+*	I have written a set of tests for my And2Circuit which run in a live scene.
+*	I have refactored Circuit, And2Circuit, and DisplayLight to using a parent class which defines almost all behaviour for these classes.
+    +   This proved more complex than previously anticipated as I decided to refactor a good chunk of the code. My new version is now much more extensible and should allow me to create almost any circuit I would like easily – up to holding state.
+    +   Creating new combinational circuits such as Or-gates, larger and-gates, mux, demux, inv, etc should now be trivial.
+*	I have made progress on a CI/CD pipeline however it is proving difficult
+    +   I have a GitHub action set up (This is just a script which runs on every push to a branch and every pull request)
+    +   I have the Unity Test Runner GitHub Action mostly setup but it fails before the tests can execute. 
+        -   The technology I am using for this is relatively new so there are few forums about it/there isnt much documentation. This is why it is proving difficult.
+
+What we spoke about:
+*	The progress I have made (found above)
+*	We discussed how we would store a custom circuit which a user has designed
+    +   We could generate a truth table from it
+        -   Seems very reasonable 
+        -   Stores the circuit in a compact way
+        -   Does not allow circuits to have state (Flip flops)
+    +   We could try to save the entire circuit and somehow give it input and recieve its output
+        -   Unsure as to how this would be implemented – needs research.
+        -   Stores the circuit in a less compact way
+        -   Allows circuits to have state (Flip flops) – this is a big positive.
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Finish CI/CD pipeline
+*	Make dragging a circuit adjust the position of any connected wires.
+*	Fix the small bug surrounding disconnecting wires.
+*	Start work on the overlay/toolbar which allows the user to spawn new components.
+
+![Project Board status on 10/11/21](ProjectBoardImages/projectBoard-10-11-21.png)
