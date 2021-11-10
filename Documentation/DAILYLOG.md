@@ -21,7 +21,7 @@
 ### 29 Sep 2021
 
 * *0 hours* Received notice that I had been allowed to do my self-proposed project.
-* *0.5 hours* Reached out to my supervisor (Chris McCaig) to make initial contact and thank him.
+* *0.5 hours* Reached out to my supervisor (Chris McCaig) to make initial contact and thank him for accepting my proposed project.
 
 ### 01 Oct 2021
 
