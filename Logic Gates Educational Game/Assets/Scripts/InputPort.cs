@@ -88,7 +88,6 @@ public class InputPort : MonoBehaviour
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
                 wireConnected.deleteConnectionPoint();
-                // RemoveWireTipChild();
 
                 this.wireConnected = null;
             }
