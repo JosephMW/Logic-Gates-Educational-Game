@@ -6,8 +6,10 @@ public class InputPort : MonoBehaviour
 {
     private bool value;
     public bool valueOut;
-    private Wire wireConnected;
     public CircuitParent ownerCircuitParent;
+    private Wire wireConnected;
+    private GameObject wireConnectedTip;
+    private Transform wireConnectedTipPreviousParentObj;
 
     public void setValue(bool value)
     {
@@ -23,7 +25,6 @@ public class InputPort : MonoBehaviour
         }
     }
 
-    // Just overlapped a collider 2D
     private void OnTriggerEnter2D(Collider2D collider)
     {
         try
@@ -33,34 +34,43 @@ public class InputPort : MonoBehaviour
                 var wireScript = collider.gameObject.GetComponentInParent<Wire>();
                 if (wireScript.dragging)
                 {
-                    // Debug.Log(collider.gameObject.transform.parent.parent.name);
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
                 }
             }
         }
-        catch
+        catch { }
+    }
+
+    public void SetWireTipAsChild(GameObject wireTip)
+    {
+        this.wireConnectedTipPreviousParentObj = wireTip.transform.parent;
+        this.wireConnectedTip = wireTip;
+
+        wireTip.transform.parent = this.transform.parent;
+    }
+
+    public void RemoveWireTipChild()
+    {
+        if (wireConnectedTip != null && wireConnectedTipPreviousParentObj != null)
         {
-            //do nothing
+            this.wireConnectedTip.transform.parent = this.wireConnectedTipPreviousParentObj;
+
+            this.wireConnectedTipPreviousParentObj = null;
+            this.wireConnectedTip = null;
         }
     }
 
-    // Overlapping a collider 2D
-    private void OnTriggerStay2D(Collider2D collider)
-    {
-        //Do something
-    }
-
-    // Just stopped overlapping a collider 2D
     private void OnTriggerExit2D(Collider2D collider)
     {
         // We use a try block as accessing collider.gameObject.GetComponentInParent<Wire>() may be a null ref
         try
         {
-            // if the object that left the collider is out connected wire and that wire is being dragged (The goal is decoupling) then decouple.
+            // if the object that left the collider is our connected wire and that wire is being dragged (The goal is decoupling) then decouple.
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
                 wireConnected.deleteConnectionPoint();
+
                 this.wireConnected = null;
             }
         }

@@ -12,7 +12,8 @@ public class DragAndDrop : MonoBehaviour
 
     public CustomGrid customGrid;
 
-    void Start(){
+    void Start()
+    {
         // center on underlying grid on start
         if (customGrid != null)
         {

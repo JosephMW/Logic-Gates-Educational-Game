@@ -10,10 +10,12 @@ public class Wire : MonoBehaviour
     private float x_mouseOffset, y_mouseOffset;
     private Vector3 startPosition;
     public bool dragging = false;
-    public GameObject wireEnd;
-
     private InputPort connectionPoint;
 
+    void Awake()
+    {
+        this.startPosition = this.transform.localPosition;
+    }
     public void setValue(bool value)
     {
         this.value = value;
@@ -36,12 +38,6 @@ public class Wire : MonoBehaviour
             Vector3 mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
             this.gameObject.transform.localPosition = new Vector3(mousePosition.x - this.x_mouseOffset, mousePosition.y - this.y_mouseOffset, 0);
-            float distance = Vector2.Distance(startPosition, mousePosition);
-            wireEnd.transform.localScale = new Vector3(distance, wireEnd.transform.localScale.y, 0);
-            float angle = Mathf.Atan((mousePosition.y - startPosition.y) / (mousePosition.x - startPosition.x));
-            angle = (angle * 180) / Mathf.PI;
-            wireEnd.transform.eulerAngles = new Vector3(0, 0, angle);
-            wireEnd.transform.localPosition = new Vector3(-(mousePosition.x - this.x_mouseOffset) / 2, -(mousePosition.y - this.y_mouseOffset) / 2, 0);
         }
 
         if (connectionPoint != null)
@@ -56,10 +52,14 @@ public class Wire : MonoBehaviour
 
     private void OnMouseDown()
     {
+        // If we are currently connected then disconnect tip
+        if (connectionPoint != null)
+        {
+            connectionPoint.RemoveWireTipChild();
+        }
+
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        this.startPosition = this.transform.position - this.transform.localPosition;
 
         this.dragging = true;
         this.x_mouseOffset = mousePosition.x - this.transform.localPosition.x;
@@ -77,23 +77,16 @@ public class Wire : MonoBehaviour
         }
         else
         {
-            var connectionPointLocation = this.connectionPoint.transform.position + new Vector3(-0.1f, 0, 0);
-
+            var connectionPointLocation = this.connectionPoint.transform.position;
             this.gameObject.transform.position = connectionPointLocation;
 
-            float distance = Vector2.Distance(this.startPosition, connectionPointLocation);
-            wireEnd.transform.localScale = new Vector3(distance, wireEnd.transform.localScale.y, 0);
-            float angle = Mathf.Atan((connectionPointLocation.y - startPosition.y) / (connectionPointLocation.x - startPosition.x));
-            angle = (angle * 180) / Mathf.PI;
-            wireEnd.transform.eulerAngles = new Vector3(0, 0, angle);
-            wireEnd.transform.position = (connectionPointLocation + startPosition) / 2;
+            connectionPoint.SetWireTipAsChild(this.gameObject);
         }
     }
 
     private void retractWire()
     {
-        this.gameObject.transform.position = this.startPosition;
-        wireEnd.transform.localScale = new Vector3(0, wireEnd.transform.localScale.y, 0);
-        wireEnd.transform.localPosition = this.startPosition;
+        // NOTE: We are using localPosition here
+        this.gameObject.transform.localPosition = this.startPosition;
     }
 }
