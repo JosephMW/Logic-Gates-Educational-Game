@@ -48,6 +48,12 @@ public class Wire : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log("Wire: OnMouseDown");
+
+        if (connectionPoint != null)
+        {
+            connectionPoint.RemoveWireTipChild();
+        }
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 

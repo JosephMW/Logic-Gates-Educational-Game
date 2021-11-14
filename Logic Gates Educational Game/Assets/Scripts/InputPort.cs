@@ -58,10 +58,10 @@ public class InputPort : MonoBehaviour
         this.wireConnectedTipPreviousParentObj = wireTip.transform.parent;
         this.wireConnectedTip = wireTip;
 
-        wireTip.transform.parent = this.transform;
+        wireTip.transform.parent = this.transform.parent;
     }
 
-    private void RemoveWireTipChild()
+    public void RemoveWireTipChild()
     {
         if (wireConnectedTip != null && wireConnectedTipPreviousParentObj != null)
         {
@@ -88,7 +88,7 @@ public class InputPort : MonoBehaviour
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
                 wireConnected.deleteConnectionPoint();
-                RemoveWireTipChild();
+                // RemoveWireTipChild();
 
                 this.wireConnected = null;
             }
