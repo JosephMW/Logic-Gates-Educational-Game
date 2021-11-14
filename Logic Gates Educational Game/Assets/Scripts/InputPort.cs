@@ -6,9 +6,10 @@ public class InputPort : MonoBehaviour
 {
     private bool value;
     public bool valueOut;
-    private Wire wireConnected;
-    private Transform wireConnectedTipPreviousParentObj;
     public CircuitParent ownerCircuitParent;
+    private Wire wireConnected;
+    private GameObject wireConnectedTip;
+    private Transform wireConnectedTipPreviousParentObj;
 
     public void setValue(bool value)
     {
@@ -52,6 +53,25 @@ public class InputPort : MonoBehaviour
         }
     }
 
+    public void SetWireTipAsChild(GameObject wireTip)
+    {
+        this.wireConnectedTipPreviousParentObj = wireTip.transform.parent;
+        this.wireConnectedTip = wireTip;
+
+        wireTip.transform.parent = this.transform;
+    }
+
+    private void RemoveWireTipChild()
+    {
+        if (wireConnectedTip != null && wireConnectedTipPreviousParentObj != null)
+        {
+            this.wireConnectedTip.transform.parent = this.wireConnectedTipPreviousParentObj;
+
+            this.wireConnectedTipPreviousParentObj = null;
+            this.wireConnectedTip = null;
+        }
+    }
+
     // Overlapping a collider 2D
     private void OnTriggerStay2D(Collider2D collider)
     {
@@ -68,13 +88,9 @@ public class InputPort : MonoBehaviour
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
                 wireConnected.deleteConnectionPoint();
-                // set wiretip parent back to what it was
-                //wireConnected.gameObject.transform.parent = this.wireConnectedTipPreviousParentObj;
-
-                Debug.Log("succeeding try so far...");
+                RemoveWireTipChild();
 
                 this.wireConnected = null;
-                //this.wireConnectedTipPreviousParentObj = null;
             }
         }
         catch { }
