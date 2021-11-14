@@ -148,3 +148,6 @@
 ### 10 Nov 2021
 * *0.5 hours* Supervisor Meeting
 * *0.3 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.
+
+### 14 Nov 2021
+* *3.5 hours* Completed [#20 Wire System: Have connected wires move with a Circuit/Light when moved](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/20) and merged the matching PR. Took more work than anticipated as a couple of refactorings were needed.
