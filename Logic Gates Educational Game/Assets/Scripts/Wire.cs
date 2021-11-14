@@ -12,6 +12,10 @@ public class Wire : MonoBehaviour
     public bool dragging = false;
     private InputPort connectionPoint;
 
+    void Awake()
+    {
+        this.startPosition = this.transform.localPosition;
+    }
     public void setValue(bool value)
     {
         this.value = value;
@@ -57,8 +61,6 @@ public class Wire : MonoBehaviour
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
-        this.startPosition = this.transform.position - this.transform.localPosition;
-
         this.dragging = true;
         this.x_mouseOffset = mousePosition.x - this.transform.localPosition.x;
         this.y_mouseOffset = mousePosition.y - this.transform.localPosition.y;
@@ -84,6 +86,7 @@ public class Wire : MonoBehaviour
 
     private void retractWire()
     {
-        this.gameObject.transform.position = this.startPosition;
+        // NOTE: We are using localPosition here
+        this.gameObject.transform.localPosition = this.startPosition;
     }
 }
