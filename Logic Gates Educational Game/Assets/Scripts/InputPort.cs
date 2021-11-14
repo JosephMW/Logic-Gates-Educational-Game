@@ -7,6 +7,7 @@ public class InputPort : MonoBehaviour
     private bool value;
     public bool valueOut;
     private Wire wireConnected;
+    private Transform wireConnectedTipPreviousParentObj;
     public CircuitParent ownerCircuitParent;
 
     public void setValue(bool value)
@@ -36,6 +37,13 @@ public class InputPort : MonoBehaviour
                     // Debug.Log(collider.gameObject.transform.parent.parent.name);
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
+
+                    Debug.Log(wireScript.gameObject.transform.GetChild(0));
+
+                    this.wireConnectedTipPreviousParentObj = wireScript.gameObject.transform;
+                    wireScript.gameObject.transform.GetChild(0).parent = this.transform;
+
+                    // set position of wireTip:
                 }
             }
         }
@@ -61,7 +69,9 @@ public class InputPort : MonoBehaviour
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
                 wireConnected.deleteConnectionPoint();
+                wireConnected.gameObject.transform.GetChild(0).parent = this.wireConnectedTipPreviousParentObj;
                 this.wireConnected = null;
+                this.wireConnectedTipPreviousParentObj = null;
             }
         }
         catch { }
