@@ -38,12 +38,11 @@ public class InputPort : MonoBehaviour
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
 
-                    Debug.Log(wireScript.gameObject.transform.GetChild(0));
+                    Debug.Log(wireScript.gameObject.transform);
 
-                    this.wireConnectedTipPreviousParentObj = wireScript.gameObject.transform;
-                    wireScript.gameObject.transform.GetChild(0).parent = this.transform;
-
-                    // set position of wireTip:
+                    // set wiretip parent to this object
+                    //this.wireConnectedTipPreviousParentObj = wireScript.gameObject.transform.parent;
+                    //wireScript.gameObject.transform.parent = this.transform;
                 }
             }
         }
@@ -69,9 +68,13 @@ public class InputPort : MonoBehaviour
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
                 wireConnected.deleteConnectionPoint();
-                wireConnected.gameObject.transform.GetChild(0).parent = this.wireConnectedTipPreviousParentObj;
+                // set wiretip parent back to what it was
+                //wireConnected.gameObject.transform.parent = this.wireConnectedTipPreviousParentObj;
+
+                Debug.Log("succeeding try so far...");
+
                 this.wireConnected = null;
-                this.wireConnectedTipPreviousParentObj = null;
+                //this.wireConnectedTipPreviousParentObj = null;
             }
         }
         catch { }
