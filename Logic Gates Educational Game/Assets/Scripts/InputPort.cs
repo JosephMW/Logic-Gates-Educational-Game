@@ -25,7 +25,6 @@ public class InputPort : MonoBehaviour
         }
     }
 
-    // Just overlapped a collider 2D
     private void OnTriggerEnter2D(Collider2D collider)
     {
         try
@@ -35,22 +34,12 @@ public class InputPort : MonoBehaviour
                 var wireScript = collider.gameObject.GetComponentInParent<Wire>();
                 if (wireScript.dragging)
                 {
-                    // Debug.Log(collider.gameObject.transform.parent.parent.name);
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
-
-                    Debug.Log(wireScript.gameObject.transform);
-
-                    // set wiretip parent to this object
-                    //this.wireConnectedTipPreviousParentObj = wireScript.gameObject.transform.parent;
-                    //wireScript.gameObject.transform.parent = this.transform;
                 }
             }
         }
-        catch
-        {
-            //do nothing
-        }
+        catch { }
     }
 
     public void SetWireTipAsChild(GameObject wireTip)
@@ -72,19 +61,12 @@ public class InputPort : MonoBehaviour
         }
     }
 
-    // Overlapping a collider 2D
-    private void OnTriggerStay2D(Collider2D collider)
-    {
-        //Do something
-    }
-
-    // Just stopped overlapping a collider 2D
     private void OnTriggerExit2D(Collider2D collider)
     {
         // We use a try block as accessing collider.gameObject.GetComponentInParent<Wire>() may be a null ref
         try
         {
-            // if the object that left the collider is out connected wire and that wire is being dragged (The goal is decoupling) then decouple.
+            // if the object that left the collider is our connected wire and that wire is being dragged (The goal is decoupling) then decouple.
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
                 wireConnected.deleteConnectionPoint();
