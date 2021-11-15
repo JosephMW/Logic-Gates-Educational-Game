@@ -48,6 +48,8 @@ public class InputPort : MonoBehaviour
         this.wireConnectedTip = wireTip;
 
         wireTip.transform.parent = this.transform.parent;
+
+        this.GetComponent<Collider2D>().enabled = false;
     }
 
     public void RemoveWireTipChild()
@@ -58,6 +60,8 @@ public class InputPort : MonoBehaviour
 
             this.wireConnectedTipPreviousParentObj = null;
             this.wireConnectedTip = null;
+
+            this.GetComponent<Collider2D>().enabled = true;
         }
     }
 

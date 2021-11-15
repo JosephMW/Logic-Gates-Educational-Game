@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2202108704957968222}
   - component: {fileID: 2031463018017416240}
   - component: {fileID: 5222426528473927059}
-  - component: {fileID: 5222246825178687827}
+  - component: {fileID: 5945830645275825776}
   m_Layer: 0
   m_Name: WireTip
   m_TagString: Untagged
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragging: 0
---- !u!61 &5222246825178687827
+--- !u!61 &5945830645275825776
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
