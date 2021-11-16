@@ -81,6 +81,9 @@ public class Wire : MonoBehaviour
             this.gameObject.transform.position = connectionPointLocation;
 
             connectionPoint.SetWireTipAsChild(this.gameObject);
+
+            // We need to immediately output our current value to the new connection:
+            connectionPoint.setValue(this.valueOut);
         }
     }
 

@@ -151,3 +151,9 @@
 
 ### 14 Nov 2021
 * *3.5 hours* Completed [#20 Wire System: Have connected wires move with a Circuit/Light when moved](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/20) and merged the matching PR. Took more work than anticipated as a couple of refactorings were needed.
+
+### 15 Nov 2021
+* *1 hour* Completed [#31 Fix disconnecting wires onClick bug](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/31) and merged the matching PR.
+
+### 16 Nov 2021
+* *0.3 hours* Completed [#41 When a wire connection is made/destroyed we should immediately output the value signal ](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/41) and merged the matching PR.

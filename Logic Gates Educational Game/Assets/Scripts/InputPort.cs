@@ -49,6 +49,7 @@ public class InputPort : MonoBehaviour
 
         wireTip.transform.parent = this.transform.parent;
 
+        // While the wire is connected we want to disable the box collider, so that other wires trying to connect do not cause complications
         this.GetComponent<Collider2D>().enabled = false;
     }
 
@@ -61,7 +62,11 @@ public class InputPort : MonoBehaviour
             this.wireConnectedTipPreviousParentObj = null;
             this.wireConnectedTip = null;
 
+            // While the wire is connected we want to disable the box collider, so that other wires trying to connect do not cause complications
             this.GetComponent<Collider2D>().enabled = true;
+
+            // We need to revert our value to false now that the connection has been broken:
+            this.setValue(false);
         }
     }
 
