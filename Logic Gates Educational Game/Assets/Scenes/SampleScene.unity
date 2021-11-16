@@ -640,6 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1537f9e532dd114b8a520ac11f1531a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragging: 0
   customGrid: {fileID: 0}
 --- !u!1 &608175376
 GameObject:
@@ -1068,6 +1069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 2910018353360808223, guid: 7cbabd8f7e24e9d4d82810ce4c29e1de, type: 3}
+  customGrid: {fileID: 1786071920}
 --- !u!1 &1513708424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1537f9e532dd114b8a520ac11f1531a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragging: 0
   customGrid: {fileID: 0}
 --- !u!1 &1784014101 stripped
 GameObject:
