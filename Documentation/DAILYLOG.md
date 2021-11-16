@@ -156,4 +156,5 @@
 * *1 hour* Completed [#31 Fix disconnecting wires onClick bug](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/31) and merged the matching PR.
 
 ### 16 Nov 2021
-* *0.3 hours* Completed [#41 When a wire connection is made/destroyed we should immediately output the value signal ](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/41) and merged the matching PR.
+* *0.3 hours* Completed [#41 When a wire connection is made/destroyed we should immediately output the value signal](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/41) and merged the matching PR.
+* *2.5 hours* Completed [#37 Toolbar: Create a toolbar which allows the spawning of Circuits](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/37) and merged the matching PR.
