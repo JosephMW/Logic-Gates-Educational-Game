@@ -216,3 +216,35 @@ Goals for next time:
 *	Start work on the overlay/toolbar which allows the user to spawn new components.
 
 ![Project Board status on 10/11/21](ProjectBoardImages/projectBoard-10-11-21.png)
+
+## 24/11/21 - Weekly Supervisor Meeting
+Progress I have made:
+*	I have added that when circuits are dragged which have connected wires, those connected wires move appropriately to stay connected
+    +   This involved some useful refactorings I had been meaning to do anyways.
+*	I fixed the bug I had previously mentioned about difficulty when disconnecting wires
+    +   This was due to overlapping colliders, so when you clicked it didn’t know which you were referring to
+*	I fixed 2 more minor bugs I found
+    +   When we disconnected an ‘ON’ wire, we were previously failing to reset the state to ‘OFF’
+    +   When we connected a new wire we were failing to immediately send the value signal in some cases
+*	I created the Toolbar which allows you to spawn GameObjects into the world. I added the 4 objects I have made so far to this toolbar
+
+What we spoke about:
+*	The progress I have made (found above)
+*	We discussed the 3 main future avenues of work:
+    +   Improve UI 
+        -   I will definitely do this
+        -   It is not imminent and may suit being completed near the end of my development phase
+    +   User Created Circuits
+        -   May cause complications if I also implement ‘Circuits which can hold state’
+    +   Circuits which can hold State
+        -   May cause complications if I also implement ‘User Created Circuits’
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Investigate and Fix bug we discovered where inputPorts do not accept wire connections in certain cases.
+*	Finish CI/CD pipeline
+*	Research and decide on which of the following two issues I should prioritise for future work.
+    +   User Created Circuits
+    +   Circuits which can hold state
+
+![Project Board status on 24/11/21](ProjectBoardImages/projectBoard-24-11-21.png)
