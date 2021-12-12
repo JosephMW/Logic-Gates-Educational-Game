@@ -77,6 +77,7 @@ public class Wire : MonoBehaviour
         }
         else
         {
+            // Set the location of this wire tip
             var connectionPointLocation = this.connectionPoint.transform.position;
             this.gameObject.transform.position = connectionPointLocation;
 

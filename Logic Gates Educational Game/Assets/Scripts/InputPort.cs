@@ -6,7 +6,9 @@ public class InputPort : MonoBehaviour
 {
     private bool value;
     public bool valueOut;
+
     public CircuitParent ownerCircuitParent;
+
     private Wire wireConnected;
     private GameObject wireConnectedTip;
     private Transform wireConnectedTipPreviousParentObj;
@@ -23,6 +25,12 @@ public class InputPort : MonoBehaviour
             this.valueOut = value;
             ownerCircuitParent.updateValue();
         }
+        // Debug.Log("this.wireConnected");
+        // Debug.Log(this.wireConnected);
+        // Debug.Log("this.wireConnectedTip");
+        // Debug.Log(this.wireConnectedTip);
+        // Debug.Log("this.wireConnectedTipPreviousParentObj");
+        // Debug.Log(this.wireConnectedTipPreviousParentObj);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
