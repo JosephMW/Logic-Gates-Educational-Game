@@ -25,16 +25,11 @@ public class InputPort : MonoBehaviour
             this.valueOut = value;
             ownerCircuitParent.updateValue();
         }
-        // Debug.Log("this.wireConnected");
-        // Debug.Log(this.wireConnected);
-        // Debug.Log("this.wireConnectedTip");
-        // Debug.Log(this.wireConnectedTip);
-        // Debug.Log("this.wireConnectedTipPreviousParentObj");
-        // Debug.Log(this.wireConnectedTipPreviousParentObj);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        // We use a try block as accessing collider.gameObject.GetComponentInParent<Wire>() may be a null ref
         try
         {
             if (wireConnected == null)
@@ -103,7 +98,6 @@ public class InputPort : MonoBehaviour
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
                 wireConnected.deleteConnectionPoint();
-
                 this.wireConnected = null;
             }
         }

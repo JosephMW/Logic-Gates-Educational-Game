@@ -53,14 +53,11 @@ public class Wire : MonoBehaviour
                 connectionPoint.setValue(this.value);
             }
         }
-
-        // Debug.Log("this.connectionPoint");
-        // Debug.Log(this.connectionPoint);
     }
 
     private void OnMouseDown()
     {
-        // If we are currently connected then disconnect tip
+        // If we are currently connected then disconnect tip (But keep reference to connectionPoint for possible reconnection)
         if (connectionPoint != null)
         {
             connectionPoint.RemoveWireTipChild();
