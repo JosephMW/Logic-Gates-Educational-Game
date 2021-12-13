@@ -21,7 +21,7 @@ I am recording the contents of all my meetings so that I can keep myself on trac
 I am recording all my references as the project progresses so that I can easily find useful sources that I have used in the past, and so I can give all my references when writing my dissertation to ensure there are no uncertainties around plagiarism. I am using Mendeley to record my references. At the link above you will find an exported .bib file of my references. This is the format I will use when writing my final dissertation in LaTeX.
 
 ## [Game Components](Documentation/GAMECOMPONENTS.md)
-I am documenting how all my major game components function. This is so I can review parts easily and will aid me in my thesis. This can be found at the link above.
+I am documenting how all my major game components' function. This is so I can review parts easily and will aid me in my thesis. This can be found at the link above.
 
 ## Issue Tracking & Branching Strategy
 I have created a [project board](https://github.com/JosephMW/Logic-Gates-Educational-Game/projects/1) where I will log all issues. In the future I may consider a second GitHub board to track bugs. 
