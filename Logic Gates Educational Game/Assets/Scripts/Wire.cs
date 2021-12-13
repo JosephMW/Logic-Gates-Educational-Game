@@ -26,6 +26,11 @@ public class Wire : MonoBehaviour
         this.connectionPoint = connectionPoint;
     }
 
+    public InputPort getConnectionPoint()
+    {
+        return this.connectionPoint;
+    }
+
     public void deleteConnectionPoint()
     {
         this.connectionPoint = null;
@@ -52,7 +57,7 @@ public class Wire : MonoBehaviour
 
     private void OnMouseDown()
     {
-        // If we are currently connected then disconnect tip
+        // If we are currently connected then disconnect tip (But keep reference to connectionPoint for possible reconnection)
         if (connectionPoint != null)
         {
             connectionPoint.RemoveWireTipChild();
@@ -77,6 +82,7 @@ public class Wire : MonoBehaviour
         }
         else
         {
+            // Set the location of this wire tip
             var connectionPointLocation = this.connectionPoint.transform.position;
             this.gameObject.transform.position = connectionPointLocation;
 

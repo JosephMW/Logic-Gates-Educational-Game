@@ -166,3 +166,9 @@
 ### 24 Nov 2021
 * *0.5 hours* Supervisor Meeting
 * *0.3 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.
+
+### 12 Dec 2021
+* *0.6 hours* Caught up with where I was. Investigated ongoing bug. Will correct bug tomorrow.
+
+### 13 Dec 2021
+* *1.3 hour* Completed [#44 Fix bug where inputPorts become unavailable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/44) and merged the matching PR.
