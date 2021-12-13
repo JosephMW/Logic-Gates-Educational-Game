@@ -169,3 +169,6 @@
 
 ### 12 Dec 2021
 * *0.6 hours* Caught up with where I was. Investigated ongoing bug. Will correct bug tomorrow.
+
+### 13 Dec 2021
+* *0.X hours* Working on inputPort Bug

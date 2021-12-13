@@ -26,6 +26,11 @@ public class Wire : MonoBehaviour
         this.connectionPoint = connectionPoint;
     }
 
+    public InputPort getConnectionPoint()
+    {
+        return this.connectionPoint;
+    }
+
     public void deleteConnectionPoint()
     {
         this.connectionPoint = null;
@@ -48,6 +53,9 @@ public class Wire : MonoBehaviour
                 connectionPoint.setValue(this.value);
             }
         }
+
+        // Debug.Log("this.connectionPoint");
+        // Debug.Log(this.connectionPoint);
     }
 
     private void OnMouseDown()

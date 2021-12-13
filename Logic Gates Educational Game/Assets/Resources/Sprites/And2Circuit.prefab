@@ -448,6 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1537f9e532dd114b8a520ac11f1531a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragging: 0
   customGrid: {fileID: 0}
 --- !u!114 &1640884162937355419
 MonoBehaviour:

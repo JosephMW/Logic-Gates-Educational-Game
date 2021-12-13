@@ -40,7 +40,7 @@ public class InputPort : MonoBehaviour
             if (wireConnected == null)
             {
                 var wireScript = collider.gameObject.GetComponentInParent<Wire>();
-                if (wireScript.dragging)
+                if (wireScript.dragging && (wireScript.getConnectionPoint() == null))
                 {
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
@@ -49,7 +49,23 @@ public class InputPort : MonoBehaviour
         }
         catch { }
     }
-
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        // We use a try block as accessing collider.gameObject.GetComponentInParent<Wire>() may be a null ref
+        try
+        {
+            if (wireConnected == null)
+            {
+                var wireScript = collider.gameObject.GetComponentInParent<Wire>();
+                if (wireScript.dragging && (wireScript.getConnectionPoint() == null))
+                {
+                    wireScript.setConnectionPoint(this);
+                    this.wireConnected = wireScript;
+                }
+            }
+        }
+        catch { }
+    }
     public void SetWireTipAsChild(GameObject wireTip)
     {
         this.wireConnectedTipPreviousParentObj = wireTip.transform.parent;
