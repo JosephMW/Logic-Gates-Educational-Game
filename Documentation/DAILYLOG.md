@@ -173,3 +173,5 @@
 ### 13 Dec 2021
 * *2 hours* Completed [#44 Fix bug where inputPorts become unavailable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/44) and merged the matching PR.
 * *1 hour* Completed [#46 Write Documentation about main components of the project](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/46) and merged the matching PR.
+* *0.3 hours* Did some general testing - built an And4 circuit. No bugs found.
+* *0.3 hours* Emailed supervisor notes for tomorrows meeting.
