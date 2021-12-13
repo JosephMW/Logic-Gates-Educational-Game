@@ -171,4 +171,5 @@
 * *0.6 hours* Caught up with where I was. Investigated ongoing bug. Will correct bug tomorrow.
 
 ### 13 Dec 2021
-* *1.3 hour* Completed [#44 Fix bug where inputPorts become unavailable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/44) and merged the matching PR.
+* *2 hours* Completed [#44 Fix bug where inputPorts become unavailable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/44) and merged the matching PR.
+* *1 hour* Completed [#46 Write Documentation about main components of the project](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/46) and merged the matching PR.
