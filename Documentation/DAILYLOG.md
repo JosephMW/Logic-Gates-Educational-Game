@@ -175,3 +175,7 @@
 * *1 hour* Completed [#46 Write Documentation about main components of the project](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/46) and merged the matching PR.
 * *0.3 hours* Did some general testing - built an And4 circuit. No bugs found.
 * *0.3 hours* Emailed supervisor notes for tomorrows meeting.
+
+### 14 Dec 2021
+* *0.5 hours* Supervisor Meeting
+* *0.3 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.

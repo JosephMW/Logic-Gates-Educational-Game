@@ -248,3 +248,26 @@ Goals for next time:
     +   Circuits which can hold state
 
 ![Project Board status on 24/11/21](ProjectBoardImages/projectBoard-24-11-21.png)
+
+## 14/12/21 - Weekly Supervisor Meeting
+Progress I have made:
+*	I have fixed the bug we found together in our last meeting
+    +   The problem was due to the wire overlapping multiple input ports causing difficulties
+    +   It was a problem as I developed the wire-inputPort code when only considering single wire and input ports, then when I added new circuits with multiple input ports it could not properly handle things.
+    +   This lead me to rethinking some of how wire-inputPort connections are made, it is all fixed and safe now.
+*	I have added a new markdown documentation page to my GitHub. It outlines the logic behind the main components in my game. I decided to do this as it took me a little time to read and remember how wire connections are made, I also figure it will help when writing my thesis.
+*	I have also given more thought to where my future work should be placed and I think custom circuits should be my priority over the xmas break. If I can find a way to save full circuits instead of saving a condensed version I may be able to save circuits which have state – and this would be the optimal solution.
+
+What we spoke about:
+*	The progress I have made (found above)
+*	The Christmas break and our first meeting back (12 Jan 9:30am)
+*	That the project progress report is brief and due Friday.
+*	That I will be emailing to try and get some students for testing next semester
+*	That I will submit the ethics paperwork soon
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Start work on building and saving custom circuits
+*	Finish CI/CD pipeline
+
+![Project Board status on 14/12/21](ProjectBoardImages/projectBoard-14-12-21.png)
