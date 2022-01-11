@@ -179,3 +179,10 @@
 ### 14 Dec 2021
 * *0.5 hours* Supervisor Meeting
 * *0.3 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.
+
+### 9 Jan 2021
+* *1.5 hours* Read the Ethics checklist and wrote introductory and debreifing scripts for my Testing Session.
+* *0.5 hours* Emailed supervisor to make sure he agreed my testing session followed the ethics guidelines.
+
+### 10 Jan 2021
+* *0.5 hours* Recieved confirmation from supervisor regarding ethics forms. Emailed Jose Cano Reyes asking if he would email the 2021 class of Computer Architecture to ask for students to volunteer for my testing session.
