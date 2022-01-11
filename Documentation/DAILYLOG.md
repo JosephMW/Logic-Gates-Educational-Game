@@ -186,3 +186,7 @@
 
 ### 10 Jan 2021
 * *0.5 hours* Recieved confirmation from supervisor regarding ethics forms. Emailed Jose Cano Reyes asking if he would email the 2021 class of Computer Architecture to ask for students to volunteer for my testing session.
+
+### 11 Jan 2021
+* *1 hour* Researched Saving a Unity scene. Decided that before I delve into saving custom circuits for reuse, I should first learn to save the entire scene and likely build a menu system to operate that.
+* *0.5 hours* Emailed Supervisor notes for tomorrows meeting. 
