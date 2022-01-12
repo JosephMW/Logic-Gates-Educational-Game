@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class OptionsMenu : MonoBehaviour
 {
-    public void NewGame(){
-        SceneManager.LoadScene("NewGame");
+    public void SaveGame(){
+        Debug.Log("NOT IMPLEMENTED YET");
     }
 
     public void QuitGame(){
         // Debug is left since Application.Quit() does not work in editor - only when built.
-        Application.Quit();
+        Debug.Log("Go to main menu");
+        SceneManager.LoadScene("MainMenu");
     }
 }
