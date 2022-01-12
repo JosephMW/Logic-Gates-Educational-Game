@@ -271,3 +271,26 @@ Goals for next time:
 *	Finish CI/CD pipeline
 
 ![Project Board status on 14/12/21](ProjectBoardImages/projectBoard-14-12-21.png)
+
+## 12/01/21 - Weekly Supervisor Meeting
+Progress I have made:
+*	I have written introductory and debriefing scripts for my Testing Session week which will be in week 4 of this semester.
+*	I have asked Jose Cano Reyes to email the class of Computer Architecture to ask for some students to help me.
+*	I have researched more into saving and loading in Unity.
+    +   The main goal I had that we discussed last term was to be able to save and load custom circuits for reuse.
+    +   I have decided that a good intermediate goal is to learn how to save and load whole scenes in Unity. This will allow me to save the scene where the student is playing and reload it. I believe this will be less complicated than diving directly into trying to do the circuit builder stuff.
+
+What we spoke about:
+*	The progress I have made (found above)
+*	That an early very rough draft of a dissertation is valuable.
+*	What my motivations for the project were (How I aimed to do things better than my competition)
+    +   Nicer UI – more attractive for students
+    +   Being able to build and reuse custom circuits
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Learn and implement saving and loading whole scenes in Unity.
+*	Build a main menu which allows the user to reload scenes, or start new ones.
+*	Still have finish CI/CD pipeline as an ongoing issue
+
+![Project Board status on 12/01/22](ProjectBoardImages/projectBoard-12-01-22.png)

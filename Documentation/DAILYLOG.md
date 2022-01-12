@@ -189,4 +189,8 @@
 
 ### 11 Jan 2021
 * *1 hour* Researched Saving a Unity scene. Decided that before I delve into saving custom circuits for reuse, I should first learn to save the entire scene and likely build a menu system to operate that.
-* *0.5 hours* Emailed Supervisor notes for tomorrows meeting. 
+* *0.5 hours* Emailed Supervisor notes for tomorrows meeting.
+
+### 12 Jan 2021
+* *0.5 hours* Supervisor Meeting
+* *0.5 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.
