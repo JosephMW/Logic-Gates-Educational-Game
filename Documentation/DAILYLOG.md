@@ -194,3 +194,7 @@
 ### 12 Jan 2021
 * *0.5 hours* Supervisor Meeting
 * *0.5 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.
+* *2.5 hours* Researched and built the majority of the Main Menu, and Options Menu (Which is available in-game)
+
+### 13 Jan 2021
+* *0.75 hours* Completed [#51 Create Basic Main Menu](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/51) and merged the matching PR.
