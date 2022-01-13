@@ -38,3 +38,14 @@ A wire is draggable, has a 2D Rigidbody, and has a 2D Box Collider. An input por
 The Toolbar exists in the SampleScene and consists of a UI Canvas with a series of GameObjects within it. Each child GameObejct including the buttons are rendered using a 'Canvas Renderer' which replaces the typically used 'Sprite Renderer' - this change is due to the Toolbar being a UI component.
 
 Each button object uses the 'Spawn Circuit' script which spawns the desired circuit and sets its Drag-and-Drop field 'dragging' to True - this allows the user to then drag the newly spawned Circuit into position and drop it in place.
+
+The toolbar object also contains the OptionsMenu Cog wheel and the options menu itself. These are both UI elements using TextMeshPro for all text elements. The OptionsMenu Cog works by setting the 'active' state of the menu to true - returning to the game doe the opposite.
+
+## Main Menu
+The main menu is comprised by a series of UI elements. I make use of the TextMeshPro package for nicer text. 
+
+The 'New Game' button selects a scene to load from the build settings - it loads the 'NewGame' scene. 
+
+The 'Load Game' button sets the active state of the main menu to false and the active state of the 'LoadGameMenu' to true. Thus allowing navigation to the LoadGameMenu.
+
+The 'Quit Game' button makes use of Application.Quit() to close the game.
