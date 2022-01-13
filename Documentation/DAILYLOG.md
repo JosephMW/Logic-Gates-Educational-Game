@@ -194,3 +194,6 @@
 ### 12 Jan 2021
 * *0.5 hours* Supervisor Meeting
 * *0.5 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.
+
+### 13 Jan 2021
+* *2.5 hours* Researched and built the majority of the Main Menu, and Options Menu (Which is available in-game)
