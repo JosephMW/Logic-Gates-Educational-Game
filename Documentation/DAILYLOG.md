@@ -201,3 +201,4 @@
 
 ### 15 Jan 2021
 * *1.25 hours* Researched Saving and Loading things in Unity. Realised it will require more code and work than expected. I think my best solution is to write custom controllers for serializing and deserializing everything in the scene. Instantiating the circuits and connecting the wires will likely be complex.
+* *X hours* ------------

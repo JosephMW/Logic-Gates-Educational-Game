@@ -21,7 +21,7 @@ public class CustomGrid : MonoBehaviour
         {
             for (int y = 0; y < height; y++)
             {
-                createBackgroundSquare(null, convertGridArrayPositionToLocalPosition(x, y));
+                createBackgroundSquare(this.transform, convertGridArrayPositionToLocalPosition(x, y));
             }
         }
     }
