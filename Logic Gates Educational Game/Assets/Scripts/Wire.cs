@@ -10,7 +10,7 @@ public class Wire : MonoBehaviour
     private float x_mouseOffset, y_mouseOffset;
     private Vector3 startPosition;
     public bool dragging = false;
-    private InputPort connectionPoint;
+    public InputPort connectionPoint;
 
     void Awake()
     {

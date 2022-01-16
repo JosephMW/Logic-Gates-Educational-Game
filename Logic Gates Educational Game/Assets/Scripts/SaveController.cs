@@ -15,13 +15,41 @@ public class SaveController : MonoBehaviour
         {
             var currentObject = objs[i];
             Debug.Log(currentObject);
+            string json = JsonUtility.ToJson(currentObject);
+            Debug.Log("My Json:");
+            Debug.Log(json);
 
             Wire[] currentObjectWires = currentObject.outputWires;
             for (int j = 0; j < currentObjectWires.Length; j++)
             {
                 var currentObjectWire = currentObjectWires[j];
                 Debug.Log(currentObjectWire);
+                string wireJson = JsonUtility.ToJson(currentObjectWire);
+                Debug.Log("My Wire Json:");
+                Debug.Log(wireJson);
             }
+
+            // We want to format our circuit in custom class CircuitJson:
+
+            CircuitJson circJson = new CircuitJson();
+        }
+    }
+
+    private class CircuitJson
+    {
+        type circuitType;
+        wireJson[] wires;
+        cpJson[] cps;
+
+        private class wireJson
+        {
+            int WireID;
+            int ConnectionPortID;
+        }
+
+        private class cpJson
+        {
+            int ConnectionPortID;
         }
     }
 }
