@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,47 +11,89 @@ public class SaveController : MonoBehaviour
     {
         Debug.Log("SaveScene Called");
 
-        CircuitParent[] objs = GameObject.FindObjectsOfType<CircuitParent>();
-        for (int i = 0; i < objs.Length; i++)
+        JsonSaveFormat newSave = new JsonSaveFormat();
+
+        CircuitParent[] circuits = GameObject.FindObjectsOfType<CircuitParent>();
+        for (int i = 0; i < circuits.Length; i++)
         {
-            var currentObject = objs[i];
-            Debug.Log(currentObject);
-            string json = JsonUtility.ToJson(currentObject);
-            Debug.Log("My Json:");
-            Debug.Log(json);
+            Debug.Log(circuits[i]);
+            newSave.addCircuit(circuits[i]);
+        }
 
-            Wire[] currentObjectWires = currentObject.outputWires;
-            for (int j = 0; j < currentObjectWires.Length; j++)
-            {
-                var currentObjectWire = currentObjectWires[j];
-                Debug.Log(currentObjectWire);
-                string wireJson = JsonUtility.ToJson(currentObjectWire);
-                Debug.Log("My Wire Json:");
-                Debug.Log(wireJson);
-            }
+        Wire[] wires = GameObject.FindObjectsOfType<Wire>();
+        for (int i = 0; i < wires.Length; i++)
+        {
+            newSave.addWire(wires[i]);
+        }
 
-            // We want to format our circuit in custom class CircuitJson:
+        string json = JsonUtility.ToJson(newSave);
+        Debug.Log(json);
 
-            CircuitJson circJson = new CircuitJson();
+        // CircuitParent[] objs = GameObject.FindObjectsOfType<CircuitParent>();
+        // for (int i = 0; i < objs.Length; i++)
+        // {
+        //     var currentObject = objs[i];
+        //     Debug.Log(currentObject);
+        //     string json = JsonUtility.ToJson(currentObject);
+        //     Debug.Log("My Json:");
+        //     Debug.Log(json);
+
+        //     Wire[] currentObjectWires = currentObject.outputWires;
+        //     for (int j = 0; j < currentObjectWires.Length; j++)
+        //     {
+        //         var currentObjectWire = currentObjectWires[j];
+        //         Debug.Log(currentObjectWire);
+        //         string wireJson = JsonUtility.ToJson(currentObjectWire);
+        //         Debug.Log("My Wire Json:");
+        //         Debug.Log(wireJson);
+        //     }
+
+        //     // We want to format our circuit in custom class CircuitJson:
+
+        //     CircuitJson circJson = new CircuitJson();
+        // }
+    }
+
+    [Serializable]
+    public class JsonSaveFormat
+    {
+        public List<CircuitParent> circuits;
+        public List<Wire> wires;
+
+        public JsonSaveFormat()
+        {
+            this.circuits = new List<CircuitParent>();
+            this.wires = new List<Wire>();
+        }
+
+        public void addCircuit(CircuitParent newCircuit)
+        {
+            circuits.Add(newCircuit);
+        }
+
+        public void addWire(Wire newWire)
+        {
+            wires.Add(newWire);
         }
     }
 
-    private class CircuitJson
+    private void getCircuitsJson()
     {
-        type circuitType;
-        wireJson[] wires;
-        cpJson[] cps;
-
-        private class wireJson
+        CircuitParent[] circuits = GameObject.FindObjectsOfType<CircuitParent>();
+        for (int i = 0; i < circuits.Length; i++)
         {
-            int WireID;
-            int ConnectionPortID;
-        }
+            var currentCircuit = circuits[i];
+            Debug.Log(currentCircuit);
+            string json = JsonUtility.ToJson(currentCircuit);
+            Debug.Log("My Json:");
+            Debug.Log(json);
 
-        private class cpJson
-        {
-            int ConnectionPortID;
         }
+    }
+
+    private void getWiresJson()
+    {
+
     }
 }
 

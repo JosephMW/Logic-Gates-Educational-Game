@@ -202,3 +202,9 @@
 ### 15 Jan 2021
 * *1.25 hours* Researched Saving and Loading things in Unity. Realised it will require more code and work than expected. I think my best solution is to write custom controllers for serializing and deserializing everything in the scene. Instantiating the circuits and connecting the wires will likely be complex.
 * *1 hour* Spent a while wrestling with searching through the scene for GameObjects and wires. Now should be at a good place to start serializing and saving the objects.
+
+### 16 Jan 2021
+* *1 hour* Tried to implement Json Serialization method - proving more difficult and nuanced than anticipated.
+
+### 18 Jan 2021
+* *1.2 hours* Spent more time on Json Serialization, trying out using another custom class for serializing. The serialization is not acting recursively though. Found Json.NET which may work better. Otherwise May individually collect Json Serializations for each Circuit and each Wire then compile somehow.
