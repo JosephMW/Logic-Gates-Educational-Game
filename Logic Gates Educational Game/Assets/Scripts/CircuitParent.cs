@@ -11,6 +11,8 @@ public abstract class CircuitParent : MonoBehaviour
     public Wire[] outputWires;
     protected bool[] outputValues;
 
+    public int circuitID = 333;
+
     void Start()
     {
         // Instantiate the value arrays to have length matching their inputs/outputs

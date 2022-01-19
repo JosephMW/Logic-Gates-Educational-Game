@@ -11,23 +11,45 @@ public class SaveController : MonoBehaviour
     {
         Debug.Log("SaveScene Called");
 
-        JsonSaveFormat newSave = new JsonSaveFormat();
-
         CircuitParent[] circuits = GameObject.FindObjectsOfType<CircuitParent>();
         for (int i = 0; i < circuits.Length; i++)
         {
-            Debug.Log(circuits[i]);
-            newSave.addCircuit(circuits[i]);
-        }
+            CircuitParent currentCircuit = circuits[i];
 
-        Wire[] wires = GameObject.FindObjectsOfType<Wire>();
-        for (int i = 0; i < wires.Length; i++)
-        {
-            newSave.addWire(wires[i]);
-        }
+            CircuitSaveFormat circuitSave = new CircuitSaveFormat(currentCircuit.circuitID, null);
 
-        string json = JsonUtility.ToJson(newSave);
-        Debug.Log(json);
+            InputPort[] currentCircuitInputPorts = currentCircuit.inputPorts;
+            for (int j = 0; j < currentCircuitInputPorts.Length; j++)
+            {
+                var currentCircuitInputPort = currentCircuitInputPorts[j];
+
+                InputPortSaveFormat inputPortSave = new InputPortSaveFormat(currentCircuitInputPort.inputPortID);
+
+                string inputPortJson = JsonUtility.ToJson(inputPortSave);
+                Debug.Log("inputPortJson");
+                Debug.Log(inputPortJson);
+
+                circuitSave.addInputPortJson(inputPortJson);
+            }
+
+            Wire[] currentCircuitWires = currentCircuit.outputWires;
+            for (int j = 0; j < currentCircuitWires.Length; j++)
+            {
+                var currentCircuitWire = currentCircuitWires[j];
+
+                WireSaveFormat wireSave = new WireSaveFormat(currentCircuitWire.wireID, currentCircuitWire.connectionPoint ? currentCircuitWire.connectionPoint.inputPortID : 9999);
+
+                string wireJson = JsonUtility.ToJson(wireSave);
+                // Debug.Log("wireJson");
+                // Debug.Log(wireJson);
+
+                circuitSave.addWireJson(wireJson);
+            }
+
+            string circuitJson = JsonUtility.ToJson(circuitSave);
+            Debug.Log("circuitJson");
+            Debug.Log(circuitJson);
+        }
 
         // CircuitParent[] objs = GameObject.FindObjectsOfType<CircuitParent>();
         // for (int i = 0; i < objs.Length; i++)
@@ -55,45 +77,54 @@ public class SaveController : MonoBehaviour
     }
 
     [Serializable]
-    public class JsonSaveFormat
+    public class WireSaveFormat
     {
-        public List<CircuitParent> circuits;
-        public List<Wire> wires;
+        public int wireID;
+        public int inputPortID;
 
-        public JsonSaveFormat()
+        public WireSaveFormat(int wireID, int inputPortID)
         {
-            this.circuits = new List<CircuitParent>();
-            this.wires = new List<Wire>();
-        }
-
-        public void addCircuit(CircuitParent newCircuit)
-        {
-            circuits.Add(newCircuit);
-        }
-
-        public void addWire(Wire newWire)
-        {
-            wires.Add(newWire);
+            this.wireID = wireID;
+            this.inputPortID = inputPortID;
         }
     }
 
-    private void getCircuitsJson()
+    [Serializable]
+    public class InputPortSaveFormat
     {
-        CircuitParent[] circuits = GameObject.FindObjectsOfType<CircuitParent>();
-        for (int i = 0; i < circuits.Length; i++)
-        {
-            var currentCircuit = circuits[i];
-            Debug.Log(currentCircuit);
-            string json = JsonUtility.ToJson(currentCircuit);
-            Debug.Log("My Json:");
-            Debug.Log(json);
+        public int inputPortID;
 
+        public InputPortSaveFormat(int inputPortID)
+        {
+            this.inputPortID = inputPortID;
         }
     }
 
-    private void getWiresJson()
+    [Serializable]
+    public class CircuitSaveFormat
     {
+        public int circuitID;
+        public Type circuitType;
+        public List<string> wireJsons;
+        public List<string> inputPortJsons;
 
+        public CircuitSaveFormat(int circuitID, Type circuitType)
+        {
+            this.circuitID = circuitID;
+            this.circuitType = circuitType;
+            this.wireJsons = new List<string>();
+            this.inputPortJsons = new List<string>();
+        }
+
+        public void addWireJson(string wireJson)
+        {
+            this.wireJsons.Add(wireJson);
+        }
+
+        public void addInputPortJson(string inputPortJson)
+        {
+            this.inputPortJsons.Add(inputPortJson);
+        }
     }
 }
 
