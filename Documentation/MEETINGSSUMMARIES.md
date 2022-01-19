@@ -294,3 +294,35 @@ Goals for next time:
 *	Still have finish CI/CD pipeline as an ongoing issue
 
 ![Project Board status on 12/01/22](ProjectBoardImages/projectBoard-12-01-22.png)
+
+## 12/01/21 - Weekly Supervisor Meeting
+Progress I have made:
+*	I have created a basic main menu for the game
+*	I have created a basic options menu for use in-game
+*	I have the rough layout for a ‘Load Game’ menu
+*	I have also begun work on the ‘Load Game’ functionality however it is proving more difficult than anticipated.
+    +   I have discovered there is a lack of an easy saving system in Unity. Instead I need to serialize all the objects I wish to save, and then save their Json representation.
+    +   I have begun work on the Json serialization. 
+    +   I have also begun reading about a Json.NET package which may be more useful for my case.
+*	I have also recieved a reply from Jose Cano Reyes recommending I message the Computer Architecture class through Teams instead of him emailing
+    +   I will do this this week.
+
+What we spoke about:
+*	The progress I have made (found above)
+*	Starting a basic rough draft of dissertation and slowly adding to it is valuable
+    +   I will start it this week
+*	Packages which are just minor help and don’t replace your project are fine
+    +   I am considering using the Json.NET package – although likely wont use it
+*	We spoke about my Json Serialization ongoing task and how it may follow on to saving individual reusable circuits
+    +   I think my serialization will hold all the required information for saving reusable circuits
+    +   I would likely need to create custom classes which mirror all my circuits and then join these up
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Complete my Json Serialization Save method
+*	Build a method for re-instantiating my saved Json files
+*	Add the above method to a more refined ‘Load Game’ menu
+*	Begin a very very rough draft of my dissertation
+*	Message Computer Architecture students through Teams about Student Testing Session
+
+![Project Board status on 19/01/22](ProjectBoardImages/projectBoard-19-01-22.png)

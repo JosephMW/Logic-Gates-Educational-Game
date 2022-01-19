@@ -198,3 +198,7 @@
 
 ### 13 Jan 2021
 * *0.75 hours* Completed [#51 Create Basic Main Menu](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/51) and merged the matching PR.
+
+### 19 Jan 2021
+* *0.5 hours* Supervisor Meeting, and emailed supervisor summary of meeting.
+* *0.2 hours* Updated MEETINGSUMMARIES and the project board.
