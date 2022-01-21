@@ -10,7 +10,7 @@ public class SaveController : MonoBehaviour
     {
         CircuitParent[] circuits = GameObject.FindObjectsOfType<CircuitParent>();
 
-        SaveFormat gameSave = new SaveFormat("testSave");
+        SaveFormat gameSave = new SaveFormat();
 
         for (int i = 0; i < circuits.Length; i++)
         {
@@ -47,6 +47,10 @@ public class SaveController : MonoBehaviour
         string gameSaveJson = JsonUtility.ToJson(gameSave);
         Debug.Log("gameSaveJson");
         Debug.Log(gameSaveJson);
+
+        // Write to File:
+        string saveName = "FirstSave";
+        System.IO.File.WriteAllText(Application.dataPath + "/SaveFiles/" + saveName + ".json", gameSaveJson);
     }
 
     [Serializable]
@@ -105,12 +109,10 @@ public class SaveController : MonoBehaviour
     [Serializable]
     public class SaveFormat
     {
-        public string saveName;
         public List<string> circuitJsons;
 
-        public SaveFormat(string saveName)
+        public SaveFormat()
         {
-            this.saveName = saveName;
             this.circuitJsons = new List<string>();
         }
 
