@@ -208,3 +208,6 @@
 
 ### 18 Jan 2021
 * *1.2 hours* Spent more time on Json Serialization, trying out using another custom class for serializing. The serialization is not acting recursively though. Found Json.NET which may work better. Otherwise May individually collect Json Serializations for each Circuit and each Wire then compile somehow.
+
+### 21 Jan 2021
+* *1.6 hours* Essentially finished serialization of my saved classes for later loading (reinstantiation).
