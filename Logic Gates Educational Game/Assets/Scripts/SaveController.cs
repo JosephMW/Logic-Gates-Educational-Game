@@ -45,8 +45,8 @@ public class SaveController : MonoBehaviour
         }
 
         string gameSaveJson = JsonUtility.ToJson(gameSave);
-        Debug.Log("gameSaveJson");
-        Debug.Log(gameSaveJson);
+        // Debug.Log("gameSaveJson");
+        // Debug.Log(gameSaveJson);
 
         // Write to File:
         string saveName = "FirstSave";
