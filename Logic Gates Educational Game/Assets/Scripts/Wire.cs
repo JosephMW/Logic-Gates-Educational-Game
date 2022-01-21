@@ -13,7 +13,7 @@ public class Wire : MonoBehaviour
     private Vector3 startPosition;
     public bool dragging = false;
     public InputPort connectionPoint;
-    public int wireID = 44;
+    public int wireID = 0;
 
     void Awake()
     {

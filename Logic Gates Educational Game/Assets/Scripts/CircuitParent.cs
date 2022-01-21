@@ -11,13 +11,23 @@ public abstract class CircuitParent : MonoBehaviour
     public Wire[] outputWires;
     protected bool[] outputValues;
 
-    public int circuitID = 333;
+    public int circuitID = 0;
 
     void Start()
     {
         // Instantiate the value arrays to have length matching their inputs/outputs
         inputValues = new bool[inputPorts.Length];
         outputValues = new bool[outputWires.Length];
+
+        circuitID = GlobalVariables.getID();
+        for (int i = 0; i < inputPorts.Length; i++)
+        {
+            inputPorts[i].inputPortID = GlobalVariables.getID();
+        }
+        for (int i = 0; i < outputWires.Length; i++)
+        {
+            outputWires[i].wireID = GlobalVariables.getID();
+        }
     }
 
     public void updateValue()
