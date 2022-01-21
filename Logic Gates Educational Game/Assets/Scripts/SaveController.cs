@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class SaveController : MonoBehaviour
 {
-    // Start is called before the first frame update
     public void SaveScene()
     {
-        Debug.Log("SaveScene Called");
-
         CircuitParent[] circuits = GameObject.FindObjectsOfType<CircuitParent>();
+
+        SaveFormat gameSave = new SaveFormat("testSave");
+
         for (int i = 0; i < circuits.Length; i++)
         {
             CircuitParent currentCircuit = circuits[i];
@@ -41,9 +41,12 @@ public class SaveController : MonoBehaviour
             }
 
             string circuitJson = JsonUtility.ToJson(circuitSave);
-            Debug.Log("circuitJson");
-            Debug.Log(circuitJson);
+            gameSave.addCircuitJson(circuitJson);
         }
+
+        string gameSaveJson = JsonUtility.ToJson(gameSave);
+        Debug.Log("gameSaveJson");
+        Debug.Log(gameSaveJson);
     }
 
     [Serializable]
@@ -95,6 +98,24 @@ public class SaveController : MonoBehaviour
         public void addInputPortJson(string inputPortJson)
         {
             this.inputPortJsons.Add(inputPortJson);
+        }
+    }
+
+    [Serializable]
+    public class SaveFormat
+    {
+        public string saveName;
+        public List<string> circuitJsons;
+
+        public SaveFormat(string saveName)
+        {
+            this.saveName = saveName;
+            this.circuitJsons = new List<string>();
+        }
+
+        public void addCircuitJson(string circuitJson)
+        {
+            this.circuitJsons.Add(circuitJson);
         }
     }
 }
