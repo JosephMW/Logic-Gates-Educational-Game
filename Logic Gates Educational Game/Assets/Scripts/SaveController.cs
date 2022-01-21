@@ -16,7 +16,7 @@ public class SaveController : MonoBehaviour
         {
             CircuitParent currentCircuit = circuits[i];
 
-            CircuitSaveFormat circuitSave = new CircuitSaveFormat(currentCircuit.circuitID, currentCircuit.GetType().ToString());
+            CircuitSaveFormat circuitSave = new CircuitSaveFormat(currentCircuit.circuitID, currentCircuit.GetType().ToString(), currentCircuit.transform.position);
 
             InputPort[] currentCircuitInputPorts = currentCircuit.inputPorts;
             for (int j = 0; j < currentCircuitInputPorts.Length; j++)
@@ -78,14 +78,15 @@ public class SaveController : MonoBehaviour
     {
         public int circuitID;
         public string circuitType;
+        public Vector3 location;
         public List<string> wireJsons;
         public List<string> inputPortJsons;
 
-        public CircuitSaveFormat(int circuitID, string circuitType)
+        public CircuitSaveFormat(int circuitID, string circuitType, Vector3 location)
         {
-            this.circuitType = circuitType;
             this.circuitID = circuitID;
             this.circuitType = circuitType;
+            this.location = location;
             this.wireJsons = new List<string>();
             this.inputPortJsons = new List<string>();
         }
