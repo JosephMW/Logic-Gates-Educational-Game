@@ -16,7 +16,7 @@ public class SaveController : MonoBehaviour
         {
             CircuitParent currentCircuit = circuits[i];
 
-            CircuitSaveFormat circuitSave = new CircuitSaveFormat(currentCircuit.circuitID, null);
+            CircuitSaveFormat circuitSave = new CircuitSaveFormat(currentCircuit.circuitID, currentCircuit.GetType().ToString());
 
             InputPort[] currentCircuitInputPorts = currentCircuit.inputPorts;
             for (int j = 0; j < currentCircuitInputPorts.Length; j++)
@@ -26,9 +26,6 @@ public class SaveController : MonoBehaviour
                 InputPortSaveFormat inputPortSave = new InputPortSaveFormat(currentCircuitInputPort.inputPortID);
 
                 string inputPortJson = JsonUtility.ToJson(inputPortSave);
-                Debug.Log("inputPortJson");
-                Debug.Log(inputPortJson);
-
                 circuitSave.addInputPortJson(inputPortJson);
             }
 
@@ -40,9 +37,6 @@ public class SaveController : MonoBehaviour
                 WireSaveFormat wireSave = new WireSaveFormat(currentCircuitWire.wireID, currentCircuitWire.connectionPoint ? currentCircuitWire.connectionPoint.inputPortID : 9999);
 
                 string wireJson = JsonUtility.ToJson(wireSave);
-                // Debug.Log("wireJson");
-                // Debug.Log(wireJson);
-
                 circuitSave.addWireJson(wireJson);
             }
 
@@ -50,30 +44,6 @@ public class SaveController : MonoBehaviour
             Debug.Log("circuitJson");
             Debug.Log(circuitJson);
         }
-
-        // CircuitParent[] objs = GameObject.FindObjectsOfType<CircuitParent>();
-        // for (int i = 0; i < objs.Length; i++)
-        // {
-        //     var currentObject = objs[i];
-        //     Debug.Log(currentObject);
-        //     string json = JsonUtility.ToJson(currentObject);
-        //     Debug.Log("My Json:");
-        //     Debug.Log(json);
-
-        //     Wire[] currentObjectWires = currentObject.outputWires;
-        //     for (int j = 0; j < currentObjectWires.Length; j++)
-        //     {
-        //         var currentObjectWire = currentObjectWires[j];
-        //         Debug.Log(currentObjectWire);
-        //         string wireJson = JsonUtility.ToJson(currentObjectWire);
-        //         Debug.Log("My Wire Json:");
-        //         Debug.Log(wireJson);
-        //     }
-
-        //     // We want to format our circuit in custom class CircuitJson:
-
-        //     CircuitJson circJson = new CircuitJson();
-        // }
     }
 
     [Serializable]
@@ -104,12 +74,13 @@ public class SaveController : MonoBehaviour
     public class CircuitSaveFormat
     {
         public int circuitID;
-        public Type circuitType;
+        public string circuitType;
         public List<string> wireJsons;
         public List<string> inputPortJsons;
 
-        public CircuitSaveFormat(int circuitID, Type circuitType)
+        public CircuitSaveFormat(int circuitID, string circuitType)
         {
+            this.circuitType = circuitType;
             this.circuitID = circuitID;
             this.circuitType = circuitType;
             this.wireJsons = new List<string>();
