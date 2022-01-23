@@ -13,6 +13,8 @@ public class InputPort : MonoBehaviour
     private GameObject wireConnectedTip;
     private Transform wireConnectedTipPreviousParentObj;
 
+    public int inputPortID = 0;
+
     public void setValue(bool value)
     {
         this.value = value;

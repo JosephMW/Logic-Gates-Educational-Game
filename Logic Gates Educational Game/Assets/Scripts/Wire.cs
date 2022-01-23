@@ -1,16 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+[Serializable]
 public class Wire : MonoBehaviour
 {
     private bool value, valueOut;
     private float x_mouseOffset, y_mouseOffset;
     private Vector3 startPosition;
     public bool dragging = false;
-    private InputPort connectionPoint;
+    public InputPort connectionPoint;
+    public int wireID = 0;
 
     void Awake()
     {
