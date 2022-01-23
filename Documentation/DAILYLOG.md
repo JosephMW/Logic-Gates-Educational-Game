@@ -215,3 +215,6 @@
 
 ### 21 Jan 2021
 * *1.6 hours* Essentially finished serialization of my saved classes for later loading (reinstantiation).
+
+### 23 Jan 2021
+* *2.2 hours* Began reinstantiation/loading of circuit from my json. Having lots of trouble with storing the types for reinstantiation. Circuits are being created before the new scene has been loaded. Very annoying.

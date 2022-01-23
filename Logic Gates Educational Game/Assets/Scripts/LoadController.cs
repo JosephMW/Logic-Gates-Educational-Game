@@ -14,7 +14,7 @@ public class LoadController : MonoBehaviour
 
         Debug.Log("Load Scene called");
 
-        SceneManager.LoadSceneAsync("NewGame");
+        SceneManager.LoadScene("NewGame");
 
 
         string fileContents = System.IO.File.ReadAllText(Application.dataPath + "/SaveFiles/" + saveName + ".json");
