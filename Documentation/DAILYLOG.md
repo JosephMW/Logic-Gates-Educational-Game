@@ -218,3 +218,7 @@
 
 ### 23 Jan 2021
 * *2.2 hours* Began reinstantiation/loading of circuit from my json. Having lots of trouble with storing the types for reinstantiation. Circuits are being created before the new scene has been loaded. Very annoying.
+
+### 25 Jan 2021
+* *0.2 hours* Messaged Computer Architecture Teams chat asking for students to participate in my Testing Session.
+* *0.8 hours* Setup Overleaf with a basic layout of my Dissertation. Appended Bibtex bibliography - not all references showing for some reason.
