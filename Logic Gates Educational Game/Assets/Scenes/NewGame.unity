@@ -133,8 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 85480342}
   - component: {fileID: 85480343}
+  - component: {fileID: 85480344}
   m_Layer: 0
-  m_Name: GlobalVars
+  m_Name: SceneScripts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,6 +167,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ecef89df8b89844b43ecd4611ce7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &85480344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85480341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3d6646bd8c2a04080571c74b006880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  passThroughCirc: {fileID: 2910018353360808223, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+  customGrid: {fileID: 1786071920}
 --- !u!1 &92392642
 GameObject:
   m_ObjectHideFlags: 0

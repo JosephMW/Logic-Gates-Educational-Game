@@ -11,11 +11,18 @@ public class LoadController : MonoBehaviour
     public void LoadScene()
     {
         string saveName = "FirstSave";
-
-        Debug.Log("Load Scene called");
+        GlobalVariables.setToLoad(saveName);
 
         SceneManager.LoadScene("NewGame");
+    }
 
+    void Start()
+    {
+        string saveName = GlobalVariables.getToLoad();
+        if (saveName == null)
+        {
+            return;
+        }
 
         string fileContents = System.IO.File.ReadAllText(Application.dataPath + "/SaveFiles/" + saveName + ".json");
         // Debug.Log(fileContents);
@@ -41,15 +48,13 @@ public class LoadController : MonoBehaviour
                 WireSaveFormat wireSaveFormat = JsonUtility.FromJson<WireSaveFormat>(currentWireJson);
             }
 
-            // Debug.Log("circuitSaveFormat.circuitType");
-            // Debug.Log(circuitSaveFormat.circuitType);
-            // Debug.Log("circuitSaveFormat.circuitID");
-            // Debug.Log(circuitSaveFormat.circuitID);
-
             GameObject newObject = Instantiate(passThroughCirc, circuitSaveFormat.location, Quaternion.identity);
-            // DragAndDrop dragAndDrop = newObject.GetComponent<DragAndDrop>();
-            // dragAndDrop.customGrid = this.customGrid;
+            DragAndDrop dragAndDrop = newObject.GetComponent<DragAndDrop>();
+            dragAndDrop.customGrid = this.customGrid;
             Debug.Log(newObject);
+
+            // Now we have loaded the circuits we reset ToLoad value.
+            GlobalVariables.setToLoad(null);
         }
     }
 }

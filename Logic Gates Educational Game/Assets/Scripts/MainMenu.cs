@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void NewGame(){
+    public void NewGame()
+    {
+        GlobalVariables.setToLoad(null);
         SceneManager.LoadScene("NewGame");
     }
 
-    public void QuitGame(){
+    public void QuitGame()
+    {
         // Debug is left since Application.Quit() does not work in editor - only when built.
         Debug.Log("Quit Game");
         Application.Quit();
