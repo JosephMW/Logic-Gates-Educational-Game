@@ -53,8 +53,10 @@ public class LoadController : MonoBehaviour
             dragAndDrop.customGrid = this.customGrid;
             Debug.Log(newObject);
 
-            // Now we have loaded the circuits we reset ToLoad value.
-            GlobalVariables.setToLoad(null);
+
         }
+
+        // Now we have loaded the circuits we reset ToLoad value.
+        GlobalVariables.setToLoad(null);
     }
 }
