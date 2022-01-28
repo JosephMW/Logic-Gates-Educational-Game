@@ -6,8 +6,7 @@ using static SaveController;
 
 public class LoadController : MonoBehaviour
 {
-    public GameObject passThroughCirc; //This is temporary!
-    public CustomGrid customGrid; //This is temporary!
+    public CustomGrid customGrid;
     public void LoadScene()
     {
         string saveName = "FirstSave";
@@ -48,7 +47,9 @@ public class LoadController : MonoBehaviour
                 WireSaveFormat wireSaveFormat = JsonUtility.FromJson<WireSaveFormat>(currentWireJson);
             }
 
-            GameObject newObject = Instantiate(passThroughCirc, circuitSaveFormat.location, Quaternion.identity);
+            GameObject toBeInstantiated = GlobalVariables.typeDictionary[circuitSaveFormat.circuitType].gameObject;
+
+            GameObject newObject = Instantiate(toBeInstantiated, circuitSaveFormat.location, Quaternion.identity);
             DragAndDrop dragAndDrop = newObject.GetComponent<DragAndDrop>();
             dragAndDrop.customGrid = this.customGrid;
         }
