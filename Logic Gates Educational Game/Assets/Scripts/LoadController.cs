@@ -51,9 +51,6 @@ public class LoadController : MonoBehaviour
             GameObject newObject = Instantiate(passThroughCirc, circuitSaveFormat.location, Quaternion.identity);
             DragAndDrop dragAndDrop = newObject.GetComponent<DragAndDrop>();
             dragAndDrop.customGrid = this.customGrid;
-            Debug.Log(newObject);
-
-
         }
 
         // Now we have loaded the circuits we reset ToLoad value.

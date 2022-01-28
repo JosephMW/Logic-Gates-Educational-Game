@@ -350,3 +350,5 @@ Goals for next time:
 *	Extend my Json reinstantiation method to link all wires.
 *	Extend my saving system so you can provide custom save names – allowing multiple save slots.
 *	If I have time, begin work on saving reusable circuits.
+
+![Project Board status on 26/01/22](ProjectBoardImages/projectBoard-26-01-22.png)
