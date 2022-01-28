@@ -6,6 +6,7 @@ using static SaveController;
 
 public class LoadController : MonoBehaviour
 {
+    private List<(int wireID, int inputPortID)> wirePortPairings;
     public CustomGrid customGrid;
     public void LoadScene()
     {
@@ -23,6 +24,7 @@ public class LoadController : MonoBehaviour
             return;
         }
 
+        wirePortPairings = new List<(int wireID, int inputPortID)>();
         string fileContents = System.IO.File.ReadAllText(Application.dataPath + "/SaveFiles/" + saveName + ".json");
 
         SaveFormat saveFormat = JsonUtility.FromJson<SaveFormat>(fileContents);
@@ -45,6 +47,8 @@ public class LoadController : MonoBehaviour
                 string currentWireJson = circuitSaveFormat.wireJsons[k];
 
                 WireSaveFormat wireSaveFormat = JsonUtility.FromJson<WireSaveFormat>(currentWireJson);
+
+                wirePortPairings.Add((wireSaveFormat.wireID, wireSaveFormat.inputPortID));
             }
 
             GameObject toBeInstantiated = GlobalVariables.typeDictionary[circuitSaveFormat.circuitType].gameObject;
@@ -56,5 +60,13 @@ public class LoadController : MonoBehaviour
 
         // Now we have loaded the circuits we reset ToLoad value.
         GlobalVariables.setToLoad(null);
+
+        for (int i = 0; i < wirePortPairings.Count; i++)
+        {
+            Debug.Log("Wire");
+            Debug.Log(wirePortPairings[i].wireID);
+            Debug.Log("Port");
+            Debug.Log(wirePortPairings[i].inputPortID);
+        }
     }
 }
