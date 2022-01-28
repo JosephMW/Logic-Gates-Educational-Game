@@ -225,3 +225,9 @@
 * *0.8 hours* Setup Overleaf with a basic layout of my Dissertation. Appended Bibtex bibliography - not all references showing for some reason.
 * *1.4 hours* Trying to reinstantiate circuit from json. Was having problem with async loading of new scene. Now using a global var to hold a save file to be loaded. The "NewGame" scene then loads any toLoad savefiles on startup. Currently reinstantiating all circuits as "PassThroughCircuit"s for simplicity. Wires still to be paired. SaveFile names still to be specified. Workflow is laid out now though.
 * *0.2 hours* Emailed Supervisor notes for tomorrows meeting.
+
+### 26 Jan 2021
+* *0.5 hours* Supervisor Meeting 
+
+### 28 Jan 2021
+* *0.3 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
