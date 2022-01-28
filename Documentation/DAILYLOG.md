@@ -232,4 +232,5 @@
 ### 28 Jan 2021
 * *0.2 hours* Completed [#57 Create Re-instantiating from Json files method](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/57) and merged the matching PR.
 * *0.3 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
-* *1 hour* Completed [#62 Extend Json Serialization to all circuit types](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/62) and merged the matching PR.
+* *1.2 hours* Completed [#62 Extend Json Serialization to all circuit types](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/62) and merged the matching PR.
+* *0.3 hours* Began work on extending the Json reinstantiation for Wires. 
