@@ -16,8 +16,6 @@ public class GlobalVariables : MonoBehaviour
     public static void setToLoad(string toLoad)
     {
         GlobalVariables.toLoad = toLoad;
-        Debug.Log("GlobalVariables - toLoad set to: ");
-        Debug.Log(GlobalVariables.toLoad);
     }
 
     public static string getToLoad()

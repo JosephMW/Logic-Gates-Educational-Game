@@ -25,9 +25,9 @@ public class LoadController : MonoBehaviour
         }
 
         string fileContents = System.IO.File.ReadAllText(Application.dataPath + "/SaveFiles/" + saveName + ".json");
-        // Debug.Log(fileContents);
+
         SaveFormat saveFormat = JsonUtility.FromJson<SaveFormat>(fileContents);
-        // Debug.Log(saveFormat.circuitJsons.Count);
+
         for (int i = 0; i < saveFormat.circuitJsons.Count; i++)
         {
             string currentCircuitJson = saveFormat.circuitJsons[i];
