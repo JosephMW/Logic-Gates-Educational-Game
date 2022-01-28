@@ -208,6 +208,7 @@
 
 ### 18 Jan 2021
 * *1.2 hours* Spent more time on Json Serialization, trying out using another custom class for serializing. The serialization is not acting recursively though. Found Json.NET which may work better. Otherwise May individually collect Json Serializations for each Circuit and each Wire then compile somehow.
+* *0.2 hours* Emailed Supervisor notes for tomorrows meeting.
 
 ### 19 Jan 2021
 * *0.5 hours* Supervisor Meeting, and emailed supervisor summary of meeting.
@@ -215,3 +216,18 @@
 
 ### 21 Jan 2021
 * *1.6 hours* Essentially finished serialization of my saved classes for later loading (reinstantiation).
+
+### 23 Jan 2021
+* *2.2 hours* Began reinstantiation/loading of circuit from my json. Having lots of trouble with storing the types for reinstantiation. Circuits are being created before the new scene has been loaded. Very annoying.
+
+### 25 Jan 2021
+* *0.2 hours* Messaged Computer Architecture Teams chat asking for students to participate in my Testing Session.
+* *0.8 hours* Setup Overleaf with a basic layout of my Dissertation. Appended Bibtex bibliography - not all references showing for some reason.
+* *1.4 hours* Trying to reinstantiate circuit from json. Was having problem with async loading of new scene. Now using a global var to hold a save file to be loaded. The "NewGame" scene then loads any toLoad savefiles on startup. Currently reinstantiating all circuits as "PassThroughCircuit"s for simplicity. Wires still to be paired. SaveFile names still to be specified. Workflow is laid out now though.
+* *0.2 hours* Emailed Supervisor notes for tomorrows meeting.
+
+### 26 Jan 2021
+* *0.5 hours* Supervisor Meeting 
+
+### 28 Jan 2021
+* *0.3 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.

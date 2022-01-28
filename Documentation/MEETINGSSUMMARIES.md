@@ -272,7 +272,7 @@ Goals for next time:
 
 ![Project Board status on 14/12/21](ProjectBoardImages/projectBoard-14-12-21.png)
 
-## 12/01/21 - Weekly Supervisor Meeting
+## 12/01/22 - Weekly Supervisor Meeting
 Progress I have made:
 *	I have written introductory and debriefing scripts for my Testing Session week which will be in week 4 of this semester.
 *	I have asked Jose Cano Reyes to email the class of Computer Architecture to ask for some students to help me.
@@ -295,7 +295,7 @@ Goals for next time:
 
 ![Project Board status on 12/01/22](ProjectBoardImages/projectBoard-12-01-22.png)
 
-## 12/01/21 - Weekly Supervisor Meeting
+## 12/01/22 - Weekly Supervisor Meeting
 Progress I have made:
 *	I have created a basic main menu for the game
 *	I have created a basic options menu for use in-game
@@ -326,3 +326,27 @@ Goals for next time:
 *	Message Computer Architecture students through Teams about Student Testing Session
 
 ![Project Board status on 19/01/22](ProjectBoardImages/projectBoard-19-01-22.png)
+
+## 26/01/22 - Weekly Supervisor Meeting
+Progress I have made:
+*	I have sent a message to the Computer Architecture Teams asking for volunteers for my Testing session.
+*	I have created a Latex Overleaf file for my dissertation and created a very rough outline of my dissertation. I have added my Bibtex bibliography to this too.
+*	I have completed my method for creating Json serializations which have all necessary info for reinstantiation. I am also now saving these Json serializations correctly.
+*	I have added a text input box for naming your save slots – this has not been connected up yet.
+*	I have a crude method for reinstantiation of circuits now.
+    +   It reinstantiates all circuits as “PassThrough” Circuits at the moment – this was done for simplicity while I wrote the rest of the code.
+    +   It doesn’t join wires yet.
+    +   This took me a while to figure out as I had a tricky problem with Unity asynchronously loading the next scene and not having an easy way to await this change. This meant my reinstantiated circuits were not appearing etc.
+
+What we spoke about:
+*	The progress I have made (found above)
+*	The dissertation outline I created
+    +   It looks good for now
+    +   Add section on Educational Games
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Extend my Json reinstantiation method to work with all circuit types.
+*	Extend my Json reinstantiation method to link all wires.
+*	Extend my saving system so you can provide custom save names – allowing multiple save slots.
+*	If I have time, begin work on saving reusable circuits.
