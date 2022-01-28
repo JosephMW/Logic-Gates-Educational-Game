@@ -13,8 +13,6 @@ public class OptionsMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        // Debug is left since Application.Quit() does not work in editor - only when built.
-        Debug.Log("Go to main menu");
         SceneManager.LoadScene("MainMenu");
     }
 }

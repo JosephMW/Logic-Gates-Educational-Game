@@ -167,6 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ecef89df8b89844b43ecd4611ce7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circuitTypes:
+  - {fileID: 4892501435627878601, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
+  - {fileID: 1640884162937355419, guid: 7cbabd8f7e24e9d4d82810ce4c29e1de, type: 3}
+  - {fileID: 7685382357334128634, guid: 73d49b487b4e1304e940ccefe0ffc226, type: 3}
 --- !u!114 &85480344
 MonoBehaviour:
   m_ObjectHideFlags: 0
