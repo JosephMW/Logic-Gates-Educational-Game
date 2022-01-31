@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using static SaveController;
@@ -19,6 +20,8 @@ public class LoadController : MonoBehaviour
     void Start()
     {
         string saveName = GlobalVariables.getToLoad();
+
+        // If saveName is null we are in a new game and do not want to load any objects:
         if (saveName == null)
         {
             return;
@@ -69,8 +72,17 @@ public class LoadController : MonoBehaviour
             dragAndDrop.customGrid = this.customGrid;
         }
 
-        // Now we have loaded the circuits we reset ToLoad value.
+        // Now all circuits are loaded in we link wires to ports:
+        linkWiresToPorts();
+
+        // Now we have loaded the circuits and paired the wires we reset ToLoad value.
         GlobalVariables.setToLoad(null);
+    }
+
+    private void linkWiresToPorts()
+    {
+        Debug.Log("Number of pairings:");
+        Debug.Log(wirePortPairings.Count);
 
         for (int i = 0; i < wirePortPairings.Count; i++)
         {
@@ -79,5 +91,24 @@ public class LoadController : MonoBehaviour
             // Debug.Log("Port");
             // Debug.Log(wirePortPairings[i].inputPortID);
         }
+
+        Wire[] sceneWires = GameObject.FindObjectsOfType<Wire>();
+
+        InputPort[] sceneInputPorts = GameObject.FindObjectsOfType<InputPort>();
+
+        for (int i = 0; i < wirePortPairings.Count; i++)
+        {
+            var matchingWire = sceneWires.FirstOrDefault(wire => wire.wireID == wirePortPairings[i].wireID);
+            var matchingInputPort = sceneInputPorts.FirstOrDefault(inputPort => inputPort.inputPortID == wirePortPairings[i].inputPortID);
+            if (matchingWire != null && matchingInputPort != null)
+            {
+                linkWireToPort(matchingWire, matchingInputPort);
+            }
+        }
+    }
+
+    private void linkWireToPort(Wire wire, InputPort inputPort)
+    {
+        Debug.Log("MATCH");
     }
 }
