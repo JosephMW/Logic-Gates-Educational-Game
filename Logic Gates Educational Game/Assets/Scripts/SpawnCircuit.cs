@@ -19,8 +19,13 @@ public class SpawnCircuit : MonoBehaviour
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         GameObject newObject = Instantiate(objectToSpawn, mousePosition, Quaternion.identity);
+
         DragAndDrop dragAndDrop = newObject.GetComponent<DragAndDrop>();
         dragAndDrop.customGrid = this.customGrid;
         dragAndDrop.dragging = true;
+
+        // Set default IDs on the circuit and its inputPorts & Wires since it has not been loaded into the scene.
+        CircuitParent circuitParent = newObject.GetComponent<CircuitParent>();
+        circuitParent.setDefaultIDs();
     }
 }

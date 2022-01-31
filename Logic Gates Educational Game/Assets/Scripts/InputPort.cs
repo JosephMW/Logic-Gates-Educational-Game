@@ -20,6 +20,18 @@ public class InputPort : MonoBehaviour
         this.value = value;
     }
 
+    public void setInputPortID(int newID)
+    {
+        // NOTE: This method should only be used on game load.
+        this.inputPortID = newID;
+        GlobalVariables.incrementIDIfNecessary(newID);
+    }
+
+    public void setWireConnected(Wire wire)
+    {
+        this.wireConnected = wire;
+    }
+
     void Update()
     {
         if (value != valueOut)

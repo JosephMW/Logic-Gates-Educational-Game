@@ -18,7 +18,16 @@ public abstract class CircuitParent : MonoBehaviour
         // Instantiate the value arrays to have length matching their inputs/outputs
         inputValues = new bool[inputPorts.Length];
         outputValues = new bool[outputWires.Length];
+    }
 
+    public void setCircuitID(int newID)
+    {
+        // NOTE: This method should only be used on game load.
+        this.circuitID = newID;
+        GlobalVariables.incrementIDIfNecessary(newID);
+    }
+    public void setDefaultIDs()
+    {
         circuitID = GlobalVariables.getID();
         for (int i = 0; i < inputPorts.Length; i++)
         {
@@ -27,6 +36,20 @@ public abstract class CircuitParent : MonoBehaviour
         for (int i = 0; i < outputWires.Length; i++)
         {
             outputWires[i].wireID = GlobalVariables.getID();
+        }
+    }
+
+    public void setCustomIDs(int circuitID, int[] inputPortIDs, int[] wireIDs)
+    {
+        setCircuitID(circuitID);
+
+        for (int i = 0; i < inputPorts.Length; i++)
+        {
+            inputPorts[i].setInputPortID(inputPortIDs[i]);
+        }
+        for (int i = 0; i < outputWires.Length; i++)
+        {
+            outputWires[i].setWireID(wireIDs[i]);
         }
     }
 
