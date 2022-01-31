@@ -81,17 +81,6 @@ public class LoadController : MonoBehaviour
 
     private void linkWiresToPorts()
     {
-        Debug.Log("Number of pairings:");
-        Debug.Log(wirePortPairings.Count);
-
-        for (int i = 0; i < wirePortPairings.Count; i++)
-        {
-            // Debug.Log("Wire");
-            // Debug.Log(wirePortPairings[i].wireID);
-            // Debug.Log("Port");
-            // Debug.Log(wirePortPairings[i].inputPortID);
-        }
-
         Wire[] sceneWires = GameObject.FindObjectsOfType<Wire>();
 
         InputPort[] sceneInputPorts = GameObject.FindObjectsOfType<InputPort>();

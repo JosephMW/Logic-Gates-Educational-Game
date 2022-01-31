@@ -236,4 +236,4 @@
 * *0.3 hours* Began work on extending the Json reinstantiation for Wires. 
 
 ### 31 Jan 2021
-* *0.2 hours* -
+* *1.5 hours* Completed [#66 Extend json to wires](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/66) and merged the matching PR.
