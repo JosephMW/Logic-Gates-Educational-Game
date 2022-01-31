@@ -92,15 +92,20 @@ public class Wire : MonoBehaviour
         }
         else
         {
-            // Set the location of this wire tip
-            var connectionPointLocation = this.connectionPoint.transform.position;
-            this.gameObject.transform.position = connectionPointLocation;
-
-            connectionPoint.SetWireTipAsChild(this.gameObject);
-
-            // We need to immediately output our current value to the new connection:
-            connectionPoint.setValue(this.valueOut);
+            connectToInputPort();
         }
+    }
+
+    public void connectToInputPort()
+    {
+        // Set the location of this wire tip
+        var connectionPointLocation = this.connectionPoint.transform.position;
+        this.gameObject.transform.position = connectionPointLocation;
+
+        connectionPoint.SetWireTipAsChild(this.gameObject);
+
+        // We need to immediately output our current value to the new connection:
+        connectionPoint.setValue(this.valueOut);
     }
 
     private void retractWire()

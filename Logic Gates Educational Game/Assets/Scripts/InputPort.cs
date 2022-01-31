@@ -27,6 +27,11 @@ public class InputPort : MonoBehaviour
         GlobalVariables.incrementIDIfNecessary(newID);
     }
 
+    public void setWireConnected(Wire wire)
+    {
+        this.wireConnected = wire;
+    }
+
     void Update()
     {
         if (value != valueOut)

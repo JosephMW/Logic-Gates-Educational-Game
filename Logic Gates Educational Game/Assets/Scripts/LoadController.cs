@@ -109,6 +109,9 @@ public class LoadController : MonoBehaviour
 
     private void linkWireToPort(Wire wire, InputPort inputPort)
     {
-        Debug.Log("MATCH");
+        wire.setConnectionPoint(inputPort);
+        inputPort.setWireConnected(wire);
+
+        wire.connectToInputPort();
     }
 }
