@@ -39,6 +39,13 @@ public class Wire : MonoBehaviour
         this.connectionPoint = null;
     }
 
+    public void setWireID(int newID)
+    {
+        // NOTE: This method should only be used on game load.
+        this.wireID = newID;
+        GlobalVariables.incrementIDIfNecessary(newID);
+    }
+
     void Update()
     {
         if (dragging)

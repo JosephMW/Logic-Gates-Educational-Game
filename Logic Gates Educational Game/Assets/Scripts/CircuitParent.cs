@@ -59,4 +59,11 @@ public abstract class CircuitParent : MonoBehaviour
             outputValues[i] = newOutputValues[i];
         }
     }
+
+    public void setCircuitID(int newID)
+    {
+        // NOTE: This method should only be used on game load.
+        this.circuitID = newID;
+        GlobalVariables.incrementIDIfNecessary(newID);
+    }
 }

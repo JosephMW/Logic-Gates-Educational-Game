@@ -18,10 +18,21 @@ public class GlobalVariables : MonoBehaviour
             typeDictionary.Add(circuitTypes[i].GetType().ToString(), circuitTypes[i]);
         }
     }
+
     public static int getID()
     {
         GlobalVariables.ID += 1;
         return GlobalVariables.ID;
+    }
+
+    public static void incrementIDIfNecessary(int newlyAddedID)
+    {
+        // This method is used when manually setting an objects ID: THIS SHOULD ONLY BE DONE IN GAME LOADING SCENARIOS.
+
+        if (newlyAddedID > GlobalVariables.ID)
+        {
+            GlobalVariables.ID = newlyAddedID;
+        }
     }
 
     public static void setToLoad(string toLoad)
