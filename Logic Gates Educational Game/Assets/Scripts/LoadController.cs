@@ -51,9 +51,16 @@ public class LoadController : MonoBehaviour
                 wirePortPairings.Add((wireSaveFormat.wireID, wireSaveFormat.inputPortID));
             }
 
+            // Instantiate the Circuit:
             GameObject toBeInstantiated = GlobalVariables.typeDictionary[circuitSaveFormat.circuitType].gameObject;
-
             GameObject newObject = Instantiate(toBeInstantiated, circuitSaveFormat.location, Quaternion.identity);
+
+            // Get the CircuitParent component and set the ID:
+            CircuitParent circuitParent = newObject.GetComponent<CircuitParent>();
+            circuitParent.setCircuitID(circuitSaveFormat.circuitID);
+            Debug.Log(circuitSaveFormat.circuitID);
+
+            // Set the dragAndDrop reference so the object sticks to the grid:
             DragAndDrop dragAndDrop = newObject.GetComponent<DragAndDrop>();
             dragAndDrop.customGrid = this.customGrid;
         }
@@ -63,10 +70,10 @@ public class LoadController : MonoBehaviour
 
         for (int i = 0; i < wirePortPairings.Count; i++)
         {
-            Debug.Log("Wire");
-            Debug.Log(wirePortPairings[i].wireID);
-            Debug.Log("Port");
-            Debug.Log(wirePortPairings[i].inputPortID);
+            // Debug.Log("Wire");
+            // Debug.Log(wirePortPairings[i].wireID);
+            // Debug.Log("Port");
+            // Debug.Log(wirePortPairings[i].inputPortID);
         }
     }
 }

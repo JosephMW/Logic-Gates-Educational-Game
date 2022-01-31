@@ -18,7 +18,10 @@ public abstract class CircuitParent : MonoBehaviour
         // Instantiate the value arrays to have length matching their inputs/outputs
         inputValues = new bool[inputPorts.Length];
         outputValues = new bool[outputWires.Length];
+    }
 
+    public void setDefaultIDs()
+    {
         circuitID = GlobalVariables.getID();
         for (int i = 0; i < inputPorts.Length; i++)
         {
