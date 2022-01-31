@@ -171,6 +171,7 @@ MonoBehaviour:
   - {fileID: 4892501435627878601, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
   - {fileID: 1640884162937355419, guid: 7cbabd8f7e24e9d4d82810ce4c29e1de, type: 3}
   - {fileID: 7685382357334128634, guid: 73d49b487b4e1304e940ccefe0ffc226, type: 3}
+  - {fileID: 6095363537905712513, guid: e8b3870880efa0242810f1bcc036d24f, type: 3}
 --- !u!114 &85480344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3d6646bd8c2a04080571c74b006880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  passThroughCirc: {fileID: 2910018353360808223, guid: 2296150ae28eaca4eb2d16069b6d53d2, type: 3}
   customGrid: {fileID: 1786071920}
 --- !u!1 &92392642
 GameObject:
