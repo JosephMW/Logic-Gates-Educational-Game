@@ -237,3 +237,4 @@
 
 ### 31 Jan 2021
 * *1.5 hours* Completed [#66 Extend json to wires](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/66) and merged the matching PR.
+* *0.5 hours* Completed [#65 Refactor Switch to implement CircuitParent class](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/65) and merged the matching PR. Noted that no means of saving the switch value - this is circuit state which I haven't had to tackle yet; For now circuit state will not be saved.

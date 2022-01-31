@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1537f9e532dd114b8a520ac11f1531a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragging: 0
   customGrid: {fileID: 0}
 --- !u!114 &6095363537905712513
 MonoBehaviour:
@@ -60,8 +61,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17eaa0426fd517149815b81dc54ca9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputPorts: []
+  outputWires:
+  - {fileID: 5855119022716654854}
+  circuitID: 0
   value: 0
-  output: {fileID: 5855119022716654854}
   sprite: {fileID: 2643135204497991995}
 --- !u!58 &6952885262338260069
 CircleCollider2D:
