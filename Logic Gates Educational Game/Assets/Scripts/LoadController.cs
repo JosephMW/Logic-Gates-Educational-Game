@@ -35,19 +35,24 @@ public class LoadController : MonoBehaviour
 
             CircuitSaveFormat circuitSaveFormat = JsonUtility.FromJson<CircuitSaveFormat>(currentCircuitJson);
 
+            int[] inputPortIDs = new int[circuitSaveFormat.inputPortJsons.Count];
             for (int j = 0; j < circuitSaveFormat.inputPortJsons.Count; j++)
             {
                 string currentInputPortJson = circuitSaveFormat.inputPortJsons[j];
 
                 InputPortSaveFormat inputPortSaveFormat = JsonUtility.FromJson<InputPortSaveFormat>(currentInputPortJson);
+
+                inputPortIDs[j] = inputPortSaveFormat.inputPortID;
             }
 
+            int[] wireIDs = new int[circuitSaveFormat.wireJsons.Count];
             for (int k = 0; k < circuitSaveFormat.wireJsons.Count; k++)
             {
                 string currentWireJson = circuitSaveFormat.wireJsons[k];
 
                 WireSaveFormat wireSaveFormat = JsonUtility.FromJson<WireSaveFormat>(currentWireJson);
 
+                wireIDs[k] = wireSaveFormat.wireID;
                 wirePortPairings.Add((wireSaveFormat.wireID, wireSaveFormat.inputPortID));
             }
 
@@ -55,10 +60,9 @@ public class LoadController : MonoBehaviour
             GameObject toBeInstantiated = GlobalVariables.typeDictionary[circuitSaveFormat.circuitType].gameObject;
             GameObject newObject = Instantiate(toBeInstantiated, circuitSaveFormat.location, Quaternion.identity);
 
-            // Get the CircuitParent component and set the ID:
+            // Get the CircuitParent component and set the IDs of it and its ports&wires:
             CircuitParent circuitParent = newObject.GetComponent<CircuitParent>();
-            circuitParent.setCircuitID(circuitSaveFormat.circuitID);
-            Debug.Log(circuitSaveFormat.circuitID);
+            circuitParent.setCustomIDs(circuitSaveFormat.circuitID, inputPortIDs, wireIDs);
 
             // Set the dragAndDrop reference so the object sticks to the grid:
             DragAndDrop dragAndDrop = newObject.GetComponent<DragAndDrop>();
