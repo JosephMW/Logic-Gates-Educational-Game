@@ -240,4 +240,5 @@
 * *0.5 hours* Completed [#65 Refactor Switch to implement CircuitParent class](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/65) and merged the matching PR. Noted that no means of saving the switch value - this is circuit state which I haven't had to tackle yet; For now circuit state will not be saved.
 
 ### 1 Feb 2021
-* *0.5 hours* -8:30
+* *2.4 hours* Added naming of game saves, also configured LoadGame menu to have scroll bar and be populated with appropriate loadGame buttons. Very successful session! This and last 2 sessions have gone very well. Overcame the Assembly references hurdle too!
+* *0.2 hours* Emailed supervisor notes for tomorrows meeting.
