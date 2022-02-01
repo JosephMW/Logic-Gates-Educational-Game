@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class ButtonListController : MonoBehaviour
@@ -8,17 +9,15 @@ public class ButtonListController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // find all save files.
+        DirectoryInfo d = new DirectoryInfo(Application.dataPath + "/SaveFiles/");
 
-        // for each save file, spawn a button with text = saveName;
-
-        for (int i = 0; i < 20; i++)
+        foreach (var file in d.GetFiles("*.json"))
         {
+            string saveName = file.Name.Substring(0, file.Name.Length - 5);
+
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
-
-            button.GetComponent<LoadGameButton>().setText("testSave");
-
+            button.GetComponent<LoadGameButton>().setText(saveName);
             button.transform.SetParent(buttonTemplate.transform.parent, false);
         }
     }
