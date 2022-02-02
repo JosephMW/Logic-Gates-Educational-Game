@@ -352,3 +352,37 @@ Goals for next time:
 *	If I have time, begin work on saving reusable circuits.
 
 ![Project Board status on 26/01/22](ProjectBoardImages/projectBoard-26-01-22.png)
+
+## 02/02/22 - Weekly Supervisor Meeting
+Progress I have made:
+*	I have recruited 2 students for my testing session (I can ask friends to help as well if nobody else volunteers)
+*	I have extended my Json serialization to allow loading of all circuit types
+*	I have extended my Json loading system to uniquely renumber all wires and ports and then perform all linking of these wires.
+*	I have refactored my switch class for consistency and to allow it to be loaded easily
+*	I have added custom naming of game saves
+*	I have added a scrollable game save menu which automatically populates
+    +   This means I can load any game save which exists now.
+
+What we spoke about:
+*	The progress I have made (found above)
+*	How I should plan how I’ll anonymize student testing session data
+    +   Likely via an encrypted excel document in my Office 365 student account
+*	How I should focus on making the game very usable and ironing out bugs etc before the testing session
+    +   This means starting work on reusable custom circuits will be delayed
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Prepare for Student Testing sessions which will be in week beginning 7th Feb
+    +   Plan how I’ll run the sessions
+    +   Plan how I’ll anonymize data
+*	Add to dissertation draft
+*	Add Documentation on the whole Load/Save process
+*	Make Game more usable
+    +   Alter the background grid to sit more nicely in frame
+    +   Make menus clearer/simpler
+    +   Add more logic gates so the students can make the circuits they want to
+*	Plan/Think about reusable circuits if I have time.
+
+**KEY DECISION** *At this point in the project I realised that the issues which sat in the 'Outside of Sprint' column of my project board had been left untouched for months. I realised that the goals of my project and the design of it had changed enough to mean that these issues were no longer useful. I decided to archive these issues unclosed and delete the 'Outside of Sprint' column. My work typically follows on from the previous sprint very nicely and so this column was of no use.*
+
+![Project Board status on 02/02/22](ProjectBoardImages/projectBoard-02-02-22.png)
