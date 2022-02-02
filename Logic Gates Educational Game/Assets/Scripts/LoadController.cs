@@ -9,9 +9,9 @@ public class LoadController : MonoBehaviour
 {
     private List<(int wireID, int inputPortID)> wirePortPairings;
     public CustomGrid customGrid;
-    public void LoadScene()
+
+    public void LoadScene(string saveName)
     {
-        string saveName = "FirstSave";
         GlobalVariables.setToLoad(saveName);
 
         SceneManager.LoadScene("NewGame");

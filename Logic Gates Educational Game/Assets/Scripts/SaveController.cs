@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SaveController : MonoBehaviour
 {
-    public void SaveScene()
+    public void SaveScene(string saveName)
     {
         CircuitParent[] circuits = GameObject.FindObjectsOfType<CircuitParent>();
 
@@ -45,11 +45,8 @@ public class SaveController : MonoBehaviour
         }
 
         string gameSaveJson = JsonUtility.ToJson(gameSave);
-        // Debug.Log("gameSaveJson");
-        // Debug.Log(gameSaveJson);
 
         // Write to File:
-        string saveName = "FirstSave";
         System.IO.File.WriteAllText(Application.dataPath + "/SaveFiles/" + saveName + ".json", gameSaveJson);
     }
 

@@ -537,11 +537,11 @@ MonoBehaviour:
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_CustomCaretColor: 0
-  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
+  m_CustomCaretColor: 1
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.53333336}
   m_Text: 
-  m_CaretBlinkRate: 0.85
+  m_CaretBlinkRate: 0.77
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
@@ -3021,6 +3021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba09c2dd3e6bc948b918207a53a5820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputText: {fileID: 336682600}
+  placeholderText: {fileID: 234503389}
 --- !u!224 &2069978626
 RectTransform:
   m_ObjectHideFlags: 0
