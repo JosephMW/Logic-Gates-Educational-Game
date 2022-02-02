@@ -245,6 +245,6 @@
 
 ### 2 Feb 2021
 * *0.5 hours* Supervisor Meeting
-* *0.2 hours* Completed [#60 Add naming of game saves](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/60) and merged the matching PR.
+* *0.3 hours* Completed [#60 Add naming of game saves](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/60) and merged the matching PR.
 * *0.2 hours* Completed [#56 Configure 'Load Game' menu](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/56) and merged the matching PR.
-* *0.5 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
+* *0.6 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
