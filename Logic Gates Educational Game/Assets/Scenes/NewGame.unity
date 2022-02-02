@@ -3021,7 +3021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba09c2dd3e6bc948b918207a53a5820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 336682600}
+  inputText: {fileID: 336682600}
+  placeholderText: {fileID: 234503389}
 --- !u!224 &2069978626
 RectTransform:
   m_ObjectHideFlags: 0

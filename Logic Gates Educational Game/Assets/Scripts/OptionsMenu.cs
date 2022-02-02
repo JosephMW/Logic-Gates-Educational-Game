@@ -7,11 +7,19 @@ using TMPro;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public TextMeshProUGUI textMeshPro;
+    public TextMeshProUGUI inputText;
+    public TextMeshProUGUI placeholderText;
+
     public void SaveGame()
     {
-        string saveName = textMeshPro.text;
-        Debug.Log(saveName);
+        string saveName = inputText.text;
+
+        if (saveName.Length == 1)
+        {
+            Debug.Log("You must enter a save name");
+            placeholderText.text = "ENTER A SAVE NAME";
+            return;
+        }
 
         var saveController = this.gameObject.GetComponent<SaveController>();
 
