@@ -8,6 +8,7 @@ public class LoadGameButton : MonoBehaviour
 {
     public TextMeshProUGUI textMeshPro;
     public LoadController loadController;
+
     public void setText(string newText)
     {
         textMeshPro.text = newText;
@@ -15,7 +16,6 @@ public class LoadGameButton : MonoBehaviour
 
     public void onClick()
     {
-        Debug.Log("CLICKED: " + textMeshPro.text);
         loadController.LoadScene(textMeshPro.text);
     }
 }

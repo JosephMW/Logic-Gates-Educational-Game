@@ -16,13 +16,11 @@ public class OptionsMenu : MonoBehaviour
 
         if (saveName.Length == 1)
         {
-            Debug.Log("You must enter a save name");
             placeholderText.text = "ENTER A SAVE NAME";
             return;
         }
 
         var saveController = this.gameObject.GetComponent<SaveController>();
-
         saveController.SaveScene(saveName);
     }
 
