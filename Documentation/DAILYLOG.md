@@ -251,4 +251,4 @@
 * *1 hour* Began building the scrollable toolbar. Have a scrollable toolbar now (Still needs automatic filling & setting-up). Fixed other positioning problems but somehow broke the attaching to customGrid. I think it thinks I'm trying to place circuits in a different place than I am. Investigate asap.
 
 ### 3 Feb 2021
-* *0.5 hours* 1:15 - 
+* *1.8 hours* Completed [#72 Refactor toolbar scrollable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/72) and merged the matching PR.

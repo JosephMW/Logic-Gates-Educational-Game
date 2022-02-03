@@ -35,9 +35,10 @@ The connection logic between **Wire** and Input Port is somewhat complex and wil
 A wire is draggable, has a 2D Rigidbody, and has a 2D Box Collider. An input port is stationary and also has a 2D Box Collider. When a wire is dragged over an input port, the input port uses the *OnTriggerEnter2D* method to register this collision. The Input Port then registers the Wire and makes the Wire register the input port. If the Wire is then dropped (Still over the input port) then the full connection is made, the WireTip is made a child of the Input Port parent cicuit, and positioning is setup. If the wire is then dragged out of the input port box collider the strong connection is deleted and both input port and wire forget each other.
 
 ## Toolbar
-The Toolbar exists in the SampleScene and consists of a UI Canvas with a series of GameObjects within it. Each child GameObejct including the buttons are rendered using a 'Canvas Renderer' which replaces the typically used 'Sprite Renderer' - this change is due to the Toolbar being a UI component.
+The Toolbar exists in the SampleScene and consists of a UI Canvas with a series of GameObjects within it. Each child GameObject including the buttons are rendered using a 'Canvas Renderer' which replaces the typically used 'Sprite Renderer' - this change is due to the Toolbar being a UI component.
 
-Each button object uses the 'Spawn Circuit' script which spawns the desired circuit and sets its Drag-and-Drop field 'dragging' to True - this allows the user to then drag the newly spawned Circuit into position and drop it in place.
+Each button object uses the 'SpawnCircuitButton' script which spawns the desired circuit and sets its Drag-and-Drop field 'dragging' to True - this allows the user to then drag the newly spawned Circuit into position and drop it in place.
+Every button is created on awake via the 'SpawnCircuitButtonListController' reading the file system for circuits and generating buttons to instantiate these circuits.
 
 The toolbar object also contains the OptionsMenu Cog wheel and the options menu itself. These are both UI elements using TextMeshPro for all text elements. The OptionsMenu Cog works by setting the 'active' state of the menu to true - returning to the game doe the opposite.
 
