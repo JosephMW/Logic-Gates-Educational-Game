@@ -252,3 +252,4 @@
 
 ### 3 Feb 2021
 * *1.8 hours* Completed [#72 Refactor toolbar scrollable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/72) and merged the matching PR.
+* *1.8 hours* 9:10 - 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class And2Circuit : CircuitParent
+public class And2Gate : CircuitParent
 {
     public override bool[] calculateOutputs()
     {
