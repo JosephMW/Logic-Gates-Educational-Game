@@ -4,10 +4,10 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class And2CircuitTests
+public class And2GateTests
 {
     private GameObject gameObject;
-    private And2Circuit and2;
+    private And2Gate and2;
     private InputPort[] inputPorts;
     private Wire[] outputWires;
 
@@ -15,7 +15,7 @@ public class And2CircuitTests
     public void Setup()
     {
         gameObject = new GameObject();
-        and2 = gameObject.AddComponent<And2Circuit>();
+        and2 = gameObject.AddComponent<And2Gate>();
         var input0 = gameObject.AddComponent<InputPort>();
         var input1 = gameObject.AddComponent<InputPort>();
         var and2Output = gameObject.AddComponent<Wire>();

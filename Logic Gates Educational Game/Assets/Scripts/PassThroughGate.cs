@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PassThroughCircuit : CircuitParent
+public class PassThroughGate : CircuitParent
 {
     public override bool[] calculateOutputs()
     {
