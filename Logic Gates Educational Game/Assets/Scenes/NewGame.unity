@@ -4737,7 +4737,6 @@ GameObject:
   - component: {fileID: 1654408041}
   - component: {fileID: 1654408040}
   - component: {fileID: 1654408039}
-  - component: {fileID: 1654408038}
   m_Layer: 5
   m_Name: ButtonScrollList
   m_TagString: Untagged
@@ -4766,19 +4765,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 120}
   m_SizeDelta: {x: 1920, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1654408038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654408036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 001923768da1db641b177214b826de04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonTemplate: {fileID: 0}
 --- !u!114 &1654408039
 MonoBehaviour:
   m_ObjectHideFlags: 0
