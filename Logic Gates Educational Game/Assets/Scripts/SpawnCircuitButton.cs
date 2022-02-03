@@ -2,11 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class SpawnCircuit : MonoBehaviour
+public class SpawnCircuitButton : MonoBehaviour
 {
-    public GameObject objectToSpawn;
+    private GameObject objectToSpawn;
     public CustomGrid customGrid;
+    public Text textComponent;
+
+    public void setObjectToSpawn(GameObject objectToSpawn)
+    {
+        this.objectToSpawn = objectToSpawn;
+    }
+
+    public void setText(string text)
+    {
+        this.textComponent.text = text;
+    }
 
     void Start()
     {
