@@ -36,7 +36,6 @@ public class DragAndDrop : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("OnMouseDown");
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePosition = Input.mousePosition;
@@ -53,7 +52,6 @@ public class DragAndDrop : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Debug.Log("OnMouseUp");
         dragging = false;
 
         Vector3 mousePosition = Input.mousePosition;
