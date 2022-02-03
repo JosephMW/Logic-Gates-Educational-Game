@@ -2856,7 +2856,7 @@ MonoBehaviour:
   m_Viewport: {fileID: 1247671031}
   m_HorizontalScrollbar: {fileID: 84255587}
   m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 1
+  m_HorizontalScrollbarVisibility: 0
   m_VerticalScrollbarVisibility: 0
   m_HorizontalScrollbarSpacing: 0
   m_VerticalScrollbarSpacing: 0
@@ -3343,6 +3343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customGrid: {fileID: 1786071920}
+  textComponent: {fileID: 1755038920}
 --- !u!1 &2017291696
 GameObject:
   m_ObjectHideFlags: 0

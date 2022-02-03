@@ -8,6 +8,7 @@ public class SpawnCircuitButton : MonoBehaviour
 {
     private GameObject objectToSpawn;
     public CustomGrid customGrid;
+    public Text textComponent;
 
     public void setObjectToSpawn(GameObject objectToSpawn)
     {
@@ -16,7 +17,7 @@ public class SpawnCircuitButton : MonoBehaviour
 
     public void setText(string text)
     {
-        Debug.Log(text);
+        this.textComponent.text = text;
     }
 
     void Start()
