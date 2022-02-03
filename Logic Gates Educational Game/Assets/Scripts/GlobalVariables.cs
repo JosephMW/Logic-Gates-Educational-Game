@@ -1,21 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
     private static int ID = 0;
     private static string toLoad = null;
-    public CircuitParent[] circuitTypes;
     public static IDictionary<string, CircuitParent> typeDictionary = new Dictionary<string, CircuitParent>();
 
     void Start()
     {
-        // Instantiate and fill the typeDictionary.
         typeDictionary = new Dictionary<string, CircuitParent>();
-        for (int i = 0; i < circuitTypes.Length; i++)
+
+        DirectoryInfo d = new DirectoryInfo(Application.dataPath + "/Resources/Sprites/Circuits/");
+
+        foreach (var file in d.GetFiles("*.prefab"))
         {
-            typeDictionary.Add(circuitTypes[i].GetType().ToString(), circuitTypes[i]);
+            string circuitName = file.Name.Substring(0, file.Name.Length - 7);
+
+            GameObject circuitGameObject = (UnityEngine.GameObject)Resources.Load("Sprites/Circuits/" + circuitName);
+            CircuitParent circuitParent = circuitGameObject.GetComponent<CircuitParent>();
+
+            typeDictionary.Add(circuitParent.GetType().ToString(), circuitParent);
         }
     }
 
