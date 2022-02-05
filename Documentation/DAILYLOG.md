@@ -253,3 +253,6 @@
 ### 3 Feb 2021
 * *1.8 hours* Completed [#72 Refactor toolbar scrollable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/72) and merged the matching PR.
 * *1.3 hours* Completed [#74 Add more base logic gates](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/74) and merged the matching PR.
+
+### 5 Feb 2021
+* *2 hours* Did most of 'Alter customgrid so it fits better'.
