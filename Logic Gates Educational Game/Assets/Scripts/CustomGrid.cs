@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class CustomGrid : MonoBehaviour
 {
-    private int width;
-    private int height;
+    public int width;
+    public int height;
     private int[,] gridArray;
-    private float cellSize;
+    public float cellSize;
 
     void Awake()
     {
-        this.width = 8;
-        this.height = 6;
-        this.cellSize = 2f;
-
         this.gridArray = new int[width, height];
 
         for (int x = 0; x < width; x++)
@@ -87,6 +83,7 @@ public class CustomGrid : MonoBehaviour
             this.gridArray[arrayPosition.x, arrayPosition.y] = 1; // 1 signifies slot taken by a circuit
 
             Vector3 centerOfSquare = convertGridArrayPositionToLocalPosition(arrayPosition.x, arrayPosition.y);
+
             return centerOfSquare;
         }
         else
