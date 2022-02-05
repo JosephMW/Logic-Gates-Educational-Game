@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class CustomGrid : MonoBehaviour
 {
-    public int width;
-    public int height;
+    private int width;
+    private int height;
     private int[,] gridArray;
-    public float cellSize;
+    private float cellSize;
 
     void Awake()
     {
+        this.width = 16;
+        this.height = 9;
+        this.cellSize = 1.11f;
+
         this.gridArray = new int[width, height];
 
         for (int x = 0; x < width; x++)
