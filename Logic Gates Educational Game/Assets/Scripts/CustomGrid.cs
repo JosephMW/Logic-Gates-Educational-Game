@@ -11,9 +11,9 @@ public class CustomGrid : MonoBehaviour
 
     void Awake()
     {
-        this.width = 8;
-        this.height = 6;
-        this.cellSize = 2f;
+        this.width = 16;
+        this.height = 9;
+        this.cellSize = 1.11f;
 
         this.gridArray = new int[width, height];
 
@@ -21,6 +21,9 @@ public class CustomGrid : MonoBehaviour
         {
             for (int y = 0; y < height; y++)
             {
+                if (x == 0 && y == height - 1)
+                    continue;
+
                 createBackgroundSquare(this.transform, convertGridArrayPositionToLocalPosition(x, y));
             }
         }
@@ -87,6 +90,7 @@ public class CustomGrid : MonoBehaviour
             this.gridArray[arrayPosition.x, arrayPosition.y] = 1; // 1 signifies slot taken by a circuit
 
             Vector3 centerOfSquare = convertGridArrayPositionToLocalPosition(arrayPosition.x, arrayPosition.y);
+
             return centerOfSquare;
         }
         else
