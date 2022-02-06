@@ -257,3 +257,6 @@
 ### 5 Feb 2021
 * *2 hours* Did most of 'Alter customgrid so it fits better'.
 * *0.1 hours* Completed [#75 Alter CustomGrid background to fit frame more nicely](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/75) and merged the matching PR.
+
+### 6 Feb 2021
+* *0.4 hours* Completed [#71 Add Documentation on Load/Save process](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/71) and merged the matching PR.
