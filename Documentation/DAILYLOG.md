@@ -260,3 +260,7 @@
 
 ### 6 Feb 2021
 * *0.4 hours* Completed [#71 Add Documentation on Load/Save process](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/71) and merged the matching PR.
+
+### 7 Feb 2021
+* *0.3 hours* Added intro, aims & motivations to dissertation.
+* *0.2 hours* Added a 2D Sprite Background. Colours need reworking and made consistent.
