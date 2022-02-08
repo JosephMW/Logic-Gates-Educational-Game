@@ -264,3 +264,6 @@
 ### 7 Feb 2021
 * *0.3 hours* Added intro, aims & motivations to dissertation.
 * *0.2 hours* Added a 2D Sprite Background. Colours need reworking and made consistent.
+
+### 8 Feb 2021
+* *0.3 hours* 6:55 - 
