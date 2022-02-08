@@ -266,4 +266,4 @@
 * *0.2 hours* Added a 2D Sprite Background. Colours need reworking and made consistent.
 
 ### 8 Feb 2021
-* *0.3 hours* 6:55 - 
+* *2 hours* Completed [#73 Improve the Main Menu design](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/73)Improve the Main Menu design
