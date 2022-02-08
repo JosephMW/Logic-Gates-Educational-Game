@@ -8,6 +8,7 @@ public class CustomGrid : MonoBehaviour
     private int height;
     private int[,] gridArray;
     private float cellSize;
+    public Color BackgroundSquareColor;
 
     void Awake()
     {
@@ -47,7 +48,12 @@ public class CustomGrid : MonoBehaviour
         spriteRenderer.drawMode = SpriteDrawMode.Sliced;
         Sprite customGridSquare = Resources.Load<Sprite>("Sprites/CustomGridSquare");
         spriteRenderer.sprite = customGridSquare;
+
         spriteRenderer.size = new Vector2(0.95f * this.cellSize, 0.95f * this.cellSize);
+
+        Debug.Log(spriteRenderer.color);
+        spriteRenderer.color = BackgroundSquareColor;
+        Debug.Log(spriteRenderer.color);
     }
 
 
