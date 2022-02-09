@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0028, y: 0.326}
+  m_AnchoredPosition: {x: 0, y: 0.45}
   m_SizeDelta: {x: 1.488, y: 0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4381597674797173608
@@ -56,7 +56,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 3253627758974050443, guid: 52b7ecad09051534385e8ccb84cfb7dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ' Pass Through'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52b7ecad09051534385e8ccb84cfb7dd, type: 2}
+  m_sharedMaterial: {fileID: 3253627758974050443, guid: 52b7ecad09051534385e8ccb84cfb7dd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 4892501435627878601}
   - component: {fileID: 3135177297972756247}
   m_Layer: 0
-  m_Name: PassThrough
+  m_Name: Pass Through
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
