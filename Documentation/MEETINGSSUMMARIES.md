@@ -386,3 +386,31 @@ Goals for next time:
 **KEY DECISION** *At this point in the project I realised that the issues which sat in the 'Outside of Sprint' column of my project board had been left untouched for months. I realised that the goals of my project and the design of it had changed enough to mean that these issues were no longer useful. I decided to archive these issues unclosed and delete the 'Outside of Sprint' column. My work typically follows on from the previous sprint very nicely and so this column was of no use.*
 
 ![Project Board status on 02/02/22](ProjectBoardImages/projectBoard-02-02-22.png)
+
+## 08/02/22 - Weekly Supervisor Meeting
+Progress I have made:
+*	Added Documentation on the whole Load/Save process
+*	Added a little bit more to the dissertation
+*	Delayed my Student Testing Sessions to next week (Due to me testing positive for covid last week)
+*	Worked on the UI in preparation for the Student Testing Sessions
+    +   Refactored the toolbar spawner as a scrollable list that’s automatically populated from files.
+    +   Added more base logic gates
+    +   Reshaped the grid to fit the screen properly
+    +   Improved Main Menu design (Still a work in progress)
+
+What we spoke about:
+*	The progress I have made (found above)
+*	I explained that my Student Testing Sessions are delayed a week due to me getting covid.
+*	Gave brief feedback on the small additions to my dissertation
+*	Discussed increasing work on dissertation since the final hand-in is 25th March
+*	My goals for the next week (found below)
+
+Goals for next time:
+*	Prepare for Student Testing sessions which will be in the week beginning 14th Feb
+*	Keep adding to dissertation draft
+*	Finish tidying the UI before Student Testing Sessions
+*	Carry out the Student Testing Sessions
+*	Write up the Student Testing Sessions in an anonymised way
+*	Start work on saving reusable custom circuits
+
+![Project Board status on 09/02/22](ProjectBoardImages/projectBoard-09-02-22.png)

@@ -274,3 +274,4 @@
 * *0.5 hours* Supervisor meeting.
 * *1.2 hours* Played around with color schemes, created custom model for HideSpawnerButton, added haze to options menu and tried to disable interactibility behind the filter.
 * *0.2 hours* Updated documentation. Completed [#83 Add consistent colour scheme](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/83) and merged the matching PR.
+* *0.4 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
