@@ -269,3 +269,7 @@
 * *2 hours* Completed [#73 Improve the Main Menu design](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/73)Improve the Main Menu design.
 * *1 hour* Spent time on color-scheme and trying to make things consistent.
 * *0.2 hours* Emailed supervisor notes for tomorrows meeting. 
+
+### 8 Feb 2021
+* *0.5 hours* Supervisor meeting.
+* *1.2 hours* Played around with color schemes, created custom model for HideSpawnerButton, added haze to options menu and tried to disable interactibility behind the filter.
