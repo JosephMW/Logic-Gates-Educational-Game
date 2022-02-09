@@ -7,8 +7,8 @@ public class Switch : CircuitParent
     public bool value = false;
 
     public SpriteRenderer sprite;
-    private static Color onColor = new Color(1, 1, 0, 1);
-    private static Color offColor = new Color(46f / 255f, 46f / 255f, 46f / 255f, 1);
+    public Color onColor;
+    public Color offColor;
 
     void OnMouseDown()
     {

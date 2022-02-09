@@ -5,8 +5,8 @@ using UnityEngine;
 public class DisplayLight : CircuitParent
 {
     public SpriteRenderer sprite;
-    private static Color onColor = new Color(1, 1, 0, 1);
-    private static Color offColor = new Color(46f / 255f, 46f / 255f, 46f / 255f, 1);
+    public Color onColor;
+    public Color offColor;
 
     // Here we override the Update method so that we can change the sprite color
     protected override void Update()
