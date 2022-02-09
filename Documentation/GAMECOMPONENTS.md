@@ -64,3 +64,6 @@ We take all the information described above about the scene and instantiate a se
 
 ## Loading Games
 To load a game we make use of the LoadController. When a gamesave is chosen to be loaded from the LoadGame menu we set a global variable named 'toLoad' to the string value of the gameSave name. Then we change the active scene to "NewGame", and on Awake this scene calls to the LoadController to load in the gamesave. The LoadController reads the Json Serialization from the SaveFiles folder and iteratively spawns the circuits in the scene. It numbers each circuit with the IDs given in the gamesave - this is important as the IDs must be unique and are crucial to the save/load process. In order to link wires we find the wires and inputPorts in the scene and match them up using their IDs.
+
+## Design - Color Scheme
+I used coolors.co to generate a color scheme for the project. ![Color Scheme](./colorPalette.png)
