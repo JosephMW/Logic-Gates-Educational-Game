@@ -1971,7 +1971,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.16322534, g: 0.16322534, b: 0.26415092, a: 1}
+  m_Color: {r: 0.27058825, g: 0.27058825, b: 0.27058825, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2749,6 +2749,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonTemplate: {fileID: 1945876518}
   textMeshPro: {fileID: 855426600}
+  colorList:
+  - {r: 0.9372549, g: 0.39215687, b: 0.38039216, a: 1}
+  - {r: 0.40784314, g: 0.6901961, b: 0.67058825, a: 1}
+  - {r: 0.91764706, g: 0.8509804, b: 0.29803923, a: 1}
 --- !u!114 &1654408039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2792,7 +2796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+  m_Color: {r: 0.27058825, g: 0.27058825, b: 0.27058825, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2867,7 +2871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9764706, g: 0.87058824, b: 0.7882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2944,7 +2948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02e1f7a047af82a498c3ca8eb32f14f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundSquareColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
+  BackgroundSquareColor: {r: 0.9764706, g: 0.87058824, b: 0.7882353, a: 1}
 --- !u!1 &1823516905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3227,7 +3231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_Color: {r: 0.9372549, g: 0.39215687, b: 0.38039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
