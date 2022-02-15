@@ -30,7 +30,6 @@ public class SpawnCircuitButtonListController : MonoBehaviour
             spawnCircuitButton.setText(circuitName);
 
             button.GetComponent<Image>().color = colorList[colorCounter % colorList.Length];
-            Debug.Log(button.GetComponent<Image>().color);
 
             button.transform.SetParent(buttonTemplate.transform.parent, false);
 
