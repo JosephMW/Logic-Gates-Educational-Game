@@ -23,7 +23,11 @@ public class CustomGrid : MonoBehaviour
             for (int y = 0; y < height; y++)
             {
                 if (x == 0 && y == height - 1)
+                {
+                    this.gridArray[x, y] = 1;
                     continue;
+                }
+
 
                 createBackgroundSquare(this.transform, convertGridArrayPositionToLocalPosition(x, y));
             }
