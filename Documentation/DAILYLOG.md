@@ -277,4 +277,4 @@
 * *0.4 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
 
 ### 15 Feb 2021
-* *0.5 hours* - 
+* *0.8 hours* Completed [#89 Add splitter Gates](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/89) and merged the matching PR.
