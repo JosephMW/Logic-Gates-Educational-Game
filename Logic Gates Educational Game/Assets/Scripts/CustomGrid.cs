@@ -93,7 +93,7 @@ public class CustomGrid : MonoBehaviour
         {
             clearSquare(startPosition);
 
-            this.gridArray[arrayPosition.x, arrayPosition.y] = true; // 1 signifies slot taken by a circuit
+            this.gridArray[arrayPosition.x, arrayPosition.y] = true;
 
             Vector3 centerOfSquare = convertGridArrayPositionToLocalPosition(arrayPosition.x, arrayPosition.y);
 
