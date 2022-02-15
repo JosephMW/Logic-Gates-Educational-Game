@@ -278,3 +278,4 @@
 
 ### 15 Feb 2021
 * *0.8 hours* Completed [#89 Add splitter Gates](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/89) and merged the matching PR.
+* *0.4 hours* Completed [#88 Make first square in customGrid unassignable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/88) and merged the matching PR.
