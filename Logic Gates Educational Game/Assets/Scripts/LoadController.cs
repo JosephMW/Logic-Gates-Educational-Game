@@ -28,7 +28,7 @@ public class LoadController : MonoBehaviour
         }
 
         wirePortPairings = new List<(int wireID, int inputPortID)>();
-        string fileContents = System.IO.File.ReadAllText(Application.dataPath + "/SaveFiles/" + saveName + ".json");
+        string fileContents = System.IO.File.ReadAllText(Application.streamingAssetsPath + "/SaveFiles/" + saveName + ".json");
 
         SaveFormat saveFormat = JsonUtility.FromJson<SaveFormat>(fileContents);
 

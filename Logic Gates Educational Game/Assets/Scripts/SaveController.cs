@@ -47,7 +47,7 @@ public class SaveController : MonoBehaviour
         string gameSaveJson = JsonUtility.ToJson(gameSave);
 
         // Write to File:
-        System.IO.File.WriteAllText(Application.dataPath + "/SaveFiles/" + saveName + ".json", gameSaveJson);
+        System.IO.File.WriteAllText(Application.streamingAssetsPath + "/SaveFiles/" + saveName + ".json", gameSaveJson);
     }
 
     [Serializable]
