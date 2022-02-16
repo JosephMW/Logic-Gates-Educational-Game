@@ -16,35 +16,23 @@ public class SpawnCircuitButtonListController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // DirectoryInfo d = new DirectoryInfo(Application.dataPath + "/Resources/Sprites/Circuits/");
+        Object[] circuits = Resources.LoadAll("Sprites/Circuits");
 
-        // int colorCounter = 0;
-        // foreach (var file in d.GetFiles("*.prefab"))
-        // {
-        //     string circuitName = file.Name.Substring(0, file.Name.Length - 7);
+        int colorCounter = 0;
+        foreach (var circ in circuits)
+        {
+            GameObject button = Instantiate(buttonTemplate) as GameObject;
+            button.SetActive(true);
+            SpawnCircuitButton spawnCircuitButton = button.GetComponent<SpawnCircuitButton>();
+            spawnCircuitButton.setObjectToSpawn((UnityEngine.GameObject)circ);
+            spawnCircuitButton.setText(circ.name);
 
-        //     GameObject button = Instantiate(buttonTemplate) as GameObject;
-        //     button.SetActive(true);
-        //     SpawnCircuitButton spawnCircuitButton = button.GetComponent<SpawnCircuitButton>();
-        //     spawnCircuitButton.setObjectToSpawn((UnityEngine.GameObject)Resources.Load("Sprites/Circuits/" + circuitName));
-        //     spawnCircuitButton.setText(circuitName);
+            button.GetComponent<Image>().color = colorList[colorCounter % colorList.Length];
 
-        //     button.GetComponent<Image>().color = colorList[colorCounter % colorList.Length];
+            button.transform.SetParent(buttonTemplate.transform.parent, false);
 
-        //     button.transform.SetParent(buttonTemplate.transform.parent, false);
-
-        //     colorCounter++;
-        // }
-
-        GameObject button = Instantiate(buttonTemplate) as GameObject;
-        button.SetActive(true);
-        SpawnCircuitButton spawnCircuitButton = button.GetComponent<SpawnCircuitButton>();
-        spawnCircuitButton.setObjectToSpawn((UnityEngine.GameObject)Resources.Load("Sprites/Circuits/Or2"));
-        spawnCircuitButton.setText("Or2");
-
-        button.GetComponent<Image>().color = colorList[0];
-
-        button.transform.SetParent(buttonTemplate.transform.parent, false);
+            colorCounter++;
+        }
     }
 
     public void collapseList()

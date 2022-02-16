@@ -13,22 +13,13 @@ public class GlobalVariables : MonoBehaviour
     {
         typeDictionary = new Dictionary<string, CircuitParent>();
 
-        // DirectoryInfo d = new DirectoryInfo(Application.dataPath + "/Resources/Sprites/Circuits/");
+        Object[] circuits = Resources.LoadAll("Sprites/Circuits");
 
-        // foreach (var file in d.GetFiles("*.prefab"))
-        // {
-        //     string circuitName = file.Name.Substring(0, file.Name.Length - 7);
-
-        //     GameObject circuitGameObject = (UnityEngine.GameObject)Resources.Load("Sprites/Circuits/" + circuitName);
-        //     CircuitParent circuitParent = circuitGameObject.GetComponent<CircuitParent>();
-
-        //     typeDictionary.Add(circuitParent.GetType().ToString(), circuitParent);
-        // }
-
-        GameObject circuitGameObject = (UnityEngine.GameObject)Resources.Load("Sprites/Circuits/Or2");
-        CircuitParent circuitParent = circuitGameObject.GetComponent<CircuitParent>();
-
-        typeDictionary.Add(circuitParent.GetType().ToString(), circuitParent);
+        foreach (var circ in circuits)
+        {
+            CircuitParent circuitParent = ((UnityEngine.GameObject)circ).GetComponent<CircuitParent>();
+            typeDictionary.Add(circuitParent.GetType().ToString(), circuitParent);
+        }
     }
 
     public static int getID()
