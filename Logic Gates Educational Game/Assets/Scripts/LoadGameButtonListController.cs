@@ -9,7 +9,7 @@ public class LoadGameButtonListController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DirectoryInfo d = new DirectoryInfo(Application.dataPath + "/SaveFiles/");
+        DirectoryInfo d = new DirectoryInfo(Application.streamingAssetsPath + "/SaveFiles/");
 
         foreach (var file in d.GetFiles("*.json"))
         {

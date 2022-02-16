@@ -16,18 +16,16 @@ public class SpawnCircuitButtonListController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DirectoryInfo d = new DirectoryInfo(Application.dataPath + "/Resources/Sprites/Circuits/");
+        Object[] circuits = Resources.LoadAll("Sprites/Circuits");
 
         int colorCounter = 0;
-        foreach (var file in d.GetFiles("*.prefab"))
+        foreach (var circ in circuits)
         {
-            string circuitName = file.Name.Substring(0, file.Name.Length - 7);
-
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
             SpawnCircuitButton spawnCircuitButton = button.GetComponent<SpawnCircuitButton>();
-            spawnCircuitButton.setObjectToSpawn((UnityEngine.GameObject)Resources.Load("Sprites/Circuits/" + circuitName));
-            spawnCircuitButton.setText(circuitName);
+            spawnCircuitButton.setObjectToSpawn((UnityEngine.GameObject)circ);
+            spawnCircuitButton.setText(circ.name);
 
             button.GetComponent<Image>().color = colorList[colorCounter % colorList.Length];
 
