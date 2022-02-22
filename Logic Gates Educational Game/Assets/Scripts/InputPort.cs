@@ -111,10 +111,23 @@ public class InputPort : MonoBehaviour
             // if the object that left the collider is our connected wire and that wire is being dragged (The goal is decoupling) then decouple.
             if (wireConnected == collider.gameObject.GetComponentInParent<Wire>() && wireConnected.dragging)
             {
-                wireConnected.deleteConnectionPoint();
-                this.wireConnected = null;
+                deleteConnectionWithWire(retractWire: false);
             }
         }
         catch { }
+    }
+
+    public void deleteConnectionWithWire(bool retractWire)
+    {
+        if (wireConnected != null)
+        {
+            RemoveWireTipChild();
+            wireConnected.deleteConnectionPoint();
+            if (retractWire)
+            {
+                wireConnected.retractWire();
+            }
+            this.wireConnected = null;
+        }
     }
 }

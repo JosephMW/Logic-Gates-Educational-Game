@@ -93,6 +93,7 @@ public class CustomGrid : MonoBehaviour
         if (arrayPosition.x == this.width - 1 && arrayPosition.y == this.height - 1)
         {
             Debug.Log("Upper Right Corner");
+            clearSquare(startPosition);
             return new Vector3(9999, 9999, 9999);
         }
 

@@ -86,6 +86,16 @@ public abstract class CircuitParent : MonoBehaviour
     public void deleteCircuit()
     {
         Debug.Log("deleting circuit inside CircuitParent");
+
+        // Iterate over input Ports disconnecting any connected wires
+        for (int i = 0; i < inputPorts.Length; i++)
+        {
+            InputPort currentPort = inputPorts[i];
+            currentPort.deleteConnectionWithWire(retractWire: true);
+        }
+        // Iterate over wires disconnecting any connected ones.
+
+        // Finally delete the circuit gameObject
         Destroy(this.gameObject);
     }
 }
