@@ -30,7 +30,7 @@ public class CustomGrid : MonoBehaviour
                 }
 
 
-                createBackgroundSquare(this.transform, convertGridArrayPositionToLocalPosition(x, y), (x == width - 1 && y == height - 1));
+                createBackgroundSquare(this.transform, convertGridArrayPositionToLocalPosition(x, y), IsTheBin: (x == width - 1 && y == height - 1));
             }
         }
     }
@@ -92,7 +92,6 @@ public class CustomGrid : MonoBehaviour
         // If the selected position is the upper right square (The Bin):
         if (arrayPosition.x == this.width - 1 && arrayPosition.y == this.height - 1)
         {
-            Debug.Log("Upper Right Corner");
             clearSquare(startPosition);
             return new Vector3(9999, 9999, 9999);
         }
