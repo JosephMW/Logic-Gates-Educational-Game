@@ -293,3 +293,5 @@
 * *0.3 hours* Completed [#92 Fix Resolution/aspect ratio to fit more devices](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/92) and merged the matching PR.
 * *0.3 hours* Completed [#95 Write-up for Student testing session with Participant X](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/95) and merged the matching PR.
 * *1 hour* Completed [#98 Add the ability to delete individual circuits](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/98) and merged the matching PR.
+* *0.5 hours* Tried to make wires less fiddly - didn't make much progress. Overlapping Box Colliders is causing the issue.
+* *0.3 hours* Emailed supervisor notes for tomorrows meeting.
