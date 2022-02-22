@@ -108,7 +108,7 @@ public class Wire : MonoBehaviour
         connectionPoint.setValue(this.valueOut);
     }
 
-    private void retractWire()
+    public void retractWire()
     {
         // NOTE: We are using localPosition here
         this.gameObject.transform.localPosition = this.startPosition;

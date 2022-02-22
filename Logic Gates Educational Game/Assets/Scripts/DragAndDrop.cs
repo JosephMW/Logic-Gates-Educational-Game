@@ -61,7 +61,24 @@ public class DragAndDrop : MonoBehaviour
         {
             Vector3 newPosition = customGrid.placeElementInGrid(new Vector3(mousePosition.x - x_mouseOffset, mousePosition.y - y_mouseOffset, 0), this.startPosition);
 
-            this.gameObject.transform.localPosition = newPosition;
+            if (newPosition == new Vector3(9999, 9999, 9999))
+            {
+                // This means we have dropped on the bin, therefore: Handle deletion of circuit
+                deleteCircuitHandler();
+            }
+            else
+            {
+                this.gameObject.transform.localPosition = newPosition;
+            }
+        }
+    }
+
+    private void deleteCircuitHandler()
+    {
+        CircuitParent circParent = this.GetComponentInParent<CircuitParent>();
+        if (circParent != null)
+        {
+            circParent.deleteCircuit();
         }
     }
 }
