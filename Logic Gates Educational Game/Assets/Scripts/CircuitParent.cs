@@ -93,7 +93,17 @@ public abstract class CircuitParent : MonoBehaviour
             InputPort currentPort = inputPorts[i];
             currentPort.deleteConnectionWithWire(retractWire: true);
         }
-        // Iterate over wires disconnecting any connected ones.
+
+        // Iterate over wires disconnecting any connected ones. (Uses same method as above, just has to locate connected ports first)
+        for (int i = 0; i < outputWires.Length; i++)
+        {
+            Wire currentWire = outputWires[i];
+            InputPort connectedPort = currentWire.getConnectionPoint();
+            if (connectedPort != null)
+            {
+                connectedPort.deleteConnectionWithWire(retractWire: true);
+            }
+        }
 
         // Finally delete the circuit gameObject
         Destroy(this.gameObject);
