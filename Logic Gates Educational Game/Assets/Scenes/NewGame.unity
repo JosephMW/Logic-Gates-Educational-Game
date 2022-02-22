@@ -3025,6 +3025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BackgroundSquareColor: {r: 0.9764706, g: 0.87058824, b: 0.7882353, a: 1}
+  BinSquareColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1823516905
 GameObject:
   m_ObjectHideFlags: 0

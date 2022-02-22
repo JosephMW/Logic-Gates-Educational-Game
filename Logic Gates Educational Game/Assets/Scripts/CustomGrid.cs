@@ -9,6 +9,7 @@ public class CustomGrid : MonoBehaviour
     private bool[,] gridArray;
     private float cellSize;
     public Color BackgroundSquareColor;
+    public Color BinSquareColor;
 
     void Awake()
     {
@@ -29,7 +30,7 @@ public class CustomGrid : MonoBehaviour
                 }
 
 
-                createBackgroundSquare(this.transform, convertGridArrayPositionToLocalPosition(x, y));
+                createBackgroundSquare(this.transform, convertGridArrayPositionToLocalPosition(x, y), (x == width - 1 && y == height - 1));
             }
         }
     }
@@ -41,7 +42,7 @@ public class CustomGrid : MonoBehaviour
         return new Vector3(x_pos, y_pos) * cellSize;
     }
 
-    private void createBackgroundSquare(Transform parent, Vector3 localPosition)
+    private void createBackgroundSquare(Transform parent, Vector3 localPosition, bool IsTheBin)
     {
         GameObject gameObject = new GameObject("Background square", typeof(SpriteRenderer));
         Transform transform = gameObject.transform;
@@ -53,7 +54,7 @@ public class CustomGrid : MonoBehaviour
         Sprite customGridSquare = Resources.Load<Sprite>("Sprites/CustomGridSquare");
         spriteRenderer.sprite = customGridSquare;
         spriteRenderer.size = new Vector2(0.95f * this.cellSize, 0.95f * this.cellSize);
-        spriteRenderer.color = BackgroundSquareColor;
+        spriteRenderer.color = IsTheBin ? BinSquareColor : BackgroundSquareColor;
     }
 
 
@@ -86,6 +87,13 @@ public class CustomGrid : MonoBehaviour
         {
             // we are outside of the grid.
             return startPosition;
+        }
+
+        // If the selected position is the upper right square (The Bin):
+        if (arrayPosition.x == this.width - 1 && arrayPosition.y == this.height - 1)
+        {
+            Debug.Log("Upper Right Corner");
+            return new Vector3(9999, 9999, 9999);
         }
 
         // If the current position is empty:

@@ -82,4 +82,10 @@ public abstract class CircuitParent : MonoBehaviour
             outputValues[i] = newOutputValues[i];
         }
     }
+
+    public void deleteCircuit()
+    {
+        Debug.Log("deleting circuit inside CircuitParent");
+        Destroy(this.gameObject);
+    }
 }
