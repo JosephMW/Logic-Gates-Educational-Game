@@ -279,3 +279,16 @@
 ### 15 Feb 2021
 * *0.8 hours* Completed [#89 Add splitter Gates](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/89) and merged the matching PR.
 * *0.4 hours* Completed [#88 Make first square in customGrid unassignable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/88) and merged the matching PR.
+
+### 16 Feb 2021
+* *2.5 hours* Completed [#93 Fix filesystem for built versions of the game](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/93) and merged the matching PR.
+* *0.5 hours* Completed [#69 Prepare for Student Testing Session](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/69).
+* *1.5 hours* Essentially finished [#92 Fix Resolution/aspect ratio to fit more devices](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/92) but never merged the matching PR.
+
+### 17 Feb 2021
+* *0.5 hours* Carried out student testing session with Participant X.
+
+### 22 Feb 2021
+* *0.5 hours* Wrote up participant X student testing session, and updated documentation.
+* *0.3 hours* Completed [#92 Fix Resolution/aspect ratio to fit more devices](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/92) and merged the matching PR.
+* *0.3 hours* Completed [#95 Write-up for Student testing session with Participant X](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/95) and merged the matching PR.

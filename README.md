@@ -23,6 +23,9 @@ I am recording all my references as the project progresses so that I can easily 
 ## [Game Components](Documentation/GAMECOMPONENTS.md)
 I am documenting how all my major game components' function. This is so I can review parts easily and will aid me in my thesis. This can be found at the link above.
 
+## [Student Testing Sessions](Documentation/TESTINGPLAN.md)
+I am documenting feedback from my Student Testing Sessions. This is so I can review parts easily and will aid me in my thesis. I have set standardised ways to run my testing sessions and I have anonymised all collected information via masking. This can be found at the link above, and sublinks from the link above.
+
 ## Issue Tracking & Branching Strategy
 I have created a [project board](https://github.com/JosephMW/Logic-Gates-Educational-Game/projects/1) where I will log all issues. In the future I may consider a second GitHub board to track bugs. 
 My process will be as follows:
