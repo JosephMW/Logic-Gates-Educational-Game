@@ -414,3 +414,33 @@ Goals for next time:
 *	Start work on saving reusable custom circuits
 
 ![Project Board status on 09/02/22](ProjectBoardImages/projectBoard-09-02-22.png)
+
+## 23/02/22 - Weekly Supervisor Meeting
+Progress I have made:
+*	Further Improved the UI colours and general feel
+*	Added ‘Splitter Gates’ which I realised would be crucial for the student testing session.
+*	Fixed a bug where you could drop a circuit in the top left where the options cog is.
+*	Fixed a major bug I found where the filesystem completely failed once built
+    +   Unity reorders the filesystem when building so I had to refactor all my code which interacted with the filesystem to account for this.
+*	Fixed a major bug where the Aspect Ratio wasn’t fixed after being built
+    +   This led to numerous bugs when run on a non 16:9 monitor. I have since fixed the aspect ratio to be 16:9 no matter the monitor.
+*	I ran 1 student testing session which was very successful
+    +   The student navigated the game with ease but gave many pointers as to things they thought were missing/were hard to use.
+    +   I have since written this up and linked it into my markdown pages available on my GitHub. This is fully anonymised and I have a securely kept file for linking participant names with their aliases in case they want to back out and have their data removed.
+    +   I will be taking pointers from this write up to make new issues to work on
+*	One major feedback point from the testing session was the lack of ability to delete circuits. I have added this with a bin in the upper-right hand corner of the screen.
+*	I have failed to find the time to work on my dissertation so this will be becoming a main priority over the next few weeks.
+
+What we spoke about:
+-	The progress I have made (found above)
+-	We discussed how focus should be on the dissertation from now on – with the option of doing some more dev work in the last couple of weeks.
+-	My goals for the next week (found below)
+
+Goals for next time:
+*	Focus on dissertation draft
+*	Run 1 more student testing session (If it seems useful)
+*	Not this week but in the future:
+    +   Start work on saving reusable custom circuits
+
+![Project Board status on 23/02/22](ProjectBoardImages/projectBoard-23-02-22.png)
+
