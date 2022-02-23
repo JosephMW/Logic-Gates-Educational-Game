@@ -299,3 +299,4 @@
 ### 23 Feb 2021
 * *0.3 hours* Supervisor Meeting
 * *0.4 hours* Emailed supervisor meeting summary and updated documentation after todays meeting.
+* *0.3 hours* Found old issues on my GitHub which I had never closed/have become obsolete - commented and closed each of these.
