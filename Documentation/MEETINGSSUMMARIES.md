@@ -444,3 +444,25 @@ Goals for next time:
 
 ![Project Board status on 23/02/22](ProjectBoardImages/projectBoard-23-02-22.png)
 
+## 16/03/22 - Weekly Supervisor Meeting
+Progress I have made:
+*	I have written the Requirements section for my Dissertation
+
+What we spoke about:
+-	The progress I have made (found above)
+-   We discussed the dissertation section I have written
+    +   Tone was appropriate
+    +   Reference the general topic - Unity, Logic gates Wikipedia
+    +   Discuss references by mentioning the surname of the writer.
+    +   More educational games examples would be nice. Examples of Logic Gate games ideal. Which are being used, and where are they used?
+    +   Give reasons for choosing Unity
+-	My goals for the next week (found below)
+
+Goals for next time:
+*	Due to next weeks strikes my goal for 'next time' is for our final meeting before the handin, on the 28th March.
+*   Complete dissertation sections Requirements, Design, Implementation, Outline(Which is just a contents page) by Sunday 20th morning to email to supervisor.
+*   Complete dissertation Evaluation and Conclusion by Sunday 27th to email to supervisor.
+*   Ensure Code is ready for submission.
+
+![Project Board status on 16/03/22](ProjectBoardImages/projectBoard-16-03-22.png)
+
