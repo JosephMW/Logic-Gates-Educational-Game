@@ -180,115 +180,115 @@
 * *0.5 hours* Supervisor Meeting
 * *0.3 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.
 
-### 9 Jan 2021
+### 9 Jan 2022
 * *1.5 hours* Read the Ethics checklist and wrote introductory and debreifing scripts for my Testing Session.
 * *0.5 hours* Emailed supervisor to make sure he agreed my testing session followed the ethics guidelines.
 
-### 10 Jan 2021
-* *0.5 hours* Recieved confirmation from supervisor regarding ethics forms. Emailed Jose Cano Reyes asking if he would email the 2021 class of Computer Architecture to ask for students to volunteer for my testing session.
+### 10 Jan 2022
+* *0.5 hours* Recieved confirmation from supervisor regarding ethics forms. Emailed Jose Cano Reyes asking if he would email the 2022 class of Computer Architecture to ask for students to volunteer for my testing session.
 
-### 11 Jan 2021
+### 11 Jan 2022
 * *1 hour* Researched Saving a Unity scene. Decided that before I delve into saving custom circuits for reuse, I should first learn to save the entire scene and likely build a menu system to operate that.
 * *0.5 hours* Emailed Supervisor notes for tomorrows meeting.
 
-### 12 Jan 2021
+### 12 Jan 2022
 * *0.5 hours* Supervisor Meeting
 * *0.5 hours* Emailed supervisor a summary of todays meeting, updated MEETINGSSUMMARIES, and updated the Project Board.
 * *2.5 hours* Researched and built the majority of the Main Menu, and Options Menu (Which is available in-game)
 
-### 13 Jan 2021
+### 13 Jan 2022
 * *0.75 hours* Completed [#51 Create Basic Main Menu](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/51) and merged the matching PR.
 
-### 15 Jan 2021
+### 15 Jan 2022
 * *1.25 hours* Researched Saving and Loading things in Unity. Realised it will require more code and work than expected. I think my best solution is to write custom controllers for serializing and deserializing everything in the scene. Instantiating the circuits and connecting the wires will likely be complex.
 * *1 hour* Spent a while wrestling with searching through the scene for GameObjects and wires. Now should be at a good place to start serializing and saving the objects.
 
-### 16 Jan 2021
+### 16 Jan 2022
 * *1 hour* Tried to implement Json Serialization method - proving more difficult and nuanced than anticipated.
 
-### 18 Jan 2021
+### 18 Jan 2022
 * *1.2 hours* Spent more time on Json Serialization, trying out using another custom class for serializing. The serialization is not acting recursively though. Found Json.NET which may work better. Otherwise May individually collect Json Serializations for each Circuit and each Wire then compile somehow.
 * *0.2 hours* Emailed Supervisor notes for tomorrows meeting.
 
-### 19 Jan 2021
+### 19 Jan 2022
 * *0.5 hours* Supervisor Meeting, and emailed supervisor summary of meeting.
 * *0.2 hours* Updated MEETINGSUMMARIES and the project board.
 
-### 21 Jan 2021
+### 21 Jan 2022
 * *1.6 hours* Essentially finished serialization of my saved classes for later loading (reinstantiation).
 
-### 23 Jan 2021
+### 23 Jan 2022
 * *2.2 hours* Began reinstantiation/loading of circuit from my json. Having lots of trouble with storing the types for reinstantiation. Circuits are being created before the new scene has been loaded. Very annoying.
 
-### 25 Jan 2021
+### 25 Jan 2022
 * *0.2 hours* Messaged Computer Architecture Teams chat asking for students to participate in my Testing Session.
 * *0.8 hours* Setup Overleaf with a basic layout of my Dissertation. Appended Bibtex bibliography - not all references showing for some reason.
 * *1.4 hours* Trying to reinstantiate circuit from json. Was having problem with async loading of new scene. Now using a global var to hold a save file to be loaded. The "NewGame" scene then loads any toLoad savefiles on startup. Currently reinstantiating all circuits as "PassThroughCircuit"s for simplicity. Wires still to be paired. SaveFile names still to be specified. Workflow is laid out now though.
 * *0.2 hours* Emailed Supervisor notes for tomorrows meeting.
 
-### 26 Jan 2021
+### 26 Jan 2022
 * *0.5 hours* Supervisor Meeting 
 
-### 28 Jan 2021
+### 28 Jan 2022
 * *0.2 hours* Completed [#57 Create Re-instantiating from Json files method](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/57) and merged the matching PR.
 * *0.3 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
 * *1.2 hours* Completed [#62 Extend Json Serialization to all circuit types](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/62) and merged the matching PR.
 * *0.3 hours* Began work on extending the Json reinstantiation for Wires. 
 
-### 31 Jan 2021
+### 31 Jan 2022
 * *1.5 hours* Completed [#66 Extend json to wires](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/66) and merged the matching PR.
 * *0.5 hours* Completed [#65 Refactor Switch to implement CircuitParent class](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/65) and merged the matching PR. Noted that no means of saving the switch value - this is circuit state which I haven't had to tackle yet; For now circuit state will not be saved.
 
-### 1 Feb 2021
+### 1 Feb 2022
 * *2.4 hours* Added naming of game saves, also configured LoadGame menu to have scroll bar and be populated with appropriate loadGame buttons. Very successful session! This and last 2 sessions have gone very well. Overcame the Assembly references hurdle too!
 * *0.2 hours* Emailed supervisor notes for tomorrows meeting.
 
-### 2 Feb 2021
+### 2 Feb 2022
 * *0.5 hours* Supervisor Meeting
 * *0.3 hours* Completed [#60 Add naming of game saves](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/60) and merged the matching PR.
 * *0.2 hours* Completed [#56 Configure 'Load Game' menu](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/56) and merged the matching PR.
 * *0.6 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
 * *1 hour* Began building the scrollable toolbar. Have a scrollable toolbar now (Still needs automatic filling & setting-up). Fixed other positioning problems but somehow broke the attaching to customGrid. I think it thinks I'm trying to place circuits in a different place than I am. Investigate asap.
 
-### 3 Feb 2021
+### 3 Feb 2022
 * *1.8 hours* Completed [#72 Refactor toolbar scrollable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/72) and merged the matching PR.
 * *1.3 hours* Completed [#74 Add more base logic gates](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/74) and merged the matching PR.
 
-### 5 Feb 2021
+### 5 Feb 2022
 * *2 hours* Did most of 'Alter customgrid so it fits better'.
 * *0.1 hours* Completed [#75 Alter CustomGrid background to fit frame more nicely](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/75) and merged the matching PR.
 
-### 6 Feb 2021
+### 6 Feb 2022
 * *0.4 hours* Completed [#71 Add Documentation on Load/Save process](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/71) and merged the matching PR.
 
-### 7 Feb 2021
+### 7 Feb 2022
 * *0.3 hours* Added intro, aims & motivations to dissertation.
 * *0.2 hours* Added a 2D Sprite Background. Colours need reworking and made consistent.
 
-### 8 Feb 2021
+### 8 Feb 2022
 * *2 hours* Completed [#73 Improve the Main Menu design](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/73) and merged the matching PR.
 * *1 hour* Spent time on color-scheme and trying to make things consistent.
 * *0.2 hours* Emailed supervisor notes for tomorrows meeting. 
 
-### 9 Feb 2021
+### 9 Feb 2022
 * *0.5 hours* Supervisor meeting.
 * *1.2 hours* Played around with color schemes, created custom model for HideSpawnerButton, added haze to options menu and tried to disable interactibility behind the filter.
 * *0.2 hours* Updated documentation. Completed [#83 Add consistent colour scheme](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/83) and merged the matching PR.
 * *0.4 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
 
-### 15 Feb 2021
+### 15 Feb 2022
 * *0.8 hours* Completed [#89 Add splitter Gates](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/89) and merged the matching PR.
 * *0.4 hours* Completed [#88 Make first square in customGrid unassignable](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/88) and merged the matching PR.
 
-### 16 Feb 2021
+### 16 Feb 2022
 * *2.5 hours* Completed [#93 Fix filesystem for built versions of the game](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/93) and merged the matching PR.
 * *0.5 hours* Completed [#69 Prepare for Student Testing Session](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/69).
 * *1.5 hours* Essentially finished [#92 Fix Resolution/aspect ratio to fit more devices](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/92) but never merged the matching PR.
 
-### 17 Feb 2021
+### 17 Feb 2022
 * *0.5 hours* Carried out student testing session with Participant X.
 
-### 22 Feb 2021
+### 22 Feb 2022
 * *0.5 hours* Wrote up participant X student testing session, and updated documentation.
 * *0.3 hours* Completed [#92 Fix Resolution/aspect ratio to fit more devices](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/92) and merged the matching PR.
 * *0.3 hours* Completed [#95 Write-up for Student testing session with Participant X](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/95) and merged the matching PR.
@@ -296,7 +296,34 @@
 * *0.5 hours* Tried to make wires less fiddly - didn't make much progress. Overlapping Box Colliders is causing the issue.
 * *0.3 hours* Emailed supervisor notes for tomorrows meeting.
 
-### 23 Feb 2021
+### 23 Feb 2022
 * *0.3 hours* Supervisor Meeting
 * *0.4 hours* Emailed supervisor meeting summary and updated documentation after todays meeting.
 * *0.3 hours* Found old issues on my GitHub which I had never closed/have become obsolete - commented and closed each of these.
+
+### 2 Mar 2022
+* *0.0 hours* Supervisor Meeting Cancelled due to me having other imminent courseworks due.
+
+### 7 Mar 2022
+* *3 hours* Wrote Dissertation Background section
+
+### 8 Mar 2022
+* *0.3 hours* Emailed supervisor notes for tomorrows meeting.
+
+### 9 Mar 2022
+* *0.0 hours* Supervisor Meeting Cancelled due to Supervisor being ill.
+
+### 11 Mar 2022
+* *0.0 hours* Had my booster vaccine today.
+
+### 12 Mar 2022
+* *0.0 hours* Very ill from booster - unable to work.
+
+### 13 Mar 2022
+* *0.0 hours* Very ill from booster - unable to work.
+
+### 15 Mar 2022
+* *0.3 hours* Emailed supervisor notes for tomorrows meeting.
+
+### 16 Mar 2022
+* *0.3 hours* Supervisor Meeting
