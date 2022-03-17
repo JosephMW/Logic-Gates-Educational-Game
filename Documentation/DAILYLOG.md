@@ -328,3 +328,6 @@
 ### 16 Mar 2022
 * *0.3 hours* Supervisor Meeting
 * *1 hours* Emailed supervisor summary of meeting and updated MEETINGSSUMMARIES and project board.
+
+### 17 Mar 2022
+* *1.1 hours* Wrote Requirements intro and majority of 'What options exist in the current market?' section for dissertation. Having troubles with internet connection.
