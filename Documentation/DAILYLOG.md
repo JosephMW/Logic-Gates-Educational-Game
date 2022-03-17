@@ -331,3 +331,7 @@
 
 ### 17 Mar 2022
 * *1.1 hours* Wrote Requirements intro and majority of 'What options exist in the current market?' section for dissertation. Having troubles with internet connection.
+* *0.4 hours* Completed 'What options exist in the current market?' section for dissertation.
+* *0.8 hours* Completed 'What do I want to do uniquely?' section for dissertation.
+* *0.6 hours* Roughly completed 'What is attractive to students?' section for dissertation.
+* *0.9 hours* Struggled with bibliography. Wrote script to fix the issue.
