@@ -335,3 +335,6 @@
 * *0.8 hours* Completed 'What do I want to do uniquely?' section for dissertation.
 * *0.6 hours* Roughly completed 'What is attractive to students?' section for dissertation.
 * *0.9 hours* Struggled with bibliography. Wrote script to fix the issue.
+
+### 18 Mar 2022
+* *1 hour* Adjusted bibliography script for consistency. Replaced some references with proper citations.
