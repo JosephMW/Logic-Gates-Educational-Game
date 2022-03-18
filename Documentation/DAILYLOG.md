@@ -338,3 +338,4 @@
 
 ### 18 Mar 2022
 * *1 hour* Adjusted bibliography script for consistency. Replaced some references with proper citations.
+* *1.5 hours* Mapped out Design section. Added Contents page. Further tweaking.
