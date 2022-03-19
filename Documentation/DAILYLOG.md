@@ -343,4 +343,5 @@
 * *0.3 hours* Updated lazy referencing, cleaned some of dissertation.
 
 ### 19 Mar 2022
-* *0.75 hour* Wrestled with moving diss to l4proj template. Things acting very differently now. Referencing is off, captions gone.
+* *0.75 hours* Wrestled with moving diss to l4proj template. Things acting very differently now. Referencing is off, captions gone.
+* *0.5 hours* Created Figma wireframe for original design and added it to diss.
