@@ -345,3 +345,4 @@
 ### 19 Mar 2022
 * *0.75 hours* Wrestled with moving diss to l4proj template. Things acting very differently now. Referencing is off, captions gone.
 * *0.5 hours* Created Figma wireframe for original design and added it to diss.
+* *0.5 hours* Refactored how figures & tables work in diss. Consistent with advice now but causing issues with where figures appear.
