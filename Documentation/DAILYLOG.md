@@ -347,3 +347,9 @@
 * *0.5 hours* Created Figma wireframe for original design and added it to diss.
 * *0.5 hours* Refactored how figures & tables work in diss. Consistent with advice now but causing issues with where figures appear.
 * *0.5 hours* Wrote Design vs Implementation section of diss. Had to stop due to a mouse entering my room.
+
+### 20 Mar 2022
+* *0.5 hours* Worked on dissertation - made minimal progress.
+
+### 22 Mar 2022
+* *0.5 hours* Wrote general descriptions for 5.2 and 5.3 intros. Wrote 5.3.2 Daily Log.
