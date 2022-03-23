@@ -357,3 +357,4 @@
 
 ### 23 Mar 2022
 * *0.45 hours* Added to 5.3.1 'Weekly Reviews' dissertation section.
+* *1 hour* Added to 5.3.3 'GitHub as a Planning Resource' and 5.3.4 'GitHub as Change Control'
