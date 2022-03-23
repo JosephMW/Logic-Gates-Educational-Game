@@ -353,4 +353,7 @@
 
 ### 22 Mar 2022
 * *0.5 hours* Wrote general descriptions for 5.2 and 5.3 intros. Wrote 5.3.2 Daily Log.
-* *0.5 hours* Wrote 5.3.1 'Weekly Reviews' dissertation section
+* *0.5 hours* Wrote 5.3.1 'Weekly Reviews' dissertation section.
+
+### 23 Mar 2022
+* *0.45 hours* Added to 5.3.1 'Weekly Reviews' dissertation section.
