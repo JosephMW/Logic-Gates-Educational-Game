@@ -360,3 +360,6 @@
 * *1 hour* Added to 5.3.3 'GitHub as a Planning Resource' and 5.3.4 'GitHub as Change Control'.
 * *0.7 hours* Almost completed 5.3.3 'GitHub as a Planning Resource' dissertation section.
 * *1.3 hours* Essentially completed 5.3.4 'GitHub as Change Control' dissertation section.
+
+### 24 Mar 2022
+* *1.5 hours* Updated references, tried to learn about natbib and how to correct my references.
