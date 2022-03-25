@@ -371,3 +371,5 @@
 * *0.25 hours* Wrote section 5.2.3 'Generating from Filesystem' in dissertation.
 * *0.25 hours* Completed [#106 Update Circuit Testing in Unity Test Runner](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/106) and merged the matching PR.
 * *0.55 hours* Completed [#107 Develop full adder circuit](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/107) and merged the matching PR.
+* *0.5 hours* Wrote section 5.2.4 'Behaviour Driven Development' in dissertation.
+* *0.1 hours* Emailed supervisor updated dissertation draft for review.
