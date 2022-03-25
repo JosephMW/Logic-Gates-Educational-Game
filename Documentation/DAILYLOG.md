@@ -363,3 +363,7 @@
 
 ### 24 Mar 2022
 * *1.5 hours* Updated references, tried to learn about natbib and how to correct my references.
+* *1.2 hours* Updated Testing for Circuits.
+
+### 25 Mar 2022
+* *1.7 hours* Wrote section 5.2.1 'Pipe and Filter Design Pattern' in dissertation.
