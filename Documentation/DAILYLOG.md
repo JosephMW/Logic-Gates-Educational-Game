@@ -368,3 +368,4 @@
 ### 25 Mar 2022
 * *1.7 hours* Wrote section 5.2.1 'Pipe and Filter Design Pattern' in dissertation.
 * *0.5 hours* Wrote section 5.2.2 'Inheritance' in dissertation.
+* *0.25 hours* Wrote section 5.2.3 'Generating from Filesystem' in dissertation.
