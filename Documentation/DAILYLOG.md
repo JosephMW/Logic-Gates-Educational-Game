@@ -376,3 +376,4 @@
 
 ### 26 Mar 2022
 * *0.3 hours* Updated References
+* *0.75 hours* Added in Chapter 6 'Testing' to diss. Began writing user testing section.
