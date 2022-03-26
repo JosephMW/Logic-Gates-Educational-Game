@@ -373,3 +373,6 @@
 * *0.55 hours* Completed [#107 Develop full adder circuit](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/107) and merged the matching PR.
 * *0.5 hours* Wrote section 5.2.4 'Behaviour Driven Development' in dissertation.
 * *0.1 hours* Emailed supervisor updated dissertation draft for review.
+
+### 26 Mar 2022
+* *0.3 hours* Updated References
