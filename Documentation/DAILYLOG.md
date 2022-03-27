@@ -377,3 +377,6 @@
 ### 26 Mar 2022
 * *0.3 hours* Updated References
 * *0.75 hours* Added in Chapter 6 'Testing' to diss. Began writing user testing section.
+
+### 27 Mar 2022
+* *1 hour* Tried to fix references/understand why they are failing. Failed to find a reason - seems entirely random.
