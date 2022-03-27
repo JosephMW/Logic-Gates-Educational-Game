@@ -1,6 +1,6 @@
 # Student Testing Session – Participant X
 
-*Participant X tested the project at its v1 stage (This can be found in the branch BRANCHNAME)*
+*Participant X tested the project on the version of main present on 17th February*
 
 I used the [Testing Plan](../TESTINGPLAN.md) to organise the testing session.
 
