@@ -382,3 +382,4 @@
 * *1 hour* Tried to fix references/understand why they are failing. Failed to find a reason - seems entirely random.
 * *0.6 hours* Almost completed 6.1 'User Testing' - still need to discuss what makes a good testing session generally, and add REFERENCES.
 * *0.35 hours* Wrote 6.2 'Automated Testing & Continuous Integration'.
+* *0.25 hours* Updated 3.4 'My Requirements' to use MoSCoW method.
