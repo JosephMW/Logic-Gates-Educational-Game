@@ -383,3 +383,4 @@
 * *0.6 hours* Almost completed 6.1 'User Testing' - still need to discuss what makes a good testing session generally, and add REFERENCES.
 * *0.35 hours* Wrote 6.2 'Automated Testing & Continuous Integration'.
 * *0.25 hours* Updated 3.4 'My Requirements' to use MoSCoW method.
+* *0.55 hours* Wrote 7.1 'Revisiting my Requirements' section in dissertation.
