@@ -384,3 +384,7 @@
 * *0.35 hours* Wrote 6.2 'Automated Testing & Continuous Integration'.
 * *0.25 hours* Updated 3.4 'My Requirements' to use MoSCoW method.
 * *0.55 hours* Wrote 7.1 'Revisiting my Requirements' section in dissertation.
+
+### 28 Mar 2022
+* *0.5 hours* Supervisor Meeting.
+* *1.3 hours* Analysed references and again looked for reasons as to why they are failing. Discovered that the urls I have in my references are not being handled correctly - latex prints them as any other character so special characters are being misinterpreted. Removing all URLs from references fixes this but clearly isn't a proper solution. Also noticed some references look silly. Example for Unity we have 'Technologies (2099)' or whichever year. 
