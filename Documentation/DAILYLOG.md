@@ -389,3 +389,6 @@
 * *0.5 hours* Supervisor Meeting.
 * *1.3 hours* Analysed references and again looked for reasons as to why they are failing. Discovered that the urls I have in my references are not being handled correctly - latex prints them as any other character so special characters are being misinterpreted. Removing all URLs from references fixes this but clearly isn't a proper solution. Also noticed some references look silly. Example for Unity we have 'Technologies (2099)' or whichever year. 
 * *1 hour* Wrote half of 7.2 'How does my solution compare to the Market options?' in dissertation.
+
+### 29 Mar 2022
+* *0.8 hours* Updated References for previous couple of days work.
