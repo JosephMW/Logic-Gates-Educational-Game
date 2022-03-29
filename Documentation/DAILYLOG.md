@@ -392,3 +392,7 @@
 
 ### 29 Mar 2022
 * *0.8 hours* Updated References for previous couple of days work.
+* *0.5 hours* Completed 7.2 'How does my solution compare to the Market options?'
+* *0.25 hours* Completed 8.1 'Summary'
+* *0.35 hours* Wrote most of 8.2 'Future Goals'
+* *0.25 hours* Submitted Good Cause for 5 day extension on my dissertation.
