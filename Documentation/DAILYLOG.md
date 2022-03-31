@@ -397,8 +397,12 @@
 * *0.35 hours* Wrote most of 8.2 'Future Goals'
 * *0.25 hours* Submitted Good Cause for 5 day extension on my dissertation.
 
-### 29 Mar 2022
+### 30 Mar 2022
 * *0.55 hours* Gave reasons for choosing Unit, discussed 'Will not have' section of MoSCoW.
 * *0.25 hours* Clarified details in dissertation.
-* *0.7 hours* Wrote section on saving/loading circuits - appears in '5.1 Design vs Implementation'
+* *0.7 hours* Wrote section on saving/loading circuits - appears in '5.1 Design vs Implementation'.
 * *0.7 hours* Updated references, removed redundant comments on dissertation, corrected minor details.
+
+### 31 Mar 2022
+* *0.25 hours* Extracted questions from debreif script. Checked Intro & Debreif scripts were correct.
+* *0.5 hours* Began planning presentation. Created a powerpoint. listed main sections. Read marking scheme. Checked time-limit.
