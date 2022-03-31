@@ -406,3 +406,4 @@
 ### 31 Mar 2022
 * *0.25 hours* Extracted questions from debreif script. Checked Intro & Debreif scripts were correct.
 * *0.5 hours* Began planning presentation. Created a powerpoint. listed main sections. Read marking scheme. Checked time-limit.
+* *0.5 hours* Created Powerpoint template with correct colours etc to match project.
