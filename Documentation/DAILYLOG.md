@@ -411,3 +411,5 @@
 
 ### 1 Apr 2022
 * *1 hour* Added to Powerpoint.
+* *0.2 hours* Completed [#110 Standardise naming to use circuit instead of game. e.g. 'New Game' -> 'New Circuit'](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/110) and merged the matching PR.
+* *0.7 hours* Recorded Demonstration of product.
