@@ -413,3 +413,5 @@
 * *1 hour* Added to Powerpoint.
 * *0.2 hours* Completed [#110 Standardise naming to use circuit instead of game. e.g. 'New Game' -> 'New Circuit'](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/110) and merged the matching PR.
 * *0.7 hours* Recorded Demonstration of product.
+* *0.25 hours* Completed [#99 Make Wires less fiddly](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/99) and merged the matching PR.
+* *0.25 hours* Completed [#105 Disallow a wire to connect to a port of the same logic-gate](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/105) and merged the matching PR.
