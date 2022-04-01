@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class InputPort : MonoBehaviour
@@ -48,8 +49,8 @@ public class InputPort : MonoBehaviour
         {
             if (wireConnected == null)
             {
-                var wireScript = collider.gameObject.GetComponentInParent<Wire>();
-                if (wireScript.dragging && (wireScript.getConnectionPoint() == null))
+                Wire wireScript = collider.gameObject.GetComponentInParent<Wire>();
+                if (wireScript.dragging && (wireScript.getConnectionPoint() == null) && (0 == (ownerCircuitParent.outputWires.Where(wire => wire.wireID == wireScript.wireID)).Count()))
                 {
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
@@ -65,8 +66,8 @@ public class InputPort : MonoBehaviour
         {
             if (wireConnected == null)
             {
-                var wireScript = collider.gameObject.GetComponentInParent<Wire>();
-                if (wireScript.dragging && (wireScript.getConnectionPoint() == null))
+                Wire wireScript = collider.gameObject.GetComponentInParent<Wire>();
+                if (wireScript.dragging && (wireScript.getConnectionPoint() == null) && (0 == (ownerCircuitParent.outputWires.Where(wire => wire.wireID == wireScript.wireID)).Count()))
                 {
                     wireScript.setConnectionPoint(this);
                     this.wireConnected = wireScript;
