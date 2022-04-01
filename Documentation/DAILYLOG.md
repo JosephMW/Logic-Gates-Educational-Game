@@ -408,3 +408,6 @@
 * *0.5 hours* Began planning presentation. Created a powerpoint. listed main sections. Read marking scheme. Checked time-limit.
 * *0.5 hours* Created Powerpoint template with correct colours etc to match project.
 * *0.9 hours* Added structure to powerpoint. Wrote some slides. 
+
+### 1 Apr 2022
+* *1 hour* Added to Powerpoint.
