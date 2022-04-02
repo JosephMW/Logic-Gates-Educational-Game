@@ -420,3 +420,4 @@
 ### 2 Apr 2022
 * *1 hour* Added to Powerpoint.
 * *0.6 hours* Completed [#117 Have Switch/Light list first in the Toolbar and be presented in another colour](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/117) and merged the matching PR.
+* *0.3 hours* Added to Powerpoint.
