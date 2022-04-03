@@ -425,3 +425,4 @@
 
 ### 2 Apr 2022
 * *3 hours* Researched and downloaded a video editing software and video compression software. Completed [#116 Record Powerpoint Presentation](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/116).Completed [#115 Record Demonstration of Product](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/115). Edited the clips together. Exported and compressed. Now have complete presentation video!
+* *1 hour* Completed [#120 Ensure 16:9 aspect ratio is enforced](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/120) and merged the matching PR.
