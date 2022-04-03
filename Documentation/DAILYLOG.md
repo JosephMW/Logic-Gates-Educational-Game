@@ -421,3 +421,7 @@
 * *1 hour* Added to Powerpoint.
 * *0.6 hours* Completed [#117 Have Switch/Light list first in the Toolbar and be presented in another colour](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/117) and merged the matching PR.
 * *0.3 hours* Added to Powerpoint.
+* *1 hour* Recorded presentation test. Not sure if my presentation is too long/covers stuff i dont need to/doesnt cover stuff I need to cover.
+
+### 2 Apr 2022
+* *3 hours* Researched and downloaded a video editing software and video compression software. Completed [#116 Record Powerpoint Presentation](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/116).Completed [#115 Record Demonstration of Product](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/115). Edited the clips together. Exported and compressed. Now have complete presentation video!
