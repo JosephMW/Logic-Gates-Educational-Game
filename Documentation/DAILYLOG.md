@@ -430,3 +430,4 @@
 
 ### 4 Apr 2022
 * *2 hours* Tested compressing source code and game etc. Source code too large.
+* *0.7 hours* Wrote section explaining condensed chip circuit implementation. Added/removed {blue} text.
