@@ -431,3 +431,4 @@
 ### 4 Apr 2022
 * *2 hours* Tested compressing source code and game etc. Source code too large.
 * *0.7 hours* Wrote section explaining condensed chip circuit implementation. Added/removed {blue} text.
+* *1 hour* Refined, exported to PDF and attached GitHub URL, Intro script, Questionnaire, Debreif script to dissertation appendix. Checked page count limitations - on track.
