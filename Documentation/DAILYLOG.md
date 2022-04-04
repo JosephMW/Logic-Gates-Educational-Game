@@ -429,7 +429,8 @@
 * *0.5 hours* Investigated referencing issues further. made progress. Using \url and replaicng special characters helps.
 
 ### 4 Apr 2022
-* *2 hours* Tested compressing source code and game etc. Source code too large.
+* *2 hours* Tested compressing source code and game etc. Source code too large for submission.
 * *0.7 hours* Wrote section explaining condensed chip circuit implementation. Added/removed {blue} text.
-* *1.2 hour* Refined, exported to PDF and attached GitHub URL, Intro script, Questionnaire, Debreif script to dissertation appendix. Checked page count limitations - on track.
+* *1.2 hour* Refined, exported to PDF and attached GitHub URL, Intro script, Questionnaire, Debreif script to dissertation appendix. Checked page count limitations - still on track.
 * *0.25 hour* Translated 'User Testing' to 'Usability Testing' - now correct. 
+* *2 hours* Cleaning references, sorting to use url correctly - THIS STILL NEEDS MADE MORE CONSISTENT. changed styling etc to get parenthesised citations (citep) and better biblio. Emailed supervisor for confirmation on updated referencing style.
