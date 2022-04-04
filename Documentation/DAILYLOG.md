@@ -423,7 +423,10 @@
 * *0.3 hours* Added to Powerpoint.
 * *1 hour* Recorded presentation test. Not sure if my presentation is too long/covers stuff i dont need to/doesnt cover stuff I need to cover.
 
-### 2 Apr 2022
+### 3 Apr 2022
 * *3 hours* Researched and downloaded a video editing software and video compression software. Completed [#116 Record Powerpoint Presentation](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/116).Completed [#115 Record Demonstration of Product](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/115). Edited the clips together. Exported and compressed. Now have complete presentation video!
 * *1 hour* Completed [#120 Ensure 16:9 aspect ratio is enforced](https://github.com/JosephMW/Logic-Gates-Educational-Game/issues/120) and merged the matching PR.
 * *0.5 hours* Investigated referencing issues further. made progress. Using \url and replaicng special characters helps.
+
+### 4 Apr 2022
+* *2 hours* Tested compressing source code and game etc. Source code too large.
