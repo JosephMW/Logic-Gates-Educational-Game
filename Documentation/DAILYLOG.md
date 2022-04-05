@@ -434,3 +434,6 @@
 * *1.2 hour* Refined, exported to PDF and attached GitHub URL, Intro script, Questionnaire, Debreif script to dissertation appendix. Checked page count limitations - still on track.
 * *0.25 hour* Translated 'User Testing' to 'Usability Testing' - now correct. 
 * *2.2 hours* Cleaning references, sorting to use url correctly - THIS STILL NEEDS MADE MORE CONSISTENT. changed styling etc to get parenthesised citations (citep) and better biblio. Emailed supervisor for confirmation on updated referencing style.
+
+### 5 Apr 2022
+* *1 hour* Updated References. Fixed URLs to be consistent in references. Reverted bibliography style to abbrvnat without numbering (Harvard style). Compiled to-do list.
