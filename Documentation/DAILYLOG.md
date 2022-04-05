@@ -438,3 +438,4 @@
 ### 5 Apr 2022
 * *2 hours* Updated References. Fixed URLs to be consistent in references. Reverted bibliography style to abbrvnat without numbering (Harvard style). Compiled to-do list.
 * *2.5 hours* Updated References. Wrote more info on ed games. fixed abstract. improved overall diss.
+* *1.5 hours* Finishing touches on dissertation. Improved layout of design chapter. Gave useful stats on EdGames. Cut some redundant information to fit page limit.
